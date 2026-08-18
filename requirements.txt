@@ -5,3 +5,6 @@ pytest
 plotly
 kaleido
 googlemaps
+pygame
+networkx
+matplotlib

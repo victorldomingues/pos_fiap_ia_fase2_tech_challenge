@@ -1,0 +1,934 @@
+﻿categoria;marca;modelo;versao;motor;propulsao;transmissao;ar_condicionado;combustivel;consumo_cidade;consumo_estrada;consumo_cidade_2;consumo_estrada_2;consumo_eletrico_cidade;consumo_eletrico_estrada;consumo_vehp_flex_cidade;consumo_vehp_flex_estrada;consumo_energetico_mj_km;autonomia_eletrica_km;classificacao_pbe;classificacao_geral;selo_conpet
+Sub Compacto;BYD;DOLPHIN MINI;GS EV;Elétrico;Elétrico;N.A.;S;E;;;;;58,6;41,9;;;0,41;280;A;A;-
+Sub Compacto;BYD;DOLPHIN MINI;GS 5 EV;Elétrico;Elétrico;N.A.;S;E;;;;;58,6;41,9;;;0,41;280;A;A;-
+Sub Compacto;BYD;DOLPHIN MINI;GL 5 EV;Elétrico;Elétrico;A-1;S;E;;;;;60,6;44,4;;;0,39;224;A;A;-
+Sub Compacto;FIAT;500E;ICON;ELÉTRICO;Elétrico;A-1;S;E;;;;;47,3;40,4;;;0,46;227;C;A;-
+Sub Compacto;FIAT;MOBI;TREKKING;1.0-6V;Combustão;M-5;S;F;9,8;10,6;14;15,1;;;;;1,46;;E;B;-
+Sub Compacto;FIAT;MOBI;LIKE;1.0-6V;Combustão;M-5;S;F;10,1;11,1;14,5;15,8;;;;;1,4;;E;B;-
+Sub Compacto;JAC;e-JS1;e-JS1;Elétrico;Elétrico;A-1;S;E;;;;;46,6;35;;;0,5;181;E;A;-
+Sub Compacto;JAC;e-JS1;e-JS1 EXT;Elétrico;Elétrico;A-1;S;E;;;;;46,6;35;;;0,5;181;E;A;-
+Sub Compacto;Renault;E-KWID;INTENS;Elétrico;Elétrico;A;S;E;;;;;52,7;39,6;;;0,44;185;B;A;-
+Compacto;FIAT;ARGO;1.0;1.0-6V;Combustão;M-5;S;F;9,4;10,4;13,6;14,5;;;;;1,52;;C;B;-
+Compacto;FIAT;ARGO;DRIVE 1.0;1.0-6V;Combustão;M-5;S;F;9,4;10,4;13,6;14,5;;;;;1,52;;C;B;-
+Compacto;FIAT;ARGO;DRIVE 1.3 AT;1.3-8V;Combustão;CVT-7;S;F;9;10,3;12,8;14,3;;;;;1,58;;C;C;-
+Compacto;Hyundai;HB20;Sense;1.0-12V;Combustão;M-5;S;F;9,9;10,7;13,3;15,4;;;;;1,48;;B;B;-
+Compacto;Hyundai;HB20;Comfort;1.0-12V;Combustão;M-5;S;F;9,9;10,7;13,3;15,4;;;;;1,48;;B;B;-
+Compacto;Hyundai;HB20;Limited;1.0-12V;Combustão;M-5;S;F;9,9;10,7;13,3;15,4;;;;;1,48;;B;B;-
+Compacto;Hyundai;HB20;Limited;1.0-12V T;Combustão;A-6;S;F;9,2;10,2;13,2;14,7;;;;;1,54;;C;C;-
+Compacto;Hyundai;HB20;Platinum;1.0-12V T;Combustão;A-6;S;F;9,2;10,2;13,2;14,7;;;;;1,54;;C;C;-
+Compacto;MINI;Cooper;E;Elétrico;Elétrico;A;S;E;;;;;48;39,7;;;0,46;239;A;A;-
+Compacto;MINI;Cooper;SE;Elétrico;Elétrico;A;S;E;;;;;46,1;38,4;;;0,48;312;A;A;-
+Compacto;MINI;JCW;3P;2.0 - 16V;Combustão;A-7;S;G;;;10,8;13,9;;;;;1,81;;E;C;-
+Compacto;MINI;Cooper;S CABRIO;2.0 - 16V;Combustão;A-7;S;G;;;11,2;14,6;;;;;1,73;;D;C;-
+Compacto;MINI;JCW;CABRIO;2.0 - 16V;Combustão;A-7;S;G;;;10,1;12,8;;;;;1,95;;E;C;-
+Compacto;MINI;JCW-E;3P;Elétrico;Elétrico;A;S;E;;;;;43,8;40,2;;;0,48;306;A;A;-
+Compacto;MINI;Cooper;S 3P EXCLUSIVE;2.0 - 16V;Combustão;A-7;S;G;;;11,5;14,1;;;;;1,72;;D;C;-
+Compacto;MINI;Cooper;S 3P SPORT;2.0 - 16V;Combustão;A-7;S;G;;;11,5;14,1;;;;;1,72;;D;C;-
+Compacto;MINI;Cooper;S 3P TOP;2.0 - 16V;Combustão;A-7;S;G;;;11,5;14,1;;;;;1,72;;D;C;-
+Compacto;PEUGEOT;208;ACTIVE MT;1.0-6V;Combustão;M-5;S;F;9,5;10,8;13,6;15,3;;;;;1,49;;B;B;-
+Compacto;PEUGEOT;208;ACTIV T200;1.0T-12V;Combustão;CVT-7;S;F;8,8;10,1;12,6;14,3;;;;;1,6;;C;C;-
+Compacto;PEUGEOT;208;STYLE MT;1.0-6V;Combustão;M-5;S;F;9,5;10,8;13,6;15,3;;;;;1,49;;B;B;-
+Compacto;PEUGEOT;208;ALLUR T200;1.0T-12V;Combustão;CVT-7;S;F;8,3;9,7;12;13,7;;;;;1,69;;D;C;-
+Compacto;PEUGEOT;208;GT T200;1.0T-12V;Combustão;CVT-7;S;F;8,3;9,7;12;13,7;;;;;1,69;;D;C;-
+Compacto;PEUGEOT;208;GT HYBRID;1.0T-12V;Híbrido;CVT-7;S;F;9,1;9,6;13;13,8;;;;;1,6;;C;C;-
+Compacto;PEUGEOT;E-208;GT;ELÉTRICO;Elétrico;A-1;S;E;;;;;37,8;30,8;;;0,59;220;A;A;-
+Médio;AUDI;A3 Spotback;Peformance;2.0 - 16V;Combustão;DCT-7;S;G;;;10,2;12,4;;;;;1,96;;E;C;-
+Médio;AUDI;A3 Spotback;Performance Black;2.0 - 16V;Combustão;DCT-7;S;G;;;10,2;12,4;;;;;1,96;;E;C;-
+Médio;BMW;M135;xDrive;2.0 - 16V;Combustão;A-7;S;G;;;9,7;12,7;;;;;2,02;;E;C;-
+Médio;BYD;DOLPHIN;GS 180EV;Elétrico;Elétrico;N.A.;S;E;;;;;51,9;43,5;;;0,42;291;A;A;-
+Médio;BYD;DOLPHIN;PLUS 310EV;Elétrico;Elétrico;N.A.;S;E;;;;;42,1;36,8;;;0,51;330;A;A;-
+Médio;BYD;DOLPHIN;SE 290EV;Elétrico;Elétrico;N.A.;S;E;;;;;45,8;36,7;;;0,49;272;A;A;-
+Médio;BYD;YUAN PRO;GS 290EV;Elétrico;Elétrico;N.A.;S;E;;;;;44;35,7;;;0,51;250;A;A;-
+Médio;CHEVROLET;ONIX;LTZ;1.0T - 12V;Combustão;A-6;S;F;8,6;10,9;12,1;15,3;;;;;1,59;;C;C;-
+Médio;CHEVROLET;ONIX;PREMIER;1.0T - 12V;Combustão;A-6;S;F;8,6;10,9;12,1;15,3;;;;;1,59;;C;C;-
+Médio;CHEVROLET;ONIX;RS;1.0T - 12V;Combustão;A-6;S;F;8,2;10,1;11,8;14,5;;;;;1,68;;C;C;-
+Médio;CHEVROLET;ONIX;MT;1.0T - 12V;Combustão;M-6;S;F;9,8;12,4;13,7;17,7;;;;;1,38;;A;B;SIM
+Médio;CHEVROLET;ONIX;LT;1.0T - 12V;Combustão;A-6;S;F;8,6;10,9;12,1;15,3;;;;;1,59;;C;C;-
+Médio;CHEVROLET;ONIX;MT;1.0 - 12 V;Combustão;M-6;S;F;9,5;11,3;13,5;16,3;;;;;1,45;;B;B;-
+Médio;CHEVROLET;ONIX;AT;1.0T - 12V;Combustão;A-6;S;F;8,6;10,9;12,1;15,3;;;;;1,59;;C;C;-
+Médio;CHEVROLET;ONIX;10TAT HB ALC;1.0T - 12V;Combustão;A-6;S;E100;9,1;11;;;;;;;1,55;;C;C;-
+Médio;CHEVROLET;ONIX;10TAT LT1 ALC;1.0T - 12V;Combustão;A-6;S;E100;9,1;11;;;;;;;1,55;;C;C;-
+Médio;CHEVROLET;ONIX;10TAT LTZ ALC;1.0T - 12V;Combustão;A-6;S;E100;9,1;11;;;;;;;1,55;;C;C;-
+Médio;CHEVROLET;ONIX;10TAT PR2 ALC;1.0T - 12V;Combustão;A-6;S;E100;9,1;11;;;;;;;1,55;;C;C;-
+Médio;CHEVROLET;ONIX PLUS;LTZ;1.0T - 12V;Combustão;A-6;S;F;8,5;11,2;12,2;16;;;;;1,57;;C;C;-
+Médio;CHEVROLET;ONIX PLUS;PREMIER;1.0T - 12V;Combustão;A-6;S;F;8,5;11,2;12,2;16;;;;;1,57;;C;C;-
+Médio;CHEVROLET;ONIX PLUS;MT;1.0T - 12V;Combustão;M-6;S;F;9,2;12,3;13,3;16,8;;;;;1,44;;B;B;-
+Médio;CHEVROLET;ONIX PLUS;LT;1.0T - 12V;Combustão;A-6;S;F;8,5;11,2;12,2;16;;;;;1,57;;C;C;-
+Médio;CHEVROLET;ONIX PLUS;MT;1.0 - 12 V;Combustão;M-6;S;F;9,8;12,1;13,9;17,1;;;;;1,39;;A;B;SIM
+Médio;CHEVROLET;ONIX PLUS;AT;1.0T - 12V;Combustão;A-6;S;F;8,5;11,2;12,2;16;;;;;1,57;;C;C;-
+Médio;CHEVROLET;ONIX PLUS;10TAT NB ALC;1.0T - 12V;Combustão;A-6;S;E100;9,1;11,1;;;;;;;1,54;;C;C;-
+Médio;CHEVROLET;ONIX PLUS;10TAT LT1 ALC;1.0T - 12V;Combustão;A-6;S;E100;9,1;11,1;;;;;;;1,54;;C;C;-
+Médio;CHEVROLET;ONIX PLUS;10TAT LTZ ALC;1.0T - 12V;Combustão;A-6;S;E100;9,1;11,1;;;;;;;1,54;;C;C;-
+Médio;CHEVROLET;ONIX PLUS;10TAT PR2 ALC;1.0T - 12V;Combustão;A-6;S;E100;9,1;11,1;;;;;;;1,54;;C;C;-
+Médio;CHEVROLET;SPARK EUV;ACTIV;Elétrico;Elétrico;Automática (A);S;E;;;;;47,4;34,9;;;0,5;258;A;A;-
+Médio;FIAT;CRONOS;1.0;1.0-6V;Combustão;M-5;S;F;9,7;11,2;13,4;15,9;;;;;1,46;;B;B;-
+Médio;FIAT;CRONOS;DRIVE 1.0;1.0-6V;Combustão;M-5;S;F;9,7;11,2;13,4;15,9;;;;;1,46;;B;B;-
+Médio;FIAT;CRONOS;DRIVE1.3AT;1.3-8V;Combustão;CVT-7;S;F;8,9;10,7;12,6;14,6;;;;;1,57;;C;C;-
+Médio;FIAT;CRONOS;PREC 1.3AT;1.3-8V;Combustão;CVT-7;S;F;8,9;10,7;12,6;14,6;;;;;1,57;;C;C;-
+Médio;FIAT;CRONOS;DRIVE 1.3;1.3-8V;Combustão;M-5;S;F;9,2;11;13,3;15,7;;;;;1,49;;B;B;-
+Médio;Geely;EX2;MAX;Elétrico;Elétrico;A;S;E;;;;;60,1;45,2;;;0,39;289;A;A;-
+Médio;Geely;EX2;PRO;Elétrico;Elétrico;A;S;E;;;;;60,1;45,2;;;0,39;289;A;A;-
+Médio;GWM;ORA 03;BEV58 C;Elétrico;Elétrico;A-1;S;E;;;;;42,8;36,1;;;0,51;315;A;A;-
+Médio;GWM;ORA 03;GT BEV63;Elétrico;Elétrico;A-1;S;E;;;;;41,1;33,7;;;0,54;295;A;A;-
+Médio;GWM;ORA 03;SKIN BEV48;Elétrico;Elétrico;A-1;S;E;;;;;41,7;35,7;;;0,52;232;A;A;-
+Médio;GWM;ORA 03;BEV58;Elétrico;Elétrico;A-1;S;E;;;;;42,8;36,1;;;0,51;315;A;A;-
+Médio;HONDA;CITY;LX;1.5-16V;Combustão;CVT;S;F;9,3;10,4;12,8;15,5;;;;;1,53;;C;C;-
+Médio;HONDA;CITY;EX;1.5-16V;Combustão;CVT;S;F;9,3;10,4;12,8;15,5;;;;;1,53;;C;C;-
+Médio;HONDA;CITY;EXL;1.5-16V;Combustão;CVT;S;F;9,3;10,4;12,8;15,5;;;;;1,53;;C;C;-
+Médio;HONDA;CITY;TOURING;1.5-16V;Combustão;CVT;S;F;9,3;10,4;12,8;15,5;;;;;1,53;;C;C;-
+Médio;HONDA;CITY HATCH;LX;1.5-16V;Combustão;CVT;S;F;9,2;10,5;13,2;15;;;;;1,53;;C;C;-
+Médio;HONDA;CITY HATCH;EX;1.5-16V;Combustão;CVT;S;F;9,2;10,5;13,2;15;;;;;1,53;;C;C;-
+Médio;HONDA;CITY HATCH;EXL;1.5-16V;Combustão;CVT;S;F;9,2;10,5;13,2;15;;;;;1,53;;C;C;-
+Médio;HONDA;CITY HATCH;TOURING;1.5-16V;Combustão;CVT;S;F;9,2;10,5;13,2;15;;;;;1,53;;C;C;-
+Médio;HONDA;CITY HATCH;TOURING SPORT;1.5-16V;Combustão;CVT;S;F;9,2;10,5;13,2;15;;;;;1,53;;C;C;-
+Médio;HONDA;HR-V;EX;1.5-16V;Combustão;CVT;S;F;8,8;9,9;12,5;13,9;;;;;1,63;;C;C;-
+Médio;HONDA;HR-V;EXL;1.5-16V;Combustão;CVT;S;F;8,8;9,9;12,5;13,9;;;;;1,63;;C;C;-
+Médio;HONDA;HR-V;ADVANCE;1.5T-16V;Combustão;CVT;S;F;8;9,2;11,3;13;;;;;1,78;;D;C;-
+Médio;HONDA;HR-V;TOURING;1.5T-16V;Combustão;CVT;S;F;8;9,2;11,3;13;;;;;1,78;;D;C;-
+Médio;HONDA;HR-V (mod. 26);ADVANCE;1.5T-16V;Combustão;CVT;S;F;8,1;9,1;11,5;12,9;;;;;1,78;;D;C;-
+Médio;HONDA;HR-V (mod. 26);TOURING;1.5T-16V;Combustão;CVT;S;F;8,1;9,1;11,5;12,9;;;;;1,78;;D;C;-
+Médio;Hyundai;HB20S;Comfort;1.0-12V;Combustão;M-5;S;F;9,7;10,9;13,4;15,4;;;;;1,47;;B;B;-
+Médio;Hyundai;HB20S;Limited;1.0-12V;Combustão;M-5;S;F;9,7;10,9;13,4;15,4;;;;;1,47;;B;B;-
+Médio;Hyundai;HB20S;Limited;1.0-12V T;Combustão;A-6;S;F;9,2;10,7;13;15,2;;;;;1,53;;C;C;-
+Médio;Hyundai;HB20S;Platinum;1.0-12V T;Combustão;A-6;S;F;9,2;10,7;13;15,2;;;;;1,53;;C;C;-
+Médio;Hyundai;KONA;Ultimate;1.6-16V HEV;Híbrido;DCT-6;S;G;;;18,4;16;;;;;1,21;;A;B;SIM
+Médio;Hyundai;KONA;Signature;1.6-16V HEV;Híbrido;DCT-6;S;G;;;18,4;16;;;;;1,21;;A;B;SIM
+Médio;Hyundai;I20;Comfort;1.0-12V;Combustão;M-5;S;F;9,7;10,5;13,9;15;;;;;1,48;;B;B;-
+Médio;Hyundai;I20;Limited;1.0-12V;Combustão;M-5;S;F;9,7;10,5;13,9;15;;;;;1,48;;B;B;-
+Médio;Hyundai;I20;Sense;1.0-12V;Combustão;M-5;S;F;9,7;10,5;13,9;15;;;;;1,48;;B;B;-
+Médio;Hyundai;I20;Comfort;1.0-12V;Combustão;M-5;S;F;9,6;10,2;13,7;14,8;;;;;1,5;;B;B;-
+Médio;Hyundai;I20;Limited;1.0-12V;Combustão;M-5;S;F;9,6;10,2;13,7;14,8;;;;;1,5;;B;B;-
+Médio;Hyundai;I20;Sense;1.0-12V;Combustão;M-5;S;F;9,6;10,2;13,7;14,8;;;;;1,5;;B;B;-
+Médio;JAC;e-JS4;e-JS4;Elétrico;Elétrico;A-1;S;E;;;;;47,5;39,1;;;0,47;307;A;A;-
+Médio;KIA;NIRO;HEV 1.6 EX;1.6 - 16V;Híbrido;DCT-6;S;G;;;18,3;15,9;;;;;1,21;;A;B;SIM
+Médio;KIA;NIRO;HEV 1.6 LX;1.6 - 16V;Híbrido;DCT-6;S;G;;;18,3;15,9;;;;;1,21;;A;B;SIM
+Médio;KIA;NIRO;HEV 1.6 SX;1.6 - 16V;Híbrido;DCT-6;S;G;;;18,3;15,9;;;;;1,21;;A;B;SIM
+Médio;KIA;NIRO;HEV 1.6 SX RIOPEN;1.6 - 16V;Híbrido;DCT-6;S;G;;;18,3;15,9;;;;;1,21;;A;B;SIM
+Médio;MG;MG4;64 KWH COM;Elétrico;Elétrico;A-1;S;E;;;;;43,3;37,4;;;0,5;364;A;A;-
+Médio;MG;MG4;64 KWH LUX;Elétrico;Elétrico;A-1;S;E;;;;;43,3;37,4;;;0,5;364;A;A;-
+Médio;MG;MG4;64 KWH AWD;Elétrico;Elétrico;A-1;S;E;;;;;36,3;32,7;;;0,59;279;A;A;-
+Médio;MINI;Cooper;S 5P EXCLUSIVE;2.0 - 16V;Combustão;A-7;S;G;;;11,5;14,5;;;;;1,71;;D;C;-
+Médio;MINI;Cooper;S 5P TOP;2.0 - 16V;Combustão;A-7;S;G;;;11,5;14,5;;;;;1,71;;D;C;-
+Médio;MINI;Aceman;E;Elétrico;Elétrico;A;S;E;;;;;47,6;40,2;;;0,46;253;A;A;-
+Médio;MINI;Aceman;SE;Elétrico;Elétrico;A;S;E;;;;;40,8;36,7;;;0,52;270;A;A;-
+Médio;MINI;JCW-E;ACEMAN;Elétrico;Elétrico;A;S;E;;;;;41,2;39,8;;;0,5;312;A;A;-
+Médio;Nissan;Versa;SENSE CVT;1.6-16V;Combustão;CVT;S;F;7,9;10,5;11,5;15;;;;;1,69;;D;C;-
+Médio;Nissan;Versa;ADVNC CVT;1.6-16V;Combustão;CVT;S;F;7,9;10,5;11,5;15;;;;;1,69;;D;C;-
+Médio;Nissan;Versa;EXCL CVT;1.6-16V;Combustão;CVT;S;F;7,9;10,5;11,5;15;;;;;1,69;;D;C;-
+Médio;Nissan;Versa;SR CVT;1.6-16V;Combustão;CVT;S;F;7,9;10,5;11,5;15;;;;;1,69;;D;C;-
+Médio;PEUGEOT;E2008;GT;ELÉTRICO;Elétrico;A-1;S;E;;;;;38,2;35,3;;;0,55;261;A;A;-
+Médio;Renault;MÉGANE;E-TECH;Elétrico;Elétrico;A;S;E;;;;;41,4;38,8;;;0,51;337;A;A;-
+Médio;SUZUKI;e-Vitara;4STY 2WD;Elétrico;Elétrico;A-1;S;E;;;;;41,5;34,3;;;0,54;317;A;A;-
+Médio;SUZUKI;e-Vitara;4STY 4WD;Elétrico;Elétrico;A-1;S;E;;;;;37,8;31,6;;;0,58;293;A;A;-
+Médio;TOYOTA;GR YARIS;8AT;1.6-12V;Combustão;A-8;S;G;;;7,8;9,7;;;;;2,6;;E;D;-
+Médio;TOYOTA;GR YARIS;6MT;1.6-12V;Combustão;M-6;S;G;;;8,6;10,1;;;;;2,39;;E;D;-
+Médio;VOLVO;EX30;E40 CORE;Elétrico;Elétrico;A-1;S;E;;;;;40,1;33,9;;;0,55;250;A;A;-
+Médio;VOLVO;EX30;E40 PLUS;Elétrico;Elétrico;A-1;S;E;;;;;40,1;33,9;;;0,55;250;A;A;-
+Médio;VOLVO;EX30;E60 ULTRA;Elétrico;Elétrico;A-1;S;E;;;;;43,2;35,3;;;0,52;338;A;A;-
+Médio;VOLVO;EX30;E60 PLUS;Elétrico;Elétrico;A-1;S;E;;;;;43,2;35,3;;;0,52;338;A;A;-
+Médio;VOLVO;EX30;E60 CORE;Elétrico;Elétrico;A-1;S;E;;;;;43,2;35,3;;;0,52;338;A;A;-
+Médio;VOLVO;EX30;TWIN ULTRA;Elétrico;Elétrico;A-1;S;E;;;;;33,4;32;;;0,62;316;A;A;-
+Médio;VW;GOLF;GOLF GTI;2.0-16V;Combustão;DTC - 7;S;G;;;9,8;12,8;;;;;2;;E;C;-
+Médio;VW;VIRTUS;COMFORTLINE 200TSI AUT;1.0-12V;Combustão;A - 6;S;F;8,3;10,2;12,1;14,7;;;;;1,64;;C;C;-
+Médio;VW;VIRTUS;HIGHLINE 200TSI AUT;1.0-12V;Combustão;A - 6;S;F;8,3;10,2;12,1;14,7;;;;;1,64;;C;C;-
+Médio;VW;VIRTUS;TSI AUTOMÁTICO;1.0-12V;Combustão;A - 6;S;F;8,5;10,4;12,2;14,9;;;;;1,62;;C;C;-
+Médio;VW;VIRTUS;TSI MECÂNICO;1.0-12V;Combustão;M - 5;S;F;9,2;11,2;13,2;15,8;;;;;1,49;;B;B;-
+Médio;VW;VIRTUS;SENSE TSI MECÂNICO;1.0-12V;Combustão;M - 5;S;F;9,2;11,2;13,2;15,8;;;;;1,49;;B;B;-
+Médio;VW;VIRTUS;EXCLUSIVE 250TSI AUT;1.4 -16V;Combustão;A - 6;S;F;8,1;9,9;11,7;14;;;;;1,7;;D;C;-
+Médio;VW;POLO;COMFORTLINE TSI AUT;1.0-12V;Combustão;A - 6;S;F;9;11,1;13,1;16,1;;;;;1,5;;B;B;-
+Médio;VW;POLO;SENSE TSI AUTOMÁTICO;1.0-12V;Combustão;A - 6;S;F;9;11,1;13,1;16,1;;;;;1,5;;B;B;-
+Médio;VW;POLO;HIGHLINE TSI AUTOMÁTICO;1.0-12V;Combustão;A - 6;S;F;8,8;10,7;12,5;15,2;;;;;1,57;;C;C;-
+Médio;VW;POLO;MPI;1.0-12V;Combustão;M - 5;S;F;9,3;10,9;13,5;15,7;;;;;1,48;;B;B;-
+Médio;VW;POLO;TRACK 1.0 MPI;1.0-12V;Combustão;M - 5;S;F;;;;;;;;;1,48;;B;B;-
+Médio;VW;POLO;TRACK ROBUST 1.0 MPI;1.0-12V;Combustão;M - 5;S;F;;;;;;;;;1,48;;B;B;-
+Médio;VW;TERA;MPI;1.0-12V;Combustão;M - 5;S;F;9,3;10,4;13,4;15;;;;;1,52;;B;B;-
+Grande;AUDI;A3 Sedan;Advanced;2.0 - 16V;Combustão;DCT-7;S;G;;;10,1;12,9;;;;;1,95;;D;C;-
+Grande;AUDI;A3 Sedan;Performance;2.0 - 16V;Combustão;DCT-7;S;G;;;10,1;12,9;;;;;1,95;;D;C;-
+Grande;AUDI;A3 Sedan;Performance Black;2.0 - 16V;Combustão;DCT-7;S;G;;;10,1;12,9;;;;;1,95;;D;C;-
+Grande;AUDI;RS3 Sedan;-;2.5 - 20V;Combustão;DCT-7;S;G;;;7,3;9,9;;;;;2,7;;E;E;-
+Grande;AUDI;RS3 Sedan;Track;2.5 - 20V;Combustão;DCT-7;S;G;;;7,3;9,9;;;;;2,7;;E;E;-
+Grande;AUDI;Q3 SUV;Launch edition (ed.0);2.0 - 16V;Combustão;DCT-7;S;G;;;8;9,8;;;;;2,54;;E;D;-
+Grande;AUDI;Q3 SUV;Launch edition (ed.0);2.0 - 16V;Combustão;DCT-7;S;G;;;8;9,8;;;;;2,54;;E;D;-
+Grande;AUDI;Q3 Sportback;Launch edition (ed.0);2.0 - 16V;Combustão;DCT-7;S;G;;;8;9,9;;;;;2,53;;E;D;-
+Grande;AUDI;Q3 Sportback;Launch edition (ed.0);2.0 - 16V;Combustão;DCT-7;S;G;;;8;9,9;;;;;2,53;;E;D;-
+Grande;AUDI;Q3 SUV;Launch edition;2.0 - 16V;Combustão;DCT-7;S;G;;;8,2;9,6;;;;;2,52;;E;D;-
+Grande;AUDI;Q3 SUV;Launch edition;2.0 - 16V;Combustão;DCT-7;S;G;;;8,2;9,6;;;;;2,52;;E;D;-
+Grande;AUDI;Q3 Sportback;Launch edition;2.0 - 16V;Combustão;DCT-7;S;G;;;8,2;9,5;;;;;2,52;;E;D;-
+Grande;AUDI;Q3 Sportback;Launch edition;2.0 - 16V;Combustão;DCT-7;S;G;;;8,2;9,5;;;;;2,52;;E;D;-
+Grande;BMW;iX1;xDrive30;Elétrico;Elétrico;A;S;E;;;;;35,7;32;;;0,6;324;A;A;-
+Grande;BMW;iX1;eDrive20;Elétrico;Elétrico;A;S;E;;;;;37,4;36,1;;;0,55;345;A;A;-
+Grande;BMW;iX2;xDrive30 MSP;Elétrico;Elétrico;A;S;E;;;;;35,7;32,8;;;0,59;327;A;A;-
+Grande;BMW;220;-;2.0 - 16V;Combustão;A-7;S;G;;;11,4;14,9;;;;;1,7;;C;C;-
+Grande;BMW;220;MSP;2.0 - 16V;Combustão;A-7;S;G;;;11,4;14,9;;;;;1,7;;C;C;-
+Grande;BMW;M235;xDrive;2.0 - 16V;Combustão;A-7;S;G;;;8,9;12,3;;;;;2,16;;E;D;-
+Grande;BMW;X2;M35i;2.0 - 16V;Combustão;A-7;S;G;;;8,9;11,6;;;;;2,21;;E;D;-
+Grande;BYD;ATTO 2;GS DM FLEX;1.5-16V;Plug-in;A-1;S;F;11,8;10,7;15,5;13,9;43,4;34,9;32,2;24,8;0,51;75;A;A;SIM
+Grande;BYD;ATTO 2;GL DM FLEX;1.5-16V;Plug-in;A-1;S;F;11,7;10,5;15,8;13,5;42,3;29,7;27,7;21,4;0,57;33;A;A;SIM
+Grande;BYD;YUAN PLUS;GS 560EV;Elétrico;Elétrico;N.A.;S;E;;;;;38,3;32;;;0,58;378;A;A;
+Grande;CAOA CHERY;TIGGO 7;PHEV;1.5T -16V;Plug-in;DHT;S;G;;;12,3;11,9;36,4;28,8;;;0,62;60;A;A;SIM
+Grande;GAC;AION Y;PREMIUM;Elétrico;Elétrico;A-1;S;E;;;;;36,5;35;;;0,57;318;A;A;-
+Grande;GAC;AION Y;ELITE;Elétrico;Elétrico;A-1;S;E;;;;;36,5;35;;;0,57;318;A;A;-
+Grande;GAC;AION UT;ELITE;Elétrico;Elétrico;A-1;S;E;;;;;38,3;32,3;;;0,57;310;A;A;-
+Grande;GAC;AION UT;PREMIUM;Elétrico;Elétrico;A-1;S;E;;;;;43,7;35,3;;;0,51;253;A;A;-
+Grande;GWM;ORA;5;Elétrico;Elétrico;A-1;S;E;;;;;44,8;37,1;;;0,49;349;A;A;-
+Grande;HONDA;CIVIC HYBRID;TOURING;2.0 - 16V;Híbrido;CVT;S;G;;;18,4;15,9;;;;;1,21;;B;B;-
+Grande;HONDA;ZR-V;TOURING;2.0 - 16V;Combustão;CVT;S;G;;;10,4;12,3;;;;;1,95;;D;C;-
+Grande;JAECOO;7;PRESTIGE;1.5-16V;Plug-in;A-1;S;G;;;15,1;13,5;37;30,7;;;0,6;79;A;A;SIM
+Grande;JAECOO;7;LUXURY;1.5-16V;Plug-in;A-1;S;G;;;15,1;13,5;37;30,7;;;0,6;79;A;A;SIM
+Grande;LEXUS;UX 300H;UX 300H;2.0 - 16V;Híbrido;CVT;S;G;;;17,3;14,9;;;;;1,29;;B;B;-
+Grande;Mercedes-Benz;AMG A45S 4M;;2.0-16V;Combustão;DCT-8;S;G;;;8,3;10,7;;;;;2,4;;E;D;-
+Grande;Mercedes-Benz;GLA200;AMG LINE;1.3-16V;Híbrido;DCT-7;S;G;;;11,4;12,4;;;;;1,83;;C;C;-
+Grande;Mercedes-Benz;GLA200;PROGRESSIVE;1.3-16V;Híbrido;DCT-7;S;G;;;11,4;12,4;;;;;1,83;;C;C;-
+Grande;Mercedes-Benz;AMG GLA35 4M;;2.0-16V;Híbrido;DCT-8;S;G;;;8,8;10,8;;;;;2,29;;E;D;-
+Grande;MG;S5;EV 62KWH LUX;Elétrico;Elétrico;A-1;S;E;;;;;43;36,7;;;0,51;351;A;A;-
+Grande;MG;S5;EV 62KWH COM;Elétrico;Elétrico;A-1;S;E;;;;;43;36,7;;;0,51;351;A;A;-
+Grande;MG;MG4;URB EV54KWH COM;Elétrico;Elétrico;A-1;S;E;;;;;53;42,8;;;0,42;358;A;A;-
+Grande;MG;MG4;URB EV54KWH LUX;Elétrico;Elétrico;A-1;S;E;;;;;53;42,8;;;0,42;358;A;A;-
+Grande;MG;MG4;URB EV43KWH COM;Elétrico;Elétrico;A-1;S;E;;;;;56,8;44;;;0,4;299;A;A;-
+Grande;MG;MG4;URB EV43KWH LUX;Elétrico;Elétrico;A-1;S;E;;;;;56,8;44;;;0,4;299;A;A;-
+Grande;MINI;Countryman;SE EXCLUSIVE;Elétrico;Elétrico;A;S;E;;;;;35;31,8;;;0,61;320;A;A;-
+Grande;MINI;Countryman;SE TOP;Elétrico;Elétrico;A;S;E;;;;;35;31,8;;;0,61;320;A;A;-
+Grande;MINI;JCW;COUNTRYMAN;2.0 - 16V;Combustão;A-7;S;G;;;9,5;11,6;;;;;2,12;;E;D;-
+Grande;MINI;JCW;COUNTRYMAN EX;2.0 - 16V;Combustão;A-7;S;G;;;9,5;11,6;;;;;2,12;;E;D;-
+Grande;Nissan;Sentra;SEN CVT;2.0-16V;Combustão;CVT;S;G;;;11;14;;;;;1,79;;C;C;-
+Grande;Nissan;Sentra;ADV CVT;2.0-16V;Combustão;CVT;S;G;;;11;14;;;;;1,79;;C;C;-
+Grande;Nissan;Sentra;EXC CVT;2.0-16V;Combustão;CVT;S;G;;;11;14;;;;;1,79;;C;C;-
+Grande;OMODA;E5;--;Elétrico;Elétrico;A-1;S;E;;;;;44,7;35,2;;;0,51;345;A;A;-
+Grande;OMODA;5;HEV COMFORT;1.5-16V;Híbrido;A-1;S;G;;;15,1;13,2;;;;;1,5;;B;B;-
+Grande;OMODA;5;HEV LUXURY;1.5-16V;Híbrido;A-1;S;G;;;15,1;13,2;;;;;1,5;;B;B;-
+Grande;OMODA;5;HEV PRESTIGE;1.5-16V;Híbrido;A-1;S;G;;;15,1;13,2;;;;;1,5;;B;B;-
+Grande;TOYOTA;COROLLA;ALTIS HV;1.8 16V;Híbrido;CVT;S;F;12,5;10,7;17,5;15,2;;;;;1,26;;B;B;-
+Grande;TOYOTA;COROLLA;APREMIUMH;1.8 16V;Híbrido;CVT;S;F;12,5;10,7;17,5;15,2;;;;;1,26;;B;B;-
+Grande;TOYOTA;COROLLA;GLI HEV;1.8 16V;Híbrido;CVT;S;F;12,5;10,7;17,5;15,2;;;;;1,26;;B;B;-
+Grande;TOYOTA;COROLLA;COROLLA ALTIS 20;2.0-16V;Combustão;CVT;S;F;8,3;10,1;11,6;14,6;;;;;1,68;;C;C;-
+Grande;TOYOTA;COROLLA;COROLLA GLI 20;2.0-16V;Combustão;CVT;S;F;8,3;10,1;11,6;14,6;;;;;1,68;;C;C;-
+Grande;TOYOTA;COROLLA;COROLLA GRS;2.0-16V;Combustão;CVT;S;F;8,3;10,1;11,6;14,6;;;;;1,68;;C;C;-
+Grande;TOYOTA;COROLLA;COROLLA XEI 20;2.0-16V;Combustão;CVT;S;F;8,3;10,1;11,6;14,6;;;;;1,68;;C;C;-
+Grande;TOYOTA;COROLLA;COROLLA GLI;2.0-16V;Combustão;CVT;S;F;8,3;10,1;11,6;14,6;;;;;1,68;;C;C;-
+Grande;TOYOTA;COROLLA HB;GR R;1.6-12V;Combustão;M-6;S;G;;;8,6;10,9;;;;;2,32;;E;D;-
+Grande;TOYOTA;COROLLA CROSS;XRV HYBRID;1.8-16V;Híbrido;CVT;S;F;11,6;9,9;16,6;14;;;;;1,36;;B;B;-
+Grande;TOYOTA;COROLLA CROSS;XRX HYBRID;1.8-16V;Híbrido;CVT;S;F;11,6;9,9;16,6;14;;;;;1,36;;B;B;-
+Grande;TOYOTA;COROLLA CROSS;XR 20;2.0-16V;Combustão;CVT;S;F;7,9;9,2;11,5;13,1;;;;;1,78;;C;C;-
+Grande;TOYOTA;COROLLA CROSS;XRE 20;2.0-16V;Combustão;CVT;S;F;7,9;9,2;11,5;13,1;;;;;1,78;;C;C;-
+Grande;TOYOTA;COROLLA CROSS;XRX 20;2.0-16V;Combustão;CVT;S;F;7,9;9,2;11,5;13,1;;;;;1,78;;C;C;-
+Grande;TOYOTA;COROLLA CROSS;GRS;2.0-16V;Combustão;CVT;S;F;7,9;9,2;11,5;13,1;;;;;1,78;;C;C;-
+Grande;VOLVO;EC40;6 CORE;Elétrico;Elétrico;A-1;S;E;;;;;41,7;37,2;;;0,51;385;A;A;-
+Grande;VOLVO;EC40;6 PLUS;Elétrico;Elétrico;A-1;S;E;;;;;41,7;37,2;;;0,51;385;A;A;-
+Grande;VOLVO;EC40;6 ULTRA;Elétrico;Elétrico;A-1;S;E;;;;;41,7;37,2;;;0,51;385;A;A;-
+Grande;VOLVO;EC40;8 CORE;Elétrico;Elétrico;A-1;S;E;;;;;36,6;32,6;;;0,59;404;A;A;-
+Grande;VOLVO;EC40;8 PLUS;Elétrico;Elétrico;A-1;S;E;;;;;36,6;32,6;;;0,59;404;A;A;-
+Grande;VOLVO;EC40;8 ULTRA;Elétrico;Elétrico;A-1;S;E;;;;;36,6;32,6;;;0,59;404;A;A;-
+Grande;VOLVO;EC40;PERF BLACK;Elétrico;Elétrico;A-1;S;E;;;;;36,6;32,6;;;0,59;404;A;A;-
+Grande;VOLVO;EC40;PERF ULTRA;Elétrico;Elétrico;A-1;S;E;;;;;36,6;32,6;;;0,59;404;A;A;-
+Extra Grande;AUDI;A5;Performance S Edition;2.0 - 16V;Combustão;DCT-7;S;G;;;8,7;11,3;;;;;2,28;;D;D;-
+Extra Grande;AUDI;A5 Avant;S line;2.0 - 16V;Combustão;DCT-7;S;G;;;8,4;11;;;;;2,36;;D;D;-
+Extra Grande;AUDI;A5 Sedan;S line (ed.0);2.0 - 16V;Combustão;DCT-7;S;G;;;8,3;10,9;;;;;2,39;;D;D;-
+Extra Grande;AUDI;A5 Sedan;S line;2.0 - 16V;Combustão;DCT-7;S;G;;;8,4;11;;;;;2,36;;D;D;-
+Extra Grande;AUDI;RS 6 Avant;Performance;4.0 - 32V;Híbrido;A-8;S;G;;;5,9;7,8;;;;;3,39;;E;E;-
+Extra Grande;AUDI;A6 Avant e-tron;S line;Elétrico;Elétrico;A-1;S;E;;;;;37;31,1;;;0,6;474;A;A;-
+Extra Grande;AUDI;A6 e-tron;Performance black;Elétrico;Elétrico;A-1;S;E;;;;;36,4;31,8;;;0,59;445;A;A;-
+Extra Grande;AUDI;Q5 SUV;Advanced;2.0 - 16V;Combustão;DCT-7;S;G;;;8,3;10,2;;;;;2,43;;D;D;-
+Extra Grande;AUDI;Q5 SUV;S line;2.0 - 16V;Combustão;DCT-7;S;G;;;8,3;10,2;;;;;2,43;;D;D;-
+Extra Grande;AUDI;Q5 Sportback;Advanced;2.0 - 16V;Combustão;DCT-7;S;G;;;8,3;10,2;;;;;2,44;;D;D;-
+Extra Grande;AUDI;Q5 Sportback;S line;2.0 - 16V;Combustão;DCT-7;S;G;;;8,3;10,2;;;;;2,44;;D;D;-
+Extra Grande;AUDI;SQ5 SUV;-;3.0 - 24V;Combustão;DCT-7;S;G;;;7,2;9,2;;;;;2,79;;E;E;-
+Extra Grande;AUDI;SQ5 Sportback;-;3.0 - 24V;Combustão;DCT-7;S;G;;;6,9;8,9;;;;;2,9;;E;E;-
+Extra Grande;AUDI;Q6 e-tron Quattro;Performance;Elétrico;Elétrico;A-1;S;E;;;;;34;29,6;;;0,64;411;A;A;-
+Extra Grande;AUDI;Q6 e-tron Quattro;Performance black;Elétrico;Elétrico;A-1;S;E;;;;;34;29,6;;;0,64;411;A;A;-
+Extra Grande;AUDI;Q6 e-tron RWD;Performance;Elétrico;Elétrico;A-1;S;E;;;;;33,8;29,3;;;0,64;411;A;A;-
+Extra Grande;AUDI;Q6 Sportback e-tron Quattro;Performance black;Elétrico;Elétrico;A-1;S;E;;;;;35,4;31,2;;;0,61;427;A;A;-
+Extra Grande;AUDI;SQ6 Sportback e-tron Quattro;-;Elétrico;Elétrico;A-1;S;E;;;;;35,1;31,9;;;0,6;428;A;A;-
+Extra Grande;AUDI;Q7;S Line;3.0 - 24V;Híbrido;A-8;S;G;;;7;8,6;;;;;2,92;;E;E;-
+Extra Grande;AUDI;Q8 Sportback;Performance Black;3.0 - 24V;Híbrido;A-8;S;G;;;6,8;7,7;;;;;3,11;;E;E;-
+Extra Grande;AUDI;RSQ8;Performance;4.0 - 32V;Combustão;A-8;S;G;;;5,3;7;;;;;3,8;;E;E;-
+Extra Grande;AUDI;Q6 e-tron Quattro;Dynamic;Elétrico;Elétrico;A-1;S;E;;;;;35,3;30,6;;;0,61;424;A;A;-
+Extra Grande;AUDI;Q6 e-tron Quattro;S line;Elétrico;Elétrico;A-1;S;E;;;;;35,3;30,6;;;0,61;424;A;A;-
+Extra Grande;AUDI;Q6 Sportback e-tron Quattro;S line;Elétrico;Elétrico;A-1;S;E;;;;;35,7;31,5;;;0,6;432;A;A;-
+Extra Grande;AUDI;SQ6 Sportback e-tron Quattro;-;Elétrico;Elétrico;A-1;S;E;;;;;34,8;31,8;;;0,61;431;A;A;-
+Extra Grande;AUDI;A6 e-tron;S line;Elétrico;Elétrico;A-1;S;E;;;;;36,5;32,2;;;0,59;443;A;A;-
+Extra Grande;AUDI;RS e-tron GT;Performance;Elétrico;Elétrico;A-1;S;E;;;;;25,2;25,9;;;0,8;348;A;A;-
+Extra Grande;BMW;420i;Cabrio;2.0 - 16V;Combustão;A-8;S;G;;;9,8;12,5;;;;;2,02;;C;C;-
+Extra Grande;BMW;530e;M SPORT;2.0 - 16V;Plug-in;A-8;S;G;;;10,9;12,3;26,2;26,9;;;0,76;70;A;A;SIM
+Extra Grande;BMW;320i;M Sport Flex;2.0 - 16V;Combustão;A-8;S;F;7,4;9;10,5;13,1;;;;;1,88;;C;C;-
+Extra Grande;BMW;320i;Sport GP Flex;2.0 - 16V;Combustão;A-8;S;F;7,6;9,2;10,9;13,3;;;;;1,83;;C;C;-
+Extra Grande;BMW;320i;GP Flex;2.0 - 16V;Combustão;A-8;S;F;7,6;9,2;10,9;13,3;;;;;1,83;;C;C;-
+Extra Grande;BMW;320i;Active Flex;2.0 - 16V;Combustão;A-8;S;F;7,1;8,6;10;12,3;;;;;1,98;;C;C;-
+Extra Grande;BMW;330e;-;2.0 - 16V;Plug-in;A-8;S;G;;;9,2;10,8;20,6;24;;;0,92;61;A;A;SIM
+Extra Grande;BMW;i7;xDrive60;Elétrico;Elétrico;A;S;E;;;;;31,8;30,3;;;0,65;467;A;A;-
+Extra Grande;BMW;I5;M60;Elétrico;Elétrico;A;S;E;;;;;35,1;31,7;;;0,61;393;A;A;-
+Extra Grande;BMW;IX;xDrive 50;Elétrico;Elétrico;A;S;E;;;;;33,2;30,3;;;0,64;498;A;A;-
+Extra Grande;BMW;iX3;50 XDRIVE MSP;Elétrico;Elétrico;A;S;E;;;;;38,7;35,7;;;0,54;570;A;A;-
+Extra Grande;BYD;ATTO 8;GS DM;1.5-16V;Plug-in;A-1;S;G;;;11,4;10,8;30,1;27;;;0,71;111;A;A;SIM
+Extra Grande;BYD;HAN;AWD GS 680EV;Elétrico;Elétrico;N.A.;S;E;;;;;30,8;28,1;;;0,69;349;A;A;-
+Extra Grande;BYD;SEAL;AWD GS 590EV;Elétrico;Elétrico;N.A.;S;E;;;;;34,9;30,5;;;0,62;372;A;A;-
+Extra Grande;BYD;TAN;AWD GS 700EV;Elétrico;Elétrico;N.A.;S;E;;;;;30,2;25,3;;;0,73;430;A;A;-
+Extra Grande;BYD;SONG PLUS;GS DM;1.5-16V;Plug-in;A-1;S;G;;;15;11,2;39,5;30,2;;;0,58;63;A;A;SIM
+Extra Grande;BYD;SONG PLUS;PREM DM;1.5-16V;Plug-in;A-1;S;G;;;12,2;10,1;33,4;27,5;;;0,67;87;A;A;SIM
+Extra Grande;BYD;SONG PLUS;PREM DM (MY27);1.5-16V;Plug-in;A-1;S;G;;;12;10,6;31,7;25,1;;;0,72;83;A;A;SIM
+Extra Grande;BYD;SONG PRO;GS DM;1.5-16V;Plug-in;A-1;S;G;;;14,8;12;38,4;30;;;0,6;62;A;A;SIM
+Extra Grande;BYD;SONG PRO;GL DM;1.5-16V;Plug-in;A-1;S;G;;;14,7;11;41,1;29,8;;;0,58;49;A;A;SIM
+Extra Grande;BYD;SONG PRO;GL DM FLEX;1.5-16V;Plug-in;A-1;S;F;12,1;10,7;16;13,9;43,9;34,1;31,3;22,4;0,53;57;A;A;SIM
+Extra Grande;BYD;SONG PRO;GS DM FLEX;1.5-16V;Plug-in;A-1;S;F;11,7;10,5;15,9;13,5;41,9;29,6;30,2;24;0,55;72;A;A;SIM
+Extra Grande;BYD;KING;GL DM;1.5-16V;Plug-in;A-1;S;G;;;17,1;13,6;43,5;33,1;;;0,53;35;A;A;SIM
+Extra Grande;BYD;KING;GS DM;1.5-16V;Plug-in;A-1;S;G;;;16,4;12,9;45,6;37,3;;;0,49;78;A;A;SIM
+Extra Grande;BYD;SEALION 7;GS 690EV;Elétrico;Elétrico;A-1;S;E;;;;;33,2;28,2;;;0,66;360;A;A;-
+Extra Grande;CAOA CHANGAN;AVATR 11;EV;Elétrico;Elétrico;A;S;E;;;;;35;32,2;;;0,6;497;A;A;-
+Extra Grande;CHEVROLET;BLAZER EV;RS;Elétrico;Elétrico;Automática (A);S;E;;;;;34,2;30,4;;;0,63;481;A;A;-
+Extra Grande;CHEVROLET;EQUINOX;ACTIV;1.5T -16V;Combustão;A-8;S;G;;;9;10,7;;;;;2,28;;D;D;-
+Extra Grande;CHEVROLET;EQUINOX;RS;1.5T -16V;Combustão;A-8;S;G;;;9;10,7;;;;;2,28;;D;D;-
+Extra Grande;CHEVROLET;EQUINOX EV;-;Elétrico;Elétrico;Automática (A);S;E;;;;;37,1;35,6;;;0,56;443;A;A;-
+Extra Grande;CHEVROLET;CAPTIVA EV;PR;Elétrico;Elétrico;Automática (A);S;E;;;;;36,2;28,9;;;0,62;304;A;A;-
+Extra Grande;FORD;TERRITORY;Titanium;1.5 - 16V;Combustão;A-7;S;G;;;8,8;11,2;;;;;2,26;;D;D;-
+Extra Grande;GAC;AION ES;PLUS;Elétrico;Elétrico;A-1;S;E;;;;;47,1;42,9;;;0,45;314;A;A;-
+Extra Grande;GAC;HYPTEC HT;ELITE;Elétrico;Elétrico;A-1;S;E;;;;;43,1;33,4;;;0,53;431;A;A;-
+Extra Grande;GAC;HYPTEC HT;ULTRA;Elétrico;Elétrico;A-1;S;E;;;;;43,1;33,4;;;0,53;431;A;A;-
+Extra Grande;GAC;AION V;ELITE;Elétrico;Elétrico;A-1;S;E;;;;;40,3;34,6;;;0,54;389;A;A;-
+Extra Grande;GAC;AION V;PREMIUM;Elétrico;Elétrico;A-1;S;E;;;;;38,8;34,7;;;0,55;325;A;A;-
+Extra Grande;Geely;EX5;MAX;Elétrico;Elétrico;A;S;E;;;;;43;37,1;;;0,51;349;A;A;-
+Extra Grande;Geely;EX5;PRO;Elétrico;Elétrico;A;S;E;;;;;51;44,7;;;0,42;413;A;A;-
+Extra Grande;Geely;EX5 EM-i;MAX / PRO;1.5-16V;Plug-in;A;S;G;;;14,6;13,3;39;34;;;0,55;65;A;A;SIM
+Extra Grande;Geely;EX5 EM-i;ULTRA;1.5-16V;Plug-in;A;S;G;;;14,8;13,1;37,1;31,6;;;0,59;112;A;A;SIM
+Extra Grande;HONDA;ACCORD HYBRID;TOURING;2.0 - 16V;Híbrido;CVT;S;G;;;17,5;15,6;;;;;1,26;;B;B;-
+Extra Grande;HONDA;PRELUDE;TOP;2.0 - 16V;Híbrido;CVT;S;G;;;17,9;15,7;;;;;1,24;;B;B;-
+Extra Grande;HONDA;PRELUDE;SP;2.0 - 16V;Híbrido;CVT;S;G;;;17,9;15,7;;;;;1,24;;B;B;-
+Extra Grande;Hyundai;IONIQ 5;Platinum;Elétrico;Elétrico;A-1;S;E;;;;;33,6;28,1;;;0,66;374;A;A;-
+Extra Grande;Hyundai;IONIQ 5;Ultimate;Elétrico;Elétrico;A-1;S;E;;;;;33,6;28,1;;;0,66;374;A;A;-
+Extra Grande;Hyundai;IONIQ 5;Signature;Elétrico;Elétrico;A-1;S;E;;;;;33,6;28,1;;;0,66;374;A;A;-
+Extra Grande;JAC;e-J7;e-J7;Elétrico;Elétrico;A-1;S;E;;;;;44;37,1;;;0,5;263;A;A;-
+Extra Grande;JETOUR;S06 DM;ADVANCE;1.5-16V;Plug-in;A-1;S;G;;;14;12,6;36,2;28,9;;;0,62;70;A;A;SIM
+Extra Grande;JETOUR;S06 DM;PREMIUM;1.5-16V;Plug-in;A-1;S;G;;;14;12,6;36,2;28,9;;;0,62;70;A;A;SIM
+Extra Grande;KIA;EV5 2WD;AIR 2WD;ELÉTRICO;Elétrico;A-1;S;E;;;;;37,6;30,5;;;0,6;402;A;A;-
+Extra Grande;LEAPMOTOR;C10;REEV;1.E5Lle t-r 1ic6oV/;Plug-In;A-1;S;G;;;12;12;33,5;29,1;;;0,65;111;A;A;SIM
+Extra Grande;LEAPMOTOR;C10;Design;ELÉTRICO;Elétrico;A-1;S;E;;;;;35,1;30,8;;;0,61;338;A;A;-
+Extra Grande;LEAPMOTOR;B10;LIFE;ELÉTRICO;Elétrico;A-1;S;E;;;;;41,2;32,8;;;0,55;288;A;A;-
+Extra Grande;LEXUS;NX350H;DYNAMIC;2.5 - 16V;Híbrido;CVT;S;G;;;15,7;13,8;;;;;1,43;;B;B;-
+Extra Grande;LEXUS;NX350H;F-SPORT;2.5 - 16V;Híbrido;CVT;S;G;;;15,7;13,8;;;;;1,43;;B;B;-
+Extra Grande;LEXUS;NX350H;LUXURY;2.5 - 16V;Híbrido;CVT;S;G;;;15,7;13,8;;;;;1,43;;B;B;-
+Extra Grande;LEXUS;NX 450H PLUG-IN;NX450H PLUG-IN;2.5 - 16V;Plug-in;CVT;S;G;;;14,5;13,1;37,1;29,5;;;0,61;56;A;A;SIM
+Extra Grande;LEXUS;RX500H;F-SPORT;2.4 - 16V;Híbrido;A-6;S;G;;;10,8;11;;;;;2;;C;C;-
+Extra Grande;LEXUS;RX450H PLUG-IN;I/LEXUS RX450H PLUG-IN;2.5-16V;Plug-in;CVT;S;G;;;14,1;12,6;35;28,5;;;0,64;54;A;A;SIM
+Extra Grande;LEXUS;RZ;500e;Elétrico;Elétrico;CVT;S;E;;;;;39,1;32,3;;;0,57;357;A;A;-
+Extra Grande;Mercedes-Benz;CLA200;AMG LINE;1.3-16V;Híbrido;DCT-7;S;G;;;12;14;;;;;1,68;;C;C;-
+Extra Grande;Mercedes-Benz;CLA200;PROGRESSIVE;1.3-16V;Híbrido;DCT-7;S;G;;;12;14;;;;;1,68;;C;C;-
+Extra Grande;Mercedes-Benz;AMG CLA35 4M;;2.0-16V;Híbrido;DCT-8;S;G;;;8,1;11,7;;;;;2,35;;D;D;-
+Extra Grande;Mercedes-Benz;AMG CLA45S 4M;;2.0-16V;Combustão;DCT-8;S;G;;;8,1;10,7;;;;;2,44;;D;D;-
+Extra Grande;Mercedes-Benz;C200;AMG LINE;1.5-16V;Híbrido;A-9;S;G;;;11,4;14,1;;;;;1,74;;C;C;-
+Extra Grande;Mercedes-Benz;C300;AMG LINE;2.0-16V;Híbrido;A-9;S;G;;;10,8;13,4;;;;;1,84;;C;C;-
+Extra Grande;Mercedes-Benz;AMG C63S EP;F1;2.0-16V;Plug-in;A-9;S;G;;;7,2;8,1;10,7;11,9;;;1,81;9;C;C;-
+Extra Grande;Mercedes-Benz;AMG C63S EP;;2.0-16V;Plug-in;A-9;S;G;;;7,2;8,1;10,7;11,9;;;1,81;9;C;C;-
+Extra Grande;Mercedes-Benz;E300;EXCLUSIVE;2.0-16V;Híbrido;A-9;S;G;;;9,9;12,7;;;;;1,99;;C;C;-
+Extra Grande;Mercedes-Benz;AMG S63 EP;;4.0-32V;Plug-in;A-9;S;G;;;6,5;7,8;15,4;19,9;;;1,18;25;B;B;-
+Extra Grande;Mercedes-Benz;GLB220 4M;AMG LINE;2.0-16V;Híbrido;DCT-8;S;G;;;10,4;13;;;;;1,91;;C;C;-
+Extra Grande;Mercedes-Benz;GLB220 4M;PROGRESSIVE;2.0-16V;Híbrido;DCT-8;S;G;;;10,4;13;;;;;1,91;;C;C;-
+Extra Grande;Mercedes-Benz;AMG GLB35 4M;;2.0-16V;Híbrido;DCT-8;S;G;;;8,4;9,8;;;;;2,46;;D;D;-
+Extra Grande;Mercedes-Benz;AMG GLC43;CO;2.0-16V;Híbrido;A-9;S;G;;;7,3;9,1;;;;;2,79;;E;E;-
+Extra Grande;Mercedes-Benz;AMG GLC63S EP;;2.0-16V;Plug-in;A-9;S;G;;;7,2;7,8;6,3;7,6;;;2,98;18;E;E;-
+Extra Grande;Mercedes-Benz;AMG GLE53 4M;;3.0-24V;Híbrido;A-9;S;G;;;7,3;8,9;;;;;2,81;;E;E;-
+Extra Grande;Mercedes-Benz;AMG GLE63 S CO;Coupé;4.0-32V;Híbrido;A-9;S;G;;;5,9;7,3;;;;;3,48;;E;E;-
+Extra Grande;Mercedes-Benz;GLS450 4M;AMG L;3.0-24V;Híbrido;A-9;S;G;;;7,5;9;;;;;2,75;;E;E;-
+Extra Grande;Mercedes-Benz;EQB250+;;Elétrico;Elétrico;A-1;S;E;;;;;40,3;36,6;;;0,53;376;A;A;-
+Extra Grande;Mercedes-Benz;AMG GLC43;;2.0-16V;Híbrido;A-9;S;G;;;6,8;8,7;;;;;2,98;;E;E;-
+Extra Grande;Mercedes-Benz;AMG GLC43;;2.0-16V;Híbrido;A-9;S;G;;;7,3;9,1;;;;;2,79;;E;E;-
+Extra Grande;Mercedes-Benz;E300;EXCLUSIVE;2.0-16V;Híbrido;A-9;S;G;;;9,7;12,3;;;;;2,05;;C;C;-
+Extra Grande;Mercedes-Benz;GLB250;EV AMGL;Elétrico;Elétrico;A-1;S;E;;;;;37,8;33,4;;;0,57;427;A;A;-
+Extra Grande;Mitsubishi;Outlander;HPE-S E;2.4-16V;Plug-in;AT;S;G;;;11,6;10,4;27,7;25,2;;;0,77;58;A;A;SIM
+Extra Grande;Mitsubishi;Outlander;SIGNATURE E;2.4-16V;Plug-in;AT;S;G;;;11,6;10,4;27,7;25,2;;;0,77;58;A;A;SIM
+Extra Grande;OMODA;7;PHEV LUXURY;1.5-16V;Plug-in;A-1;S;G;;;14;11,9;33,4;28,4;;;0,66;60;A;A;SIM
+Extra Grande;OMODA;7;PHEV PRESTIGE;1.5-16V;Plug-in;A-1;S;G;;;14;11,9;33,4;28,4;;;0,66;60;A;A;SIM
+Extra Grande;PORSCHE;MACAN;S;2.9-24V;Combustão;DCT-7;S;G;;;7;8,4;;;;;2,96;;E;E;-
+Extra Grande;PORSCHE;MACAN;E4;Elétrico;Elétrico;--;S;E;;;;;36,5;31;;;0,6;443;A;A;-
+Extra Grande;PORSCHE;MACAN;ETURBO;Elétrico;Elétrico;--;S;E;;;;;36,1;30,3;;;0,61;435;A;A;-
+Extra Grande;PORSCHE;MACAN;E4S;Elétrico;Elétrico;--;S;E;;;;;36,2;30,4;;;0,61;438;A;A;-
+Extra Grande;PORSCHE;MACAN;GTS (MY 2026);2.9-24V;Combustão;DCT-7;S;G;;;7;8,4;;;;;2,94;;E;E;-
+Extra Grande;PORSCHE;MACAN;;2.0-16V;Combustão;DCT-7;S;G;;;7,3;8,5;;;;;2,84;;E;E;-
+Extra Grande;PORSCHE;MACAN;T;2.0-16V;Combustão;DCT-7;S;G;;;7,3;8,5;;;;;2,84;;E;E;-
+Extra Grande;PORSCHE;MACAN;EGTS;Elétrico;Elétrico;--;S;E;;;;;36,1;30,6;;;0,61;441;A;A;-
+Extra Grande;PORSCHE;CAYENNE;E;Elétrico;Elétrico;--;S;E;;;;;35;29,5;;;0,63;493;A;A;-
+Extra Grande;PORSCHE;CAYENNE;E OF;Elétrico;Elétrico;--;S;E;;;;;35;29,5;;;0,63;493;A;A;-
+Extra Grande;PORSCHE;CAYENNE;E C;Elétrico;Elétrico;--;S;E;;;;;35;29,5;;;0,63;493;A;A;-
+Extra Grande;PORSCHE;CAYENNE;E CO;Elétrico;Elétrico;--;S;E;;;;;35;29,5;;;0,63;493;A;A;-
+Extra Grande;RENAULT;KOLEOS;E-TECH;1.5T 16V;Híbrido;A-4;S;G;;;13,1;12,1;;;;;1,7;;C;C;-
+Extra Grande;TOYOTA;RAV4;SX CONNECT;2.5-16V;Híbrido;CVT;S;G;;;15,3;14,1;;;;;1,43;;B;B;-
+Extra Grande;TOYOTA;RAV4;S CONNECT;2.5-16V;Híbrido;CVT;S;G;;;15,3;14,1;;;;;1,43;;B;B;-
+Extra Grande;TOYOTA;RAV4;SX HYBRID;2.5-16V;Combustão;CVT;S;G;;;16,1;13,5;;;;;1,42;;B;B;-
+Extra Grande;VOLVO;ES90;TWIN PE ULT;Elétrico;Elétrico;A-1;S;E;;;;;38,9;34,3;;;0,55;524;A;A;-
+Extra Grande;TOYOTA;RAV4;S HYBRID;2.5-16V;Combustão;CVT;S;G;;;16,1;13,5;;;;;1,42;;B;B;-
+Extra Grande;VW;JETTA;GLI;2.0-16V;Combustão;DCT - 7;S;G;;;10,3;13,4;;;;;1,9;;C;C;-
+Extra Grande;ZEEKR;001;Flagship;Elétrico;Elétrico;A;S;E;;;;;34,1;30,1;;;0,63;426;A;A;-
+Extra Grande;ZEEKR;001;Premium;Elétrico;Elétrico;A;S;E;;;;;34,1;30,1;;;0,63;426;A;A;-
+Extra Grande;ZEEKR;7X;Flagship AWD;Elétrico;Elétrico;A;S;E;;;;;34,5;29;;;0,64;423;A;A;-
+Extra Grande;ZEEKR;7X;Premium RWD;Elétrico;Elétrico;A;S;E;;;;;39,5;34;;;0,55;491;A;A;-
+Utilitário Esportivo Compacto;CAOA CHERY;TIGGO 5X;PRO HA;1.5T -16V;Híbrido;CVT;S;F;8,1;8,5;11,4;11,8;;;;;1,85;;C;C;-
+Utilitário Esportivo Compacto;CAOA CHERY;TIGGO 5X;PRO;1.5T -16V;Combustão;CVT;S;F;6,6;8;10;11,7;;;;;2,08;;E;D;-
+Utilitário Esportivo Compacto;CAOA CHERY;TIGGO 5X;SPORT;1.5T -16V;Combustão;CVT;S;F;6,6;8;10;11,7;;;;;2,08;;E;D;-
+Utilitário Esportivo Compacto;CHEVROLET;TRACKER;LT;1.0T - 12V;Combustão;A-6;S;F;8,1;9,9;11,5;13,8;;;;;1,72;;B;C;-
+Utilitário Esportivo Compacto;CHEVROLET;TRACKER;LTZ;1.0T - 12V;Combustão;A-6;S;F;8,1;9,9;11,5;13,8;;;;;1,72;;B;C;-
+Utilitário Esportivo Compacto;CHEVROLET;TRACKER;AT;1.0T - 12V;Combustão;A-6;S;F;8,1;9,9;11,5;13,8;;;;;1,72;;B;C;-
+Utilitário Esportivo Compacto;CHEVROLET;TRACKER;LT;1.0T - 12V;Combustão;A-6;S;F;8,1;9,9;11,5;13,8;;;;;1,72;;B;C;-
+Utilitário Esportivo Compacto;CHEVROLET;TRACKER;LTZ;1.0T - 12V;Combustão;A-6;S;F;8,1;9,9;11,5;13,8;;;;;1,72;;B;C;-
+Utilitário Esportivo Compacto;CHEVROLET;TRACKER;RS;1.2T - 12V;Combustão;A-6;S;F;7,6;9,7;11;13,7;;;;;1,8;;C;C;-
+Utilitário Esportivo Compacto;CHEVROLET;TRACKER;PREMIER;1.2T - 12V;Combustão;A-6;S;F;7,6;9,7;11;13,7;;;;;1,8;;C;C;-
+Utilitário Esportivo Compacto;CHEVROLET;TRACKER;PREMIER;1.2T - 12V;Combustão;A-6;S;F;7,6;9,7;11;13,7;;;;;1,8;;C;C;-
+Utilitário Esportivo Compacto;CHEVROLET;SONIC;10T AT PR;1.0T - 12V;Combustão;A-6;S;F;8,4;10,4;12,1;14,8;;;;;1,63;;A;C;-
+Utilitário Esportivo Compacto;CHEVROLET;SONIC;10T AT RS;1.0T - 12V;Combustão;A-6;S;F;8,4;10,4;12,1;14,8;;;;;1,63;;A;C;-
+Utilitário Esportivo Compacto;CITROEN;BASALT;FEEL 1.0;1.0-6V;Combustão;M-5;S;F;9,2;10,1;13,2;14,3;;;;;1,56;;A;C;-
+Utilitário Esportivo Compacto;CITROEN;BASALT;LIVE 1.0;1.0-6V;Combustão;M-5;S;F;9,2;10,1;13,2;14,3;;;;;1,56;;A;C;-
+Utilitário Esportivo Compacto;CITROEN;BASALT;SHINE T200;1.0T-12V;Combustão;CVT-7;S;F;8,4;9,6;12,1;13,7;;;;;1,69;;B;C;-
+Utilitário Esportivo Compacto;CITROEN;BASALT;FL PKT200;1.0T-12V;Combustão;CVT-7;S;F;8,4;9,6;12,1;13,7;;;;;1,69;;B;C;-
+Utilitário Esportivo Compacto;CITROEN;BASALT;T200 DARK;1.0T-12V;Combustão;CVT-7;S;F;8,4;9,6;12,1;13,7;;;;;1,69;;B;C;-
+Utilitário Esportivo Compacto;CITROEN;C3;FEEL 1.0;1.0-6V;Combustão;M-5;S;F;9,3;10,3;13,2;14,5;;;;;1,54;;A;C;-
+Utilitário Esportivo Compacto;CITROEN;C3;FEEL PLUS 1.0;1.0-6V;Combustão;M-5;S;F;9,5;10,4;13,4;14,6;;;;;1,51;;A;B;SIM
+Utilitário Esportivo Compacto;CITROEN;C3;LIVE 1.0;1.0-6V;Combustão;M-5;S;F;9,3;10,3;13,2;14,5;;;;;1,54;;A;C;-
+Utilitário Esportivo Compacto;CITROEN;C3;LIVE GO 1.0;1.0-6V;Combustão;M-5;S;F;9,5;10,4;13,4;14,6;;;;;1,51;;A;B;SIM
+Utilitário Esportivo Compacto;CITROEN;C3;LIVE PK 1.0;1.0-6V;Combustão;M-5;S;F;9,3;10,3;13,2;14,5;;;;;1,54;;A;C;-
+Utilitário Esportivo Compacto;CITROEN;C3;LIVE PLUS 1.0;1.0-6V;Combustão;M-5;S;F;9,5;10,4;13,4;14,6;;;;;1,51;;A;B;SIM
+Utilitário Esportivo Compacto;CITROEN;C3;XTR 1.0;1.0-6V;Combustão;M-5;S;F;9,5;10,3;13;14,2;;;;;1,55;;A;C;-
+Utilitário Esportivo Compacto;CITROEN;C3;YOU 1.0T CVT;1.0T-12V;Combustão;CVT-7;S;F;8,1;8,9;11,5;12,9;;;;;1,78;;C;C;-
+Utilitário Esportivo Compacto;CITROEN;AIRCROSS;XTR 7;1.0T-12V;Combustão;CVT-7;S;F;7,6;8,9;11;12,6;;;;;1,86;;C;C;-
+Utilitário Esportivo Compacto;CITROEN;AIRCROSS;XTR;1.0T-12V;Combustão;CVT-7;S;F;7,6;8,9;11;12,6;;;;;1,86;;C;C;-
+Utilitário Esportivo Compacto;CITROEN;AIRCROSS;FL;1.0T-12V;Combustão;CVT-7;S;F;7,9;9,1;11,2;13;;;;;1,8;;C;C;-
+Utilitário Esportivo Compacto;CITROEN;AIRCROSS;7 FL;1.0T-12V;Combustão;CVT-7;S;F;7,9;9,1;11,2;13;;;;;1,8;;C;C;-
+Utilitário Esportivo Compacto;CITROEN;AIRCROSS;FL PK;1.0T-12V;Combustão;CVT-7;S;F;7,9;9,1;11,2;13;;;;;1,8;;C;C;-
+Utilitário Esportivo Compacto;CITROEN;AIRCROSS;7 FL PK;1.0T-12V;Combustão;CVT-7;S;F;7,9;9,1;11,2;13;;;;;1,8;;C;C;-
+Utilitário Esportivo Compacto;CITROEN;AIRCROSS;SH;1.0T-12V;Combustão;CVT-7;S;F;7,9;9,1;11,2;13;;;;;1,8;;C;C;-
+Utilitário Esportivo Compacto;CITROEN;AIRCROSS;7 SH;1.0T-12V;Combustão;CVT-7;S;F;7,9;9,1;11,2;13;;;;;1,8;;C;C;-
+Utilitário Esportivo Compacto;FIAT;ARGO;TREKKING 1.3;1.3-8V;Combustão;M-5;S;F;8,9;10,2;12,9;14,7;;;;;1,57;;A;C;-
+Utilitário Esportivo Compacto;FIAT;ARGO;ENDUR 1.3 MT;1.3-8V;Combustão;M-5;S;F;8,9;10,2;12,9;14,7;;;;;1,57;;A;C;-
+Utilitário Esportivo Compacto;FIAT;ARGO;TREKKING 1.3AT;1.3-8V;Combustão;CVT-7;S;F;9;10,3;12,8;14,3;;;;;1,58;;A;C;-
+Utilitário Esportivo Compacto;FIAT;FASTBACK;TURBO 200;1.0T-12V;Combustão;CVT-7;S;F;8,5;10,1;12,1;14,3;;;;;1,65;;A;C;-
+Utilitário Esportivo Compacto;FIAT;FASTBACK;AUDACE HYB;1.0T-12V;Híbrido;CVT-7;S;F;8,9;9,8;12,6;13,9;;;;;1,62;;A;C;-
+Utilitário Esportivo Compacto;FIAT;FASTBACK;IMPETUS HY;1.0T-12V;Híbrido;CVT-7;S;F;8,9;9,8;12,6;13,9;;;;;1,62;;A;C;-
+Utilitário Esportivo Compacto;FIAT;FASTBACK;ABARTH 270;1.3T-16V;Combustão;A-6;S;F;7,3;9,1;10,8;12,9;;;;;1,88;;D;C;-
+Utilitário Esportivo Compacto;FIAT;FASTBACK;LIMITED ED;1.3T-16V;Combustão;A-6;S;F;7,8;9,8;11,3;13,6;;;;;1,76;;B;C;-
+Utilitário Esportivo Compacto;FIAT;PULSE;DRIVE MT;1.3-8V;Combustão;M-5;S;F;9;10,3;12,6;14,5;;;;;1,58;;A;C;-
+Utilitário Esportivo Compacto;FIAT;PULSE;DRIVE AT;1.3-8V;Combustão;CVT-7;S;F;8,9;10,5;13;14,7;;;;;1,56;;A;C;-
+Utilitário Esportivo Compacto;FIAT;PULSE;AUDACE HYB;1.0T-12V;Híbrido;CVT-7;S;F;9,3;10,2;13,4;14,4;;;;;1,54;;A;C;-
+Utilitário Esportivo Compacto;FIAT;PULSE;DRIVE TF 200;1.0T-12V;Combustão;CVT-7;S;F;8,6;10;12,3;14,4;;;;;1,63;;A;C;-
+Utilitário Esportivo Compacto;FIAT;PULSE;IMPETUS HYB;1.0T-12V;Híbrido;CVT-7;S;F;9,3;10,2;13,4;14,4;;;;;1,54;;A;C;-
+Utilitário Esportivo Compacto;FIAT;PULSE;ABARTH 270;1.3T-16V;Combustão;A-6;S;F;7,2;8,8;10,5;12,2;;;;;1,94;;D;C;-
+Utilitário Esportivo Compacto;HONDA;WR-V;EX;1.5-16V;Combustão;CVT;S;F;8,2;8,9;12;12,8;;;;;1,76;;B;C;-
+Utilitário Esportivo Compacto;HONDA;WR-V;EXL;1.5-16V;Combustão;CVT;S;F;8,2;8,9;12;12,8;;;;;1,76;;B;C;-
+Utilitário Esportivo Compacto;Hyundai;CRETA;Comfort;1.0-12V T;Combustão;A-6;S;F;8,4;9;12;12,7;;;;;1,74;;B;C;-
+Utilitário Esportivo Compacto;Hyundai;CRETA;Comfort Safety;1.0-12V T;Combustão;A-6;S;F;8,4;9;12;12,7;;;;;1,74;;B;C;-
+Utilitário Esportivo Compacto;Hyundai;CRETA;Limited;1.0-12V T;Combustão;A-6;S;F;8,4;9;12;12,7;;;;;1,74;;B;C;-
+Utilitário Esportivo Compacto;Hyundai;CRETA;Platinum;1.0-12V T;Combustão;A-6;S;F;8,4;9;12;12,7;;;;;1,74;;B;C;-
+Utilitário Esportivo Compacto;Hyundai;CRETA;N Line;1.0-12V T;Combustão;A-6;S;F;8,4;9;12;12,7;;;;;1,74;;B;C;-
+Utilitário Esportivo Compacto;Hyundai;CRETA;Ultimate;1.6-16V T;Combustão;DCT-7;S;F;8,3;9,1;11,8;13,4;;;;;1,73;;B;C;-
+Utilitário Esportivo Compacto;Hyundai;CRETA;N-line;1.6-16V T;Combustão;DCT-7;S;F;8,2;9,4;11,7;13,8;;;;;1,72;;B;C;-
+Utilitário Esportivo Compacto;JEEP;AVENGER;LIMITED HYB;1.0T-12V;Híbrido;CVT-7;S;F;8,8;9,4;12,7;13,5;;;;;1,64;;A;C;-
+Utilitário Esportivo Compacto;JEEP;AVENGER;ALTIT HYB;1.0T-12V;Híbrido;CVT-7;S;F;8,8;9,4;12,7;13,5;;;;;1,64;;A;C;-
+Utilitário Esportivo Compacto;JEEP;AVENGER;LONGT HYB;1.0T-12V;Híbrido;CVT-7;S;F;8,8;9,4;12,7;13,5;;;;;2,64;;A;C;-
+Utilitário Esportivo Compacto;JEEP;RENEGADE;ALTIT HYB;1.3T-16V;Híbrido;A-6;S;F;8,3;8,6;11,9;11,8;;;;;1,8;;C;C;-
+Utilitário Esportivo Compacto;JEEP;RENEGADE;ALTIT T270;1.3T-16V;Combustão;A-6;S;F;7,8;8,9;11,1;12,4;;;;;1,84;;C;C;-
+Utilitário Esportivo Compacto;JEEP;RENEGADE;ALTIT T270 (MY27);1.3T-16V;Combustão;A-6;S;F;7,6;8,6;10,9;12;;;;;1,9;;D;C;-
+Utilitário Esportivo Compacto;JEEP;RENEGADE;LGTD T270;1.3T-16V;Combustão;A-6;S;F;7,8;8,9;11,1;12,4;;;;;1,84;;C;C;-
+Utilitário Esportivo Compacto;JEEP;RENEGADE;LONGIT HYB;1.3T-16V;Híbrido;A-6;S;F;8,3;8,6;11,9;11,8;;;;;1,8;;C;C;-
+Utilitário Esportivo Compacto;JEEP;RENEGADE;SAHARA;1.3T-16V;Combustão;A-6;S;F;7,8;8,9;11,1;12,4;;;;;1,84;;C;C;-
+Utilitário Esportivo Compacto;JEEP;RENEGADE;SAHARA HYB;1.3T-16V;Híbrido;A-6;S;F;8,3;8,6;11,9;11,8;;;;;1,8;;C;C;-
+Utilitário Esportivo Compacto;JEEP;RENEGADE;SPORT FLEX (MY27);1.3T-16V;Combustão;A-6;S;F;7,6;8,6;10,9;12;;;;;1,9;;D;C;-
+Utilitário Esportivo Compacto;JEEP;RENEGADE;SPORT T270 (MY27);1.3T-16V;Combustão;A-6;S;F;7,6;8,6;10,9;12;;;;;1,9;;D;C;-
+Utilitário Esportivo Compacto;JEEP;RENEGADE;SPT T FLEX;1.3T-16V;Combustão;A-6;S;F;7,8;8,9;11,1;12,4;;;;;1,84;;C;C;-
+Utilitário Esportivo Compacto;JEEP;RENEGADE;SPT TURBO;1.3T-16V;Combustão;A-6;S;F;7,8;8,9;11,1;12,4;;;;;1,84;;C;C;-
+Utilitário Esportivo Compacto;NISSAN;Kicks;SENSE AT;1.0 12V;Combustão;DCT;S;F;8,3;9,9;11,7;14,3;;;;;1,69;;B;C;-
+Utilitário Esportivo Compacto;NISSAN;Kicks;ADVANCE AT;1.0 12V;Combustão;DCT;S;F;8,3;9,9;11,7;14,3;;;;;1,69;;B;C;-
+Utilitário Esportivo Compacto;NISSAN;Kicks;EXCLUSIV AT;1.0 12V;Combustão;DCT;S;F;8,3;9,9;11,7;14,3;;;;;1,69;;B;C;-
+Utilitário Esportivo Compacto;NISSAN;Kicks;PLATINUM AT;1.0 12V;Combustão;DCT;S;F;8,3;9,9;11,7;14,3;;;;;1,69;;B;C;-
+Utilitário Esportivo Compacto;NISSAN;Kait;SENSE;1.6-16V;Combustão;CVT;S;F;7,8;9,4;11,3;13,7;;;;;1,77;;C;C;-
+Utilitário Esportivo Compacto;NISSAN;Kait;ADVANCE;1.6-16V;Combustão;CVT;S;F;7,8;9,4;11,3;13,7;;;;;1,77;;C;C;-
+Utilitário Esportivo Compacto;NISSAN;Kait;ACTIVE CVT;1.6-16V;Combustão;CVT;S;F;7,8;9,4;11,3;13,7;;;;;1,77;;C;C;-
+Utilitário Esportivo Compacto;NISSAN;Kait;ADV B CVT;1.6-16V;Combustão;CVT;S;F;7,8;9,4;11,3;13,7;;;;;1,77;;C;C;-
+Utilitário Esportivo Compacto;PEUGEOT;2008;ACT T200;1.0T-12V;Combustão;CVT-7;S;F;8,5;9,8;12;14,1;;;;;1,66;;A;C;-
+Utilitário Esportivo Compacto;PEUGEOT;2008;ALLU T200;1.0T-12V;Combustão;CVT-7;S;F;8,5;9,8;12;14,1;;;;;1,66;;A;C;-
+Utilitário Esportivo Compacto;PEUGEOT;2008;GT T200;1.0T-12V;Combustão;CVT-7;S;F;8,5;9,8;12;14,1;;;;;1,66;;A;C;-
+Utilitário Esportivo Compacto;PEUGEOT;2008;GT HYBRID;1.0T-12V;Híbrido;CVT-7;S;F;9;9,6;13;13,7;;;;;1,61;;A;C;-
+Utilitário Esportivo Compacto;Renault;KWID;ZEN 2;1.0-12V;Combustão;M-5;S;F;10,4;10,7;14,4;15,4;;;;;1,41;;A;B;SIM
+Utilitário Esportivo Compacto;Renault;KWID;INTENSE 2;1.0-12V;Combustão;M-5;S;F;10,4;10,7;14,4;15,4;;;;;1,41;;A;B;SIM
+Utilitário Esportivo Compacto;Renault;KWID;OUTSIDER 2;1.0-12V;Combustão;M-5;S;F;10,4;10,7;14,4;15,4;;;;;1,41;;A;B;SIM
+Utilitário Esportivo Compacto;Renault;KWID;INTENSE BITON;1.0-12V;Combustão;M-5;S;F;10,4;10,7;14,4;15,4;;;;;1,41;;A;B;SIM
+Utilitário Esportivo Compacto;Renault;KWID;ICONIC 2;1.0-12V;Combustão;M-5;S;F;10,4;10,7;14,4;15,4;;;;;1,41;;A;B;SIM
+Utilitário Esportivo Compacto;Renault;KWID;LIFE 2;1.0-12V;Combustão;M-5;S;F;10,4;10,7;14,4;15,4;;;;;1,41;;A;B;SIM
+Utilitário Esportivo Compacto;Renault;KARDIAN;TECH AT;1.0 12V;Combustão;DCT-6;S;F;8,8;9,7;12,8;13,9;;;;;1,61;;A;C;-
+Utilitário Esportivo Compacto;Renault;KARDIAN;ICO AT;1.0 12V;Combustão;DCT-6;S;F;8,8;9,8;12,2;13,8;;;;;1,64;;A;C;-
+Utilitário Esportivo Compacto;Renault;KARDIAN;10T AT;1.0 12V;Combustão;DCT-6;S;F;8,8;9,8;12,2;13,8;;;;;1,64;;A;C;-
+Utilitário Esportivo Compacto;Renault;KARDIAN;EVO AT;1.0 12V;Combustão;M-6;S;F;8,8;10,2;12,7;14,7;;;;;1,59;;A;C;-
+Utilitário Esportivo Compacto;Renault;KARDIAN;EVO MT;1.0 12V;Combustão;M-6;S;F;8,8;10,2;12,7;14,7;;;;;1,59;;A;C;-
+Utilitário Esportivo Compacto;TOYOTA;YARIS CROSS FLEX;XR FLEX;1.5-16V;Combustão;CVT;S;F;8,8;10,2;12,6;14,3;;;;;1,6;;A;C;-
+Utilitário Esportivo Compacto;TOYOTA;YARIS CROSS FLEX;XRE FLEX;1.5-16V;Combustão;CVT;S;F;8,8;10,2;12,6;14,3;;;;;1,6;;A;C;-
+Utilitário Esportivo Compacto;TOYOTA;YARIS CROSS FLEX;XRX FLEX;1.5-16V;Combustão;CVT;S;F;8,8;10,2;12,6;14,3;;;;;1,6;;A;C;-
+Utilitário Esportivo Compacto;TOYOTA;YARIS CROSS;XRX-HYBRID;1.5-16V;Híbrido;CVT;S;F;13,2;10,7;17,9;15,3;;;;;1,23;;A;B;SIM
+Utilitário Esportivo Compacto;TOYOTA;YARIS CROSS;XRE-HYBRID;1.5-16V;Híbrido;CVT;S;F;13,2;10,7;17,9;15,3;;;;;1,23;;A;B;SIM
+Utilitário Esportivo Compacto;VW;T CROSS;HIGHLINE 250TSI;1.4 - 16V;Combustão;A - 6;S;F;8,2;9,9;11,8;14,2;;;;;1,69;;B;C;-
+Utilitário Esportivo Compacto;VW;T CROSS;COMA AFU UOT TRO OTM MLÁIANT TEI I C C 2O O00TSI;1.0-12V;Combustão;A - 6;S;F;8,5;10,2;12,1;14,5;;;;;1,64;;A;C;-
+Utilitário Esportivo Compacto;VW;T CROSS;COMAFUOTROTMLIANTEIC 2O00TSI;1.0-12V;Combustão;A - 8;S;F;8,7;10,2;12,5;14,3;;;;;1,61;;A;C;-
+Utilitário Esportivo Compacto;VW;T CROSS;200TSI AUTOMATICO;1.0-12V;Combustão;A - 6;S;F;8,5;10,2;12,1;14,5;;;;;1,64;;A;C;-
+Utilitário Esportivo Compacto;VW;T CROSS;200TSI AUTOMATICO;1.0-12V;Combustão;A - 8;S;F;8,7;10,2;12,5;14,3;;;;;1,61;;A;C;-
+Utilitário Esportivo Compacto;VW;T CROSS;SENSE 200TSI AUTOMATICO;1.0-12V;Combustão;A - 6;S;F;8,5;10,2;12,1;14,5;;;;;1,64;;A;C;-
+Utilitário Esportivo Compacto;VW;T CROSS;SENSE 200TSI AUTOMATICO;1.0-12V;Combustão;A - 8;S;F;8,9;10,4;12,9;14,9;;;;;1,56;;A;C;-
+Utilitário Esportivo Compacto;VW;NIVUS;HIGHLINE 200TSI;1.0-12V;Combustão;A - 6;S;F;8,6;10,3;12,4;14,8;;;;;1,61;;A;C;-
+Utilitário Esportivo Compacto;VW;NIVUS;COMAFUOTROTMLÁINTEIC 2O00TSI;1.0-12V;Combustão;A - 6;S;F;8,6;10,3;12,4;14,8;;;;;1,61;;A;C;-
+Utilitário Esportivo Compacto;VW;T CROSS;EXATURTEOMMEÁ T25IC0OTSI;1.4 - 16V;Combustão;A - 6;S;F;8,2;9,9;11,8;14,2;;;;;1,69;;B;C;-
+Utilitário Esportivo Compacto;VW;NIVUS;GTS 1A.4UTTSOI AMUÁTTOICMOÁTICO;1.4-16V;Combustão;A - 6;S;F;8,1;9,9;11,6;14,2;;;;;1,7;;B;C;-
+Utilitário Esportivo Compacto;VW;TERA;COMFORT TSI;1.0-12V;Combustão;A - 6;S;F;8,6;10,3;12,2;14,5;;;;;1,62;;A;C;-
+Utilitário Esportivo Compacto;VW;TERA;HIGH TSI;1.0-12V;Combustão;A - 6;S;F;8,6;10,3;12,2;14,5;;;;;1,62;;A;C;-
+Utilitário Esportivo Compacto;VW;TERA;TSI;1.0-12V;Combustão;M - 5;S;F;9;10,3;12,9;15;;;;;1,56;;A;C;-
+Utilitário Esportivo Compacto 4x4;VOLVO;EX30;CROSSC PLUS;Elétrico;Elétrico;A-1;S;E;;;;;37,8;31,8;;;0,58;333;A;A;-
+Utilitário Esportivo Compacto 4x4;VOLVO;EX30;C COUNTRY;Elétrico;Elétrico;A-1;S;E;;;;;37,3;33,4;;;0,57;327;A;A;-
+Utilitário Esportivo Grande;BMW;X1;S20i X Line;2.0 - 16V;Combustão;A-7;S;G;;;10,3;13,5;;;;;1,9;;B;C;-
+Utilitário Esportivo Grande;BMW;X1;S20i X Line;2.0 - 16V;Combustão;A-7;S;G;;;10,3;13,5;;;;;1,9;;B;C;-
+Utilitário Esportivo Grande;BMW;X1;S20i M Sport;2.0 - 16V;Combustão;A-7;S;G;;;10,2;13,2;;;;;1,91;;B;C;-
+Utilitário Esportivo Grande;BMW;X1;S20i M Sport;2.0 - 16V;Combustão;A-7;S;G;;;10,2;13,2;;;;;1,91;;B;C;-
+Utilitário Esportivo Grande;BMW;X1;S20i GP;2.0 - 16V;Combustão;A-7;S;G;;;10,3;13,5;;;;;1,9;;B;C;-
+Utilitário Esportivo Grande;BMW;X1;S20i GP;2.0 - 16V;Combustão;A-7;S;G;;;10,3;13,5;;;;;1,9;;B;C;-
+Utilitário Esportivo Grande;BMW;X2;xDrive20i MSP;2.0 - 16V;Combustão;A-7;S;G;;;9,9;13,1;;;;;1,97;;C;C;-
+Utilitário Esportivo Grande;BYD;YUAN PLUS;GL310 EV;Elétrico;Elétrico;N.A.;S;E;;;;;39,8;33,1;;;0,56;294;A;A;-
+Utilitário Esportivo Grande;BYD;YUAN PLUS;GS310 EV;Elétrico;Elétrico;N.A.;S;E;;;;;39,8;33,1;;;0,56;294;A;A;-
+Utilitário Esportivo Grande;CAOA CHANGAN;Uni-T;INFINITY (LEV4);1.5 - 16V;Combustão;DCT-7;S;F;7,1;8,6;10,5;12,4;;;;;1,95;;C;C;-
+Utilitário Esportivo Grande;CAOA CHERY;TIGGO 7;PRO 16TA;1.6T - 16V;Combustão;DCT-7;S;G;;;10,5;13,3;;;;;1,88;;B;C;-
+Utilitário Esportivo Grande;CAOA CHERY;TIGGO 7;PRO HA;1.5T -16V;Híbrido;CVT;S;F;7,8;8,3;11,1;11,6;;;;;1,9;;B;C;-
+Utilitário Esportivo Grande;CAOA CHERY;TIGGO 7;SPORT;1.5T -16V;Combustão;CVT 9;S;F;6,7;8,6;10,4;12,6;;;;;1,99;;C;C;-
+Utilitário Esportivo Grande;CAOA CHERY;TIGGO 8;16TA;1.6T - 16V;Combustão;DCT-7;S;G;;;10;12,5;;;;;1,99;;C;C;-
+Utilitário Esportivo Grande;CAOA CHERY;TIGGO 8;PHEV;1.5T - 16V;Plug-in;DHT;S;G;;;11,8;11,3;33,6;27,7;;;0,66;56;A;A;SIM
+Utilitário Esportivo Grande;GAC;GS3;ELITE;1.5-16V;Combustão;DCT-7;S;G;;;10,2;11,6;;;;;2,02;;D;C;-
+Utilitário Esportivo Grande;GAC;GS3;ELITE PLUS;1.5-16V;Combustão;DCT-7;S;G;;;10,2;11,6;;;;;2,02;;D;C;-
+Utilitário Esportivo Grande;GAC;GS4;PREMIUM;2.0-16V;Híbrido;DHT-2;S;G;;;14,1;11,8;;;;;1,64;;A;C;-
+Utilitário Esportivo Grande;GAC;GS4;ELITE;2.0-16V;Híbrido;DHT-2;S;G;;;14,1;11,8;;;;;1,64;;A;C;-
+Utilitário Esportivo Grande;GWM;WEY;07;1.5 - 16V;Plug-in;A-4;S;G;;;10,8;9,1;25,9;22,8;;;0,83;128;A;A;SIM
+Utilitário Esportivo Grande;GWM;HAVAL H6;HEV ONE (MY26);1.5-16V;Híbrido;DHT - 2;S;G;;;14,7;11,4;;;;;1,63;;A;C;-
+Utilitário Esportivo Grande;GWM;HAVAL H6;HEV2 (MY26);1.5-16V;Híbrido;DHT - 2;S;G;;;14,7;11,4;;;;;1,63;;A;C;-
+Utilitário Esportivo Grande;GWM;HAVAL H6;PHEV19 (MY26);1.5-16V;Plug-in;DHT - 2;S;G;;;13,5;11,9;35;28,5;;;0,64;73;A;A;SIM
+Utilitário Esportivo Grande;GWM;HAVAL H6;PHEV35 (MY26);1.5-16V;Plug-in;DHT - 2;S;G;;;12;10,9;29,3;25,3;;;0,74;119;A;A;SIM
+Utilitário Esportivo Grande;GWM;HAVAL H6;GT (MY26);1.5-16V;Plug-in;DHT - 2;S;G;;;12,6;10,5;30,1;24,9;;;0,74;119;A;A;SIM
+Utilitário Esportivo Grande;GWM;HAVAL H6;HEV ESP;1.5-16V;Híbrido;DHT - 2;S;G;;;14,7;11,4;;;;;1,63;;A;C;-
+Utilitário Esportivo Grande;GWM;HAVAL H6;PHEV19 FF;1.5 - 16V;Plug-in;DHT - 2;S;F;10;8,9;14,7;12,9;37,7;30,6;25,8;21;0,6;77;A;A;SIM
+Utilitário Esportivo Grande;GWM;HAVAL H6;PHEV35 FF;1.5 - 16V;Plug-in;DHT-4;S;F;9,2;7,4;12,5;10,7;30,7;26,1;22,8;18,1;0,7;126;A;A;SIM
+Utilitário Esportivo Grande;GWM;HAVAL H6;GT FF;1.5 - 16V;Plug-in;DHT-4;S;F;9,2;7,4;12,5;10,7;30,7;26,1;22,8;18,1;0,7;126;A;A;SIM
+Utilitário Esportivo Grande;GWM;HAVAL H6;HEV1 FLEX;1.5-16V;Híbrido;DHT-1A - 2;S;F;10,2;9;15,8;13;;;7,7;6,9;1,49;;A;B;SIM
+Utilitário Esportivo Grande;GWM;HAVAL H6;HEV2 FLEX;1.5-16V;Híbrido;DHT-1A - 2;S;F;10,2;9;15,8;13;;;7,7;6,9;1,49;;A;B;SIM
+Utilitário Esportivo Grande;GWM;WEY;07 DARK ED.;1.5 - 16V;Plug-in;DHT-4;S;G;;;10,8;9,1;25,9;22,8;;;0,83;128;A;A;SIM
+Utilitário Esportivo Grande;HONDA;CR-V;TOURING;2.0-16V;Híbrido;CVT;S;G;;;14,1;11,8;;;;;1,65;;A;C;-
+Utilitário Esportivo Grande;JEEP;COMMANDER;LIM 7 270;1.3T-16V;Combustão;A-6;S;F;6,9;8,3;10;11,5;;;;;2,05;;D;C;-
+Utilitário Esportivo Grande;JEEP;COMMANDER;LON 7 270;1.3T-16V;Combustão;A-6;S;F;6,9;8,3;10;11,5;;;;;2,05;;D;C;-
+Utilitário Esportivo Grande;JEEP;COMMANDER;OVE 7 270;1.3T-16V;Combustão;A-6;S;F;6,9;8,3;10;11,5;;;;;2,05;;D;C;-
+Utilitário Esportivo Grande;JEEP;COMMANDER;LMTD HYB;1.3T-16V;Híbrido;A-6;S;F;7,6;8,1;11;11,2;;;;;1,94;;C;C;-
+Utilitário Esportivo Grande;JEEP;COMMANDER;OVER HYB;1.3T-16V;Híbrido;A-6;S;F;7,6;8,1;11;11,2;;;;;1,94;;C;C;-
+Utilitário Esportivo Grande;JEEP;COMPASS;LIMITED T;1.3T-16V;Combustão;A-6;S;F;7,3;8,6;10,1;12,1;;;;;1,97;;C;C;-
+Utilitário Esportivo Grande;JEEP;COMPASS;LONGITUDE T;1.3T-16V;Combustão;A-6;S;F;7,3;8,6;10,1;12,1;;;;;1,97;;C;C;-
+Utilitário Esportivo Grande;JEEP;COMPASS;SERIE S T;1.3T-16V;Combustão;A-6;S;F;7,3;8,6;10,1;12,1;;;;;1,97;;C;C;-
+Utilitário Esportivo Grande;JEEP;COMPASS;SPORT T;1.3T-16V;Combustão;A-6;S;F;7,3;8,6;10,1;12,1;;;;;1,97;;C;C;-
+Utilitário Esportivo Grande;JETOUR;T1 I-DM;ADVANCE;1.5-16V;Plug-in;A-1;S;G;;;13,6;12,2;34,7;26,8;;;0,66;88;A;A;SIM
+Utilitário Esportivo Grande;JETOUR;T1 I-DM;PREMIUM;1.5-16V;Plug-in;A-1;S;G;;;13,6;12,2;34,7;26,8;;;0,66;88;A;A;SIM
+Utilitário Esportivo Grande;JETOUR;T2 I-DM;ADVANCE;1.5-16V;Plug-in;A-1;S;G;;;11,4;10,5;27,6;23,4;;;0,8;75;A;A;SIM
+Utilitário Esportivo Grande;JETOUR;T2 I-DM;PREMIUM;1.5-16V;Plug-in;A-1;S;G;;;11,4;10,5;27,6;23,4;;;0,8;75;A;A;SIM
+Utilitário Esportivo Grande;KIA;SPORTAGE;TMHEV EX;1.6 - 16V;Híbrido;DCT-7;S;G;;;12,5;13,2;;;;;1,68;;A;C;-
+Utilitário Esportivo Grande;KIA;SPORTAGE;TMHEV LX;1.6 - 16V;Híbrido;DCT-7;S;G;;;12,5;13,2;;;;;1,68;;A;C;-
+Utilitário Esportivo Grande;KIA;SPORTAGE;TMHEV SX;1.6 - 16V;Híbrido;DCT-7;S;G;;;12,5;13,2;;;;;1,68;;A;C;-
+Utilitário Esportivo Grande;KIA;SPORTAGE;TMHEV GT;1.6 - 16V;Híbrido;DCT-7;S;G;;;12,5;13,2;;;;;1,68;;A;C;-
+Utilitário Esportivo Grande;KIA;SPORTAGE;TMHEV EXP;1.6 - 16V;Híbrido;DCT-7;S;G;;;12,5;13,2;;;;;1,68;;A;C;-
+Utilitário Esportivo Grande;Mitsubishi;Eclipse Cross;RUSH;1.5T-16V;Combustão;CVT;S;G;;;10,3;11,3;;;;;2,03;;D;C;-
+Utilitário Esportivo Grande;Mitsubishi;Eclipse Cross;HPE;1.5T-16V;Combustão;CVT;S;G;;;10,3;11,3;;;;;2,03;;D;C;-
+Utilitário Esportivo Grande;Mitsubishi;Eclipse Cross;HPE BLACK;1.5T-16V;Combustão;CVT;S;G;;;10,3;11,3;;;;;2,03;;D;C;-
+Utilitário Esportivo Grande;Mitsubishi;Eclipse Cross;HPE-S;1.5T-16V;Combustão;CVT;S;G;;;10,3;11,3;;;;;2,03;;D;C;-
+Utilitário Esportivo Grande;Renault;DUSTER;DUSTER ICO16 CVT;1.6-16V;Combustão;CVT;S;F;7,5;8,3;10,8;11,4;;;;;1,94;;C;C;-
+Utilitário Esportivo Grande;Renault;DUSTER;DUSTER ICOP CVT;1.6-16V;Combustão;CVT;S;F;7,5;8,3;10,8;11,4;;;;;1,94;;C;C;-
+Utilitário Esportivo Grande;Renault;DUSTER;DUSTERINT16 CVT;1.6-16V;Combustão;CVT;S;F;7,5;8,3;10,8;11,4;;;;;1,94;;C;C;-
+Utilitário Esportivo Grande;Renault;DUSTER;DUSTER INTP CVT;1.6-16V;Combustão;CVT;S;F;7,5;8,3;10,8;11,4;;;;;1,94;;C;C;-
+Utilitário Esportivo Grande;Renault;DUSTER;DUSTER LIF16 CVT;1.6-16V;Combustão;CVT;S;F;7,5;8,3;10,8;11,4;;;;;1,94;;C;C;-
+Utilitário Esportivo Grande;Renault;DUSTER;DUSTER ZEN16 CVT;1.6-16V;Combustão;CVT;S;F;7,5;8,3;10,8;11,4;;;;;1,94;;C;C;-
+Utilitário Esportivo Grande;Renault;DUSTER;DUSTER INT 16;1.6-16V;Combustão;M-5;S;F;7,6;8,4;11,2;12,3;;;;;1,88;;B;C;-
+Utilitário Esportivo Grande;Renault;DUSTER;DUSTER INTP MT;1.6-16V;Combustão;M-5;S;F;7,6;8,4;11,2;12,3;;;;;1,88;;B;C;-
+Utilitário Esportivo Grande;Renault;DUSTER;DUSTER ZEN 16;1.6-16V;Combustão;M-5;S;F;7,6;8,4;11,2;12,3;;;;;1,88;;B;C;-
+Utilitário Esportivo Grande;Renault;DUSTER;DUSTER ICO TCE;1.3-16V;Combustão;CVT;S;F;7,5;8,6;10,9;12,3;;;;;1,89;;B;C;-
+Utilitário Esportivo Grande;Renault;DUSTER;DUSTER ICOUT TCE;1.3-16V;Combustão;CVT;S;F;7,5;8,6;10,9;12,3;;;;;1,89;;B;C;-
+Utilitário Esportivo Grande;Renault;DUSTER;DUSTER ZEN13TCE;1.3-16V;Combustão;CVT;S;F;7,5;8,6;10,9;12,3;;;;;1,89;;B;C;-
+Utilitário Esportivo Grande;Renault;BOREAL;EVO;1.3-16V;Combustão;DCT-6;S;F;7,8;9,4;11,2;13,6;;;;;1,79;;A;C;-
+Utilitário Esportivo Grande;Renault;BOREAL;TECH;1.3-16V;Combustão;DCT-6;S;F;7,8;9,4;11,2;13,6;;;;;1,79;;A;C;-
+Utilitário Esportivo Grande;Renault;BOREAL;ICO;1.3-16V;Combustão;DCT-6;S;F;7,8;9,4;11,2;13,6;;;;;1,79;;A;C;-
+Utilitário Esportivo Grande;VOLVO;EX40;6 CORE;Elétrico;Elétrico;A-1;S;E;;;;;39,4;34,3;;;0,55;364;A;A;-
+Utilitário Esportivo Grande;VOLVO;EX40;6 PLUS;Elétrico;Elétrico;A-1;S;E;;;;;39,4;34,3;;;0,55;364;A;A;-
+Utilitário Esportivo Grande;VOLVO;EX40;6 ULTRA;Elétrico;Elétrico;A-1;S;E;;;;;39,4;34,3;;;0,55;364;A;A;-
+Utilitário Esportivo Grande;VW;TAOS;HIAGUHTLOINMEÁ 2T5IC0TOSI;1.4 - 16V;Combustão;A - 8;S;F;7,7;9,3;11,1;13,3;;;;;1,81;;A;C;-
+Utilitário Esportivo Grande;VW;TAOS;COMAFUOTROTMLÁINTEIC 2O50TSI;1.4 - 16V;Combustão;A - 8;S;F;7,7;9,3;11,1;13,3;;;;;1,81;;A;C;-
+Utilitário Esportivo Grande;ZEEKR;X;Premium;Elétrico;Elétrico;A;S;E;;;;;39,5;34,7;;;0,55;332;A;A;-
+Utilitário Esportivo Grande 4x4;BMW;X3;M50i;3.0 - 24V;Híbrido;A-8;S;G;;;9,6;10,9;;;;;2,16;;C;D;-
+Utilitário Esportivo Grande 4x4;BMW;X3;30 XDRIVE;2.0 - 16V;Híbrido;A-8;S;G;;;10,4;12,2;;;;;1,96;;C;C;-
+Utilitário Esportivo Grande 4x4;BMW;X5;xDrive50e MSP;3.0 - 24V;Plug-in;A-8;S;G;;;9,2;9,9;22,8;23,4;;;0,88;76;A;A;SIM
+Utilitário Esportivo Grande 4x4;BMW;X5;xDrive50e XLINE;3.0 - 24V;Plug-in;A-8;S;G;;;9,2;9,9;22,8;23,4;;;0,88;76;A;A;SIM
+Utilitário Esportivo Grande 4x4;BMW;X5;xDrive50e MSP;3.0 - 24V;Plug-in;A-8;S;G;;;9,2;9,9;22,8;23,4;;;0,88;76;A;A;SIM
+Utilitário Esportivo Grande 4x4;BMW;X5;xDrive50e XLINE;3.0 - 24V;Plug-in;A-8;S;G;;;9,2;9,9;22,8;23,4;;;0,88;76;A;A;SIM
+Utilitário Esportivo Grande 4x4;BMW;X6;xDrive40i MSP;3.0 - 24V;Híbrido;A-8;S;G;;;9;10,1;;;;;2,33;;C;D;-
+Utilitário Esportivo Grande 4x4;BMW;X6;40I MSP DARK ED;3.0 - 24V;Híbrido;A-8;S;G;;;9;10,1;;;;;2,33;;C;D;-
+Utilitário Esportivo Grande 4x4;BMW;X7;xDrive40i;3.0 - 24V;Híbrido;A-8;S;G;;;8;8,7;;;;;2,66;;D;E;-
+Utilitário Esportivo Grande 4x4;Hyundai;PALISADE;Signature;3.8-24V;Combustão;A-8;S;G;;;6,8;9,3;;;;;2,9;;D;E;-
+Utilitário Esportivo Grande 4x4;JETOUR;T2 I-DM;PRM 4X4;1.5-16V;Plug-in;A-3;S;G;;;10,5;9,3;26,1;22,1;;;0,84;106;A;A;SIM
+Utilitário Esportivo Grande 4x4;Mercedes-Benz;GLC300 4M;;2.0-16V;Híbrido;A-9;S;G;;;9,5;11,8;;;;;2,11;;C;D;-
+Utilitário Esportivo Grande 4x4;Mercedes-Benz;GLC300 4M;CO;2.0-16V;Híbrido;A-9;S;G;;;9,5;11,8;;;;;2,11;;C;D;-
+Utilitário Esportivo Grande 4x4;Mercedes-Benz;GLE450D;AMGL;3.0-24V;Híbrido;A-9;S;D;;;10,6;13;;;;;2,32;;C;D;-
+Utilitário Esportivo Grande 4x4;Mercedes-Benz;GLE450D;CO AMGL;3.0-24V;Híbrido;A-9;S;D;;;10,6;13;;;;;2,32;;C;D;-
+Utilitário Esportivo Grande 4x4;Mitsubishi;Eclipse Cross;HPE-S S-AWC;1.5T-16V;Combustão;CVT;S;G;;;10,2;11,5;;;;;2,03;;C;C;-
+Utilitário Esportivo Grande 4x4;Mitsubishi;Eclipse Cross;HPE-S BLACK S-AWC;1.5T-16V;Combustão;CVT;S;G;;;10,2;11,5;;;;;2,03;;C;C;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;GT COUPE;4.0-32V;Combustão;A-8;S;G;;;5,8;7,9;;;;;3,44;;E;E;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;PHEV;3.0-24V;Plug-in;A-8;S;G;;;7,7;8,1;20,2;18,7;;;1,04;52;A;B;SIM
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;CP PHE;3.0-24V;Plug-in;A-8;S;G;;;7,7;8,1;20,2;18,7;;;1,04;52;A;B;SIM
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;CPH BE;3.0-24V;Plug-in;A-8;S;G;;;7,7;8,1;20,2;18,7;;;1,04;52;A;B;SIM
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;PH BE;3.0-24V;Plug-in;A-8;S;G;;;7,7;8,1;20,2;18,7;;;1,04;52;A;B;SIM
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;COUPE;3.0-24V;Combustão;A-8;S;G;;;6,9;8,5;;;;;2,98;;D;E;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;V6;3.0-24V;Combustão;A-8;S;G;;;6,9;8,5;;;;;2,98;;D;E;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;T PHEV;4.0-32V;Plug-in;A-8;S;G;;;7,4;8,1;20,1;19,9;;;1,01;57;A;B;SIM
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;TCPHEV;4.0-32V;Plug-in;A-8;S;G;;;7,4;8,1;20,1;19,9;;;1,01;57;A;B;SIM
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;GTP;4.0-32V;Combustão;A-8;S;G;;;5,9;8,2;;;;;3,34;;E;E;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;GTS CP;4.0-32V;Combustão;A-8;S;G;;;5,9;8,2;;;;;3,34;;E;E;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;S;4.0-32V;Combustão;A-8;S;G;;;5,9;8,2;;;;;3,33;;E;E;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;S CP;4.0-32V;Combustão;A-8;S;G;;;5,9;8,2;;;;;3,33;;E;E;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;S PHEV;3.0-24V;Plug-in;A-8;S;G;;;7,8;8,4;20,6;21,1;;;0,98;57;A;B;SIM
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;SCPHEV;3.0-24V;Plug-in;A-8;S;G;;;7,8;8,4;20,6;21,1;;;0,98;57;A;B;SIM
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;SCPHBE;3.0-24V;Plug-in;A-8;S;G;;;7,8;8,4;20,6;21,1;;;0,98;57;A;B;SIM
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;SPH BE;3.0-24V;Plug-in;A-8;S;G;;;7,8;8,4;20,6;21,1;;;0,98;57;A;B;SIM
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;E;Elétrico;Elétrico;--;S;E;;;;;35;29,5;;;0,63;493;A;A;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;E OF;Elétrico;Elétrico;--;S;E;;;;;35;29,5;;;0,63;493;A;A;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;E C;Elétrico;Elétrico;--;S;E;;;;;35;29,5;;;0,63;493;A;A;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;E CO;Elétrico;Elétrico;--;S;E;;;;;35;29,5;;;0,63;493;A;A;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;ET;Elétrico;Elétrico;--;S;E;;;;;34,3;29,1;;;0,64;481;A;A;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;ET C;Elétrico;Elétrico;--;S;E;;;;;34,3;29,1;;;0,64;481;A;A;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;ET OF;Elétrico;Elétrico;--;S;E;;;;;34,3;29,1;;;0,64;481;A;A;-
+Utilitário Esportivo Grande 4x4;PORSCHE;CAYENNE;ET CO;Elétrico;Elétrico;--;S;E;;;;;34,3;29,1;;;0,64;481;A;A;-
+Utilitário Esportivo Grande 4x4;VOLVO;XC60;INSC EXPRESS;2.0-16V;Plug-in;A;S;G;;;9,5;9,4;24,4;22,5;;;0,86;48;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC60;T8 CORE;2.0-16V;Plug-in;A;S;G;;;9,5;9,4;24,4;22,5;;;0,86;48;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC60;T8 INSCRIPT;2.0-16V;Plug-in;A;S;G;;;9,5;9,4;24,4;22,5;;;0,86;48;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC60;T8 MOMENTUM;2.0-16V;Plug-in;A;S;G;;;9,5;9,4;24,4;22,5;;;0,86;48;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC60;T8 PLUS;2.0-16V;Plug-in;A;S;G;;;9,5;9,4;24,4;22,5;;;0,86;48;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC60;T8 POLESTAR;2.0-16V;Plug-in;A;S;G;;;9,5;9,4;24,4;22,5;;;0,86;48;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC60;T8 R-DESIGN;2.0-16V;Plug-in;A;S;G;;;9,5;9,4;24,4;22,5;;;0,86;48;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC60;T8 ULT DARK;2.0-16V;Plug-in;A;S;G;;;9,5;9,4;24,4;22,5;;;0,86;48;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC60;T8 ULTIMATE;2.0-16V;Plug-in;A;S;G;;;9,5;9,4;24,4;22,5;;;0,86;48;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC60;T8 ULTRA;2.0-16V;Plug-in;A;S;G;;;9,5;9,4;24,4;22,5;;;0,86;48;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;INSC EXPRESS;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;T8 CORE;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;T8 EXCELLEN;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;T8 INSCRIPT;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;T8 MOMENTUM;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;T8 PLUS;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;T8 POLESTAR;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;T8 R-DESIGN;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;T8 ULT DARK;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;T8 ULTIMATE;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;T8 ULTRA;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;T8 AWD PLUS;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;T8 AWD ULT;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;T8 AWD ULTD;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;XC90;AWD ULT BLA;2.0-16V;Plug-in;A;S;G;;;9,4;9,3;24,1;21,9;;;0,88;47;A;A;SIM
+Utilitário Esportivo Grande 4x4;VOLVO;EX90;ULTRA TWIN;Elétrico;Elétrico;A-1;S;E;;;;;32,6;27,4;;;0,68;459;A;A;-
+Utilitário Esportivo Grande 4x4;VOLVO;EX90;PLUS TWIN;Elétrico;Elétrico;A-1;S;E;;;;;32,6;27,4;;;0,68;459;A;A;-
+Utilitário Esportivo Grande 4x4;VOLVO;EX90;ULT TWIN PER;Elétrico;Elétrico;A-1;S;E;;;;;32,6;27,4;;;0,68;459;A;A;-
+Utilitário Esportivo Grande 4x4;VOLVO;EX40;8 CORE;Elétrico;Elétrico;A-1;S;E;;;;;35,7;33;;;0,59;393;A;A;-
+Utilitário Esportivo Grande 4x4;VOLVO;EX40;8 PLUS;Elétrico;Elétrico;A-1;S;E;;;;;35,7;33;;;0,59;393;A;A;-
+Utilitário Esportivo Grande 4x4;VOLVO;EX40;8 ULTRA;Elétrico;Elétrico;A-1;S;E;;;;;35,7;33;;;0,59;393;A;A;-
+Utilitário Esportivo Grande 4x4;VOLVO;EX40;PERF BLACK;Elétrico;Elétrico;A-1;S;E;;;;;35,7;33;;;0,59;393;A;A;-
+Utilitário Esportivo Grande 4x4;VOLVO;EX40;PERF ULTRA;Elétrico;Elétrico;A-1;S;E;;;;;35,7;33;;;0,59;393;A;A;-
+Utilitário Esportivo Grande 4x4;ZEEKR;X;Flagship;Elétrico;Elétrico;A;S;E;;;;;36,6;32,2;;;0,59;304;A;A;-
+Fora de Estrada Compacto;JEEP;RENEGADE;WILLYS 4x4;1.3T-16V;Combustão;A-9;S;F;6,3;7,4;9,2;10,1;;;;;2,28;;D;D;-
+Fora de Estrada Compacto;JEEP;RENEGADE;WILLYS 4X4T (MY27);1.3T-16V;Combustão;A-9;S;F;6,3;7,3;9,1;9,7;;;;;2,31;;D;D;-
+Fora de Estrada Grande;CHEVROLET;TRAILBLAZER;HC D4A;2.8 - 16V;Combustão;A-8;S;D;;;9,4;11,6;;;;;2,63;;D;D;-
+Fora de Estrada Grande;CHEVROLET;TRAILBLAZER;LT D4A;2.8 - 16V;Combustão;A-8;S;D;;;9,4;11,6;;;;;2,63;;D;D;-
+Fora de Estrada Grande;DENZA;B5;GS DM;1.5-16V;Plug-in;A-1;S;G;;;8,4;7,9;23;20,4;;;0,93;74;A;A;SIM
+Fora de Estrada Grande;FORD;BRONCO SPORT;Badlands;2.0 - 16V;Combustão;A-8;S;G;;;8,4;10,7;;;;;2,37;;B;D;-
+Fora de Estrada Grande;GWM;HAVAL H9;EXC;2.4- 16V;Combustão;A-9;S;D;;;9;10,3;;;;;2,83;;E;E;-
+Fora de Estrada Grande;GWM;HAVAL H9;SELECTION;2.4-16V;Combustão;A-9;S;D;;;9;10,3;;;;;2,83;;E;E;-
+Fora de Estrada Grande;GWM;TANK 300;PHEV;2.0 -16V;Plug-in;A-9;S;G;;;7,5;7,7;18,4;18,7;;;1,09;75;A;B;SIM
+Fora de Estrada Grande;GWM;TANK 300;PHEV FLEX;2.0-16V;Plug-in;A-9;S;F;5,4;5,7;7,5;7,6;18,3;18,8;13,1;14,1;1,07;74;A;B;SIM
+Fora de Estrada Grande;JEEP;COMMANDER;BLA 2.0 G;2.0T-16V;Combustão;A-9;S;G;;;8;10,3;;;;;2,48;;C;D;-
+Fora de Estrada Grande;JEEP;COMMANDER;OVE 2.2 D;2.2T-16V;Combustão;A-9;S;D;;;10,3;13,4;;;;;2,34;;B;D;-
+Fora de Estrada Grande;JEEP;COMMANDER;BLK GME (MY27);2.0T-16V;Combustão;A-9;S;F;5,7;7,4;8,2;10,6;;;;;2,42;;C;D;-
+Fora de Estrada Grande;JEEP;COMPASS;BLACKHAWK;2.0T-16V;Combustão;A-9;S;G;;;8,5;10,8;;;;;2,36;;B;D;-
+Fora de Estrada Grande;JEEP;COMPASS;BLACKHAWK F;2.0T-16V;Combustão;A-9;S;F;6;7,6;8,5;11;;;;;2,32;;B;D;-
+Fora de Estrada Grande;JEEP;WRANGLER;UNL RUBI;2.0T-16V;Combustão;A-8;S;G;;;7,2;7,5;;;;;3,03;;E;E;-
+Fora de Estrada Grande;KIA;SORENTO;EX;2.2 - 16V;Combustão;DCT - 8;S;D;;;11;13,5;;;;;2,23;;B;D;-
+Fora de Estrada Grande;LAND ROVER;RANGE ROVER;PHEV SV;3.0-24V;Plug-in;A-8;S;G;;;7,5;8,4;17,5;19;;;1,12;71;A;B;SIM
+Fora de Estrada Grande;LAND ROVER;RANGE ROVER;PHEV SE;3.0-24V;Plug-in;A-8;S;G;;;7,5;8,4;17,5;19;;;1,12;71;A;B;SIM
+Fora de Estrada Grande;LAND ROVER;RANGE ROVER;PHEV HSE;3.0-24V;Plug-in;A-8;S;G;;;7,5;8,4;17,5;19;;;1,12;71;A;B;SIM
+Fora de Estrada Grande;LAND ROVER;RANGE ROVER;PHEV AB;3.0-24V;Plug-in;A-8;S;G;;;7,5;8,4;17,5;19;;;1,12;71;A;B;SIM
+Fora de Estrada Grande;LAND ROVER;DEFENDER 90 D350;HSE XD;3.0-24V;Híbrido;A-8;S;D;;;9,1;10,6;;;;;2,78;;D;E;-
+Fora de Estrada Grande;LAND ROVER;DEFENDER 130 D350;X;3.0-24V;Híbrido;A-8;S;D;;;9,2;10,9;;;;;2,73;;D;E;-
+Fora de Estrada Grande;LAND ROVER;DEFENDER 130 D350;X7L;3.0-24V;Híbrido;A-8;S;D;;;9,2;10,9;;;;;2,73;;D;E;-
+Fora de Estrada Grande;LAND ROVER;VELAR;PHEV AB;2.0-16V;Plug-in;A-8;S;G;;;8,3;9,3;20,6;24,1;;;0,92;40;A;A;SIM
+Fora de Estrada Grande;LAND ROVER;DEFENDER 110 D350;TROPHY;3.0-24V;Híbrido;A-8;S;D;;;9,1;10,6;;;;;2,78;;D;E;-
+Fora de Estrada Grande;LAND ROVER;DEFENDER 110 D350;HSEXD 7L;3.0-24V;Híbrido;A-8;S;D;;;9,1;10,6;;;;;2,78;;D;E;-
+Fora de Estrada Grande;LAND ROVER;DEFENDER 110 D350;X 7L;3.0-24V;Híbrido;A-8;S;D;;;9,1;10,6;;;;;2,78;;D;E;-
+Fora de Estrada Grande;LAND ROVER;DISCOVERY;D350 LE;3.0-24V;Híbrido;A-8;S;D;;;9,5;11,8;;;;;2,59;;C;D;-
+Fora de Estrada Grande;LAND ROVER;DISCOVERY;D350 TEMPEST;3.0-24V;Híbrido;A-8;S;D;;;9,5;11,8;;;;;2,59;;C;D;-
+Fora de Estrada Grande;LAND ROVER;RANGE ROVER SPORT;PHEV S;3.0-24V;Plug-in;A-8;S;G;;;7,5;8,4;17,5;19;;;1,12;71;A;B;SIM
+Fora de Estrada Grande;LAND ROVER;RANGE ROVER SPORT;PHEV SE;3.0-24V;Plug-in;A-8;S;G;;;7,5;8,4;17,5;19;;;1,12;71;A;B;SIM
+Fora de Estrada Grande;LAND ROVER;RANGE ROVER SPORT;PHEV SED;3.0-24V;Plug-in;A-8;S;G;;;7,5;8,4;17,5;19;;;1,12;71;A;B;SIM
+Fora de Estrada Grande;LAND ROVER;RANGE ROVER SPORT;PHEV HSED;3.0-24V;Plug-in;A-8;S;G;;;7,5;8,4;17,5;19;;;1,12;71;A;B;SIM
+Fora de Estrada Grande;LAND ROVER;RANGE ROVER SPORT;PHEV AB;3.0-24V;Plug-in;A-8;S;G;;;7,5;8,4;17,5;19;;;1,12;71;A;B;SIM
+Fora de Estrada Grande;LAND ROVER;EVOQUE;P250FF AB;2.0-16V;Combustão;A-9;S;F;5,1;6,6;7,4;9,4;;;;;2,71;;D;E;-
+Fora de Estrada Grande;LAND ROVER;DISCOVERY SPORT;P250FF LE;2.0-16V;Combustão;A-9;S;F;5,1;6,6;7,2;9,6;;;;;2,74;;D;E;-
+Fora de Estrada Grande;LAND ROVER;DISCOVERY SPORT;P250FF LE 7L;2.0-16V;Combustão;A-9;S;F;5,1;6,6;7,2;9,6;;;;;2,74;;D;E;-
+Fora de Estrada Grande;LAND ROVER;DISCOVERY SPORT;P250FF SE D;2.0-16V;Combustão;A-9;S;F;5,1;6,6;7,2;9,6;;;;;2,74;;D;E;-
+Fora de Estrada Grande;LAND ROVER;DISCOVERY SPORT;P250FF SED7L;2.0-16V;Combustão;A-9;S;F;5,1;6,6;7,2;9,6;;;;;2,74;;D;E;-
+Fora de Estrada Grande;Mercedes-Benz;AMG G63;MFKT;4.0-32V;Híbrido;A-9;S;G;;;5,3;6;;;;;4;;E;E;-
+Fora de Estrada Grande;Mercedes-Benz;AMG G63 4M;;4.0-32V;Híbrido;A-9;S;G;;;5,4;6,2;;;;;3,95;;E;E;-
+Fora de Estrada Grande;Mercedes-Benz;AMG G63 4M;GRD;4.0-32V;Híbrido;A-9;S;G;;;5,4;6,2;;;;;3,95;;E;E;-
+Fora de Estrada Grande;TOYOTA;SW4 DIESEL 4X4;DIAMOND AT;2.8-16V;Combustão;A-6;S;D;;;9,3;10,5;;;;;2,74;;D;E;-
+Fora de Estrada Grande;TOYOTA;SW4 DIESEL 4X4;SRX PLATINUM AT;2.8-16V;Combustão;A-6;S;D;;;9,3;10,5;;;;;2,74;;D;E;-
+Fora de Estrada Grande;VW;TIGUAN;R LINE;2.0 - 16V;Combustão;A - 8;S;G;;;8,9;12,1;;;;;2,19;;A;D;-
+Minivan;KIA;CARNIVAL;HEV EX;16 - 16V;Híbrido;DCT-6;S;G;;;11,9;10,2;;;;;1,95;;D;C;-
+Minivan;KIA;CARNIVAL;HEV LX;16 - 16V;Híbrido;DCT-6;S;G;;;11,9;10,2;;;;;1,95;;D;C;-
+Minivan;KIA;CARNIVAL;HEV SX;16 - 16V;Híbrido;DCT-6;S;G;;;11,9;10,2;;;;;1,95;;D;C;-
+Comercial;BYD;ET3;---;Elétrico;Elétrico;N.A.;S;E;;;;;30,7;26,3;;;0,71;170;A;A;-
+Comercial;CHEVROLET;ONIX;LOG;1.0 - 12 V;Combustão;M-6;S;F;9,5;11,3;13,5;16,3;;;;;1,45;;A;B;SIM
+Comercial;CITROEN;E-JUMPY;CARGO;ELÉTRICO;Elétrico;A-1;S;E;;;;;28,1;26,1;;;0,75;258;A;A;-
+Comercial;CITROEN;JUMPER;COMFORT;2.2T-16V;Combustão;M-6;S;D;;;10,4;10,5;;;;;2,57;;C;D;-
+Comercial;CITROEN;JUMPER;MB16;2.2T-16V;Combustão;M-6;S;D;;;10,4;10,5;;;;;2,57;;C;D;-
+Comercial;CITROEN;JUMPER;CARGOPK;2.2T-16V;Combustão;M-6;S;D;;;10,8;10,4;;;;;2,52;;B;D;-
+Comercial;CITROEN;JUMPER;FURG PK;2.2T-16V;Combustão;M-6;S;D;;;10,8;10,4;;;;;2,52;;B;D;-
+Comercial;CITROEN;JUMPER;VITRE;2.2T-16V;Combustão;M-6;S;D;;;11;10,6;;;;;2,47;;B;D;-
+Comercial;CITROEN;JUMPER;L3H2AMB;2.2T-16V;Combustão;M-6;S;D;;;10,8;10,4;;;;;2,52;;B;D;-
+Comercial;CITROEN;JUMPY;CARGO;2.2T-16V;Combustão;M-6;S;D;;;12,4;13,7;;;;;2,05;;A;C;-
+Comercial;CITROEN;JUMPY;VITRE;2.2T-16V;Combustão;M-6;S;D;;;12,4;13,7;;;;;2,05;;A;C;-
+Comercial;FARIZON;V6E;--;Elétrico;Elétrico;A-1;S;E;;;;;32,1;24,5;;;0,72;156;A;A;-
+Comercial;FARIZON;SV;AIR 11M3;Elétrico;Elétrico;A-1;S;E;;;;;23,9;20,3;;;0,92;239;A;A;-
+Comercial;FARIZON;SV;AIR PRO11M3;Elétrico;Elétrico;A-1;S;E;;;;;23,9;20,3;;;0,92;239;A;A;-
+Comercial;FARIZON;SV;LUX 11M3;Elétrico;Elétrico;A-1;S;E;;;;;23,9;20,3;;;0,92;239;A;A;-
+Comercial;FARIZON;SV;LUX PRO11M3;Elétrico;Elétrico;A-1;S;E;;;;;23,9;20,3;;;0,92;239;A;A;-
+Comercial;FARIZON;SV;AIR 8M3;Elétrico;Elétrico;A-1;S;E;;;;;25,3;23,1;;;0,84;262;A;A;-
+Comercial;FARIZON;SV;AIR PRO 8M3;Elétrico;Elétrico;A-1;S;E;;;;;25,3;23,1;;;0,84;262;A;A;-
+Comercial;FARIZON;SV;LUX 8M3;Elétrico;Elétrico;A-1;S;E;;;;;25,3;23,1;;;0,84;262;A;A;-
+Comercial;FARIZON;SV;LUX PRO 8M3;Elétrico;Elétrico;A-1;S;E;;;;;25,3;23,1;;;0,84;262;A;A;-
+Comercial;FIAT;DUCATO;MB COMFORT;2.2T-16V;Combustão;M-6;S;D;;;10,4;10,5;;;;;2,57;;C;D;-
+Comercial;FIAT;DUCATO;MB LUXO 16;2.2T-16V;Combustão;M-6;S;D;;;10,4;10,5;;;;;2,57;;C;D;-
+Comercial;FIAT;DUCATO;L3H2AMB;2.2T-16V;Combustão;M-6;S;D;;;10,8;10,4;;;;;2,52;;B;D;-
+Comercial;FIAT;DUCATO;MXCARGO13M;2.2T-16V;Combustão;M-6;S;D;;;10,8;10,4;;;;;2,52;;B;D;-
+Comercial;FIAT;DUCATO;FURGAO 13M;2.2T-16V;Combustão;M-6;S;D;;;10,8;10,4;;;;;2,52;;B;D;-
+Comercial;FIAT;DUCATO;MULTI 13M;2.2T-16V;Combustão;M-6;S;D;;;11;10,6;;;;;2,47;;B;D;-
+Comercial;FIAT;FIORINO;ENDURANCE;1.3-8V;Combustão;M-5;S;F;8,7;9,6;12,4;13,6;;;;;1,65;;A;C;-
+Comercial;FIAT;SCUDO;MULTI TD;2.2T-16V;Combustão;M-6;S;D;;;12,4;13,7;;;;;2,05;;A;C;-
+Comercial;FIAT;SCUDO;CARGO TD;2.2T-16V;Combustão;M-6;S;D;;;12,4;13,7;;;;;2,05;;A;C;-
+Comercial;FORD;E-Transit;F35MMAB;Elétrico;Elétrico;A-1;S;E;;;;;23,9;16,5;;;1,02;203;A;B;-
+Comercial;FORD;E-Transit;F35MAAB;Elétrico;Elétrico;A-1;S;E;;;;;23,9;16,5;;;1,02;203;A;B;-
+Comercial;FORD;E-Transit;F35LMAB;Elétrico;Elétrico;A-1;S;E;;;;;23,9;16,5;;;1,02;203;A;B;-
+Comercial;FORD;E-Transit;F35LAAB;Elétrico;Elétrico;A-1;S;E;;;;;23,9;16,5;;;1,02;203;A;B;-
+Comercial;FORD;E-Transit;F35EAAB;Elétrico;Elétrico;A-1;S;E;;;;;23,9;16,5;;;1,02;203;A;B;-
+Comercial;FORD;E-Transit;C35LBAB;Elétrico;Elétrico;A-1;S;E;;;;;23,9;16,5;;;1,02;203;A;B;-
+Comercial;FORD;E-Transit;C35EBAB;Elétrico;Elétrico;A-1;S;E;;;;;23,9;16,5;;;1,02;203;A;B;-
+Comercial;FORD;Transit;F35LAMA;2.0 - 16V;Combustão;M-6;S;D;;;9,8;9,7;;;;;2,75;;C;E;-
+Comercial;FORD;Transit;F35MMMA;2.0 - 16V;Combustão;M-6;S;D;;;9,8;9,7;;;;;2,75;;C;E;-
+Comercial;FORD;Transit;F35MAMA;2.0 - 16V;Combustão;M-6;S;D;;;9,8;9,7;;;;;2,75;;C;E;-
+Comercial;FORD;Transit;F38LAMA;2.0 - 16V;Combustão;M-6;S;D;;;9,8;9,7;;;;;2,75;;C;E;-
+Comercial;FOTON;EVIEW;GRAND53;Elétrico;Elétrico;A-1;S;E;;;;;27,3;22,1;;;0,82;162;A;A;-
+Comercial;FOTON;EVIEW CONNECT;50S;Elétrico;Elétrico;A-1;S;E;;;;;32,2;26,3;;;0,69;202;A;A;-
+Comercial;FOTON;EVIEW;GRAND77;Elétrico;Elétrico;A-1;S;E;;;;;20,2;20,5;;;1;187;A;B;-
+Comercial;FOTON;ETOANO;PRO H;Elétrico;Elétrico;A-1;S;E;;;;;20,6;18,1;;;1,05;179;A;B;-
+Comercial;FOTON;ETOANO;PRO M;Elétrico;Elétrico;A-1;S;E;;;;;23,5;17,6;;;1;198;A;B;-
+Comercial;FOTON;WONDER;CS;1.6-16V;Combustão;M-5;S;G;;;9;9,6;;;;;2,38;;B;D;-
+Comercial;FOTON;WONDER;CHASSI;1.6-16V;Combustão;M-5;S;G;;;9;9,6;;;;;2,38;;B;D;-
+Comercial;JAC;EJV5.5;CARGO;Elétrico;Elétrico;A-1;S;E;;;;;38;27,4;;;0,63;260;A;A;-
+Comercial;KIA;BONGO K2500 4X4 SC;HD SC 4WD;2.5 - 16V;Combustão;M-6;S;D;;;8,6;8,1;;;;;3,24;;E;E;-
+Comercial;KIA;BONGO K2500 4X4 SC;HDDL 4WD;2.5 - 16V;Combustão;M-6;S;D;;;8,6;8,1;;;;;3,24;;E;E;-
+Comercial;Mercedes-Benz;320 E SPRINTER;Furgão;Elétrico;Elétrico;A-1;S;E;;;;;21,1;16,3;;;1,09;206;A;B;-
+Comercial;Mercedes-Benz;320 E SPRINTER;Chassi;Elétrico;Elétrico;A-1;S;E;;;;;21,1;16,3;;;1,09;206;A;B;-
+Comercial;Mercedes-Benz;315CDI STREET;Furgão;2.0-16V;Combustão;M-6;S;D;;;9,6;10,4;;;;;2,72;;C;E;-
+Comercial;Mercedes-Benz;315CDI STREET;Chassi;2.0-16V;Combustão;M-6;S;D;;;9,6;10,4;;;;;2,72;;C;E;-
+Comercial;PEUGEOT;BOXER;16L LUXO;2.2T-16V;Combustão;M-6;S;D;;;10,4;10,5;;;;;2,57;;C;D;-
+Comercial;PEUGEOT;BOXER;COMFORT;2.2T-16V;Combustão;M-6;S;D;;;10,4;10,5;;;;;2,57;;C;D;-
+Comercial;PEUGEOT;BOXER;CARGO PK;2.2T-16V;Combustão;M-6;S;D;;;10,8;10,4;;;;;2,52;;B;D;-
+Comercial;PEUGEOT;BOXER;VIDRADA;2.2T-16V;Combustão;M-6;S;D;;;11;10,6;;;;;2,47;;B;D;-
+Comercial;PEUGEOT;BOXER;FURGAOPK;2.2T-16V;Combustão;M-6;S;D;;;10,8;10,4;;;;;2,52;;B;D;-
+Comercial;PEUGEOT;E-EXPERT;CARGO;ELÉTRICO;Elétrico;A-1;S;E;;;;;28,1;26,1;;;0,75;258;A;A;-
+Comercial;PEUGEOT;EXPERT;CARGO;2.2T-16V;Combustão;M-6;S;D;;;12,4;13,7;;;;;2,05;;A;C;-
+Comercial;PEUGEOT;EXPERT;VITRE;2.2T-16V;Combustão;M-6;S;D;;;12,4;13,7;;;;;2,05;;A;C;-
+Comercial;PEUGEOT;PARTRAPID;BUSIPK;1.3-8V;Combustão;M-5;S;F;8,7;9,6;12,4;13,6;;;;;1,65;;A;C;-
+Comercial;Renault;MASTER FURGÃO;FURGÃO L1;2.3-16V;Combustão;M-6;S;D;;;10,1;10,3;;;;;2,63;;C;D;-
+Comercial;Renault;MASTER FURGÃO;FURGÃO L2;2.3-16V;Combustão;M-6;S;D;;;10,1;10,3;;;;;2,63;;C;D;-
+Comercial;Renault;MASTER FURGÃO;FURGÃO L3;2.3-16V;Combustão;M-6;S;D;;;10,1;10,3;;;;;2,63;;C;D;-
+Comercial;Renault;MASTER FURGÃO;FURGÃOL1R;2.3-16V;Combustão;M-6;S;D;;;10,1;10,3;;;;;2,63;;C;D;-
+Comercial;Renault;MASTER FURGÃO;FURGÃOL2R;2.3-16V;Combustão;M-6;S;D;;;10,1;10,3;;;;;2,63;;C;D;-
+Comercial;Renault;MASTER FURGÃO;FURGÃOL3R;2.3-16V;Combustão;M-6;S;D;;;10,1;10,3;;;;;2,63;;C;D;-
+Comercial;Renault;MASTER FUGÃO PRÓ;PRÓ L1;2.3-16V;Combustão;M-6;S;D;;;10,1;9,6;;;;;2,72;;C;E;-
+Comercial;Renault;MASTER FUGÃO PRÓ;PRÓ L2;2.3-16V;Combustão;M-6;S;D;;;10,1;9,6;;;;;2,72;;C;E;-
+Comercial;Renault;MASTER FUGÃO PRÓ;PRÓ L3;2.3-16V;Combustão;M-6;S;D;;;10,1;9,6;;;;;2,72;;C;E;-
+Comercial;Renault;MASTER FUGÃO PRÓ;VITPRO3AC;2.3-16V;Combustão;M-6;S;D;;;10,1;9,6;;;;;2,72;;C;E;-
+Comercial;Renault;MASTER FUGÃO PRÓ;VITPROL3R;2.3-16V;Combustão;M-6;S;D;;;10,1;9,6;;;;;2,72;;C;E;-
+Comercial;Renault;MASTER BUS;MINIBUSL3;2.3-16V;Combustão;M-6;S;D;;;9,4;9,3;;;;;2,88;;D;E;-
+Comercial;Renault;MASTER CHASSIS CABINE;CHASSICAB;2.3-16V;Combustão;M-6;S;D;;;10,2;9,7;;;;;2,69;;C;E;-
+Comercial;Renault;KANGOO;ADV16;1.6-16V;Combustão;M-5;S;F;7,6;8,1;11;11,7;;;;;1,93;;A;C;-
+Comercial;Renault;KANGOO;EX PRO;1.6-16V;Combustão;M-5;S;F;7,6;8,1;11;11,7;;;;;1,93;;A;C;-
+Comercial;Renault;KANGOO;SRT16;1.6-16V;Combustão;M-5;S;F;7,6;8,1;11;11,7;;;;;1,93;;A;C;-
+Comercial;Renault;KANGOO;ETECHL2;Elétrico;Elétrico;A;S;E;;;;;37,5;30,3;;;0,6;210;A;A;-
+Comercial;Renault;E-KWID;CARGO;Elétrico;Elétrico;A;S;E;;;;;52,7;39,6;;;0,44;185;A;A;-
+Comercial;TOYOTA;HIACE;MINIBUS AT DX;2.8-16V;Combustão;A-6;S;D;;;8,5;9,8;;;;;3;;E;E;-
+Comercial;TOYOTA;HIACE;HIACE CARGO AT DX;2.8-16V;Combustão;A-6;S;D;;;8,8;10,2;;;;;2,88;;D;E;-
+Picape Compacta;CHEVROLET;MONTANA;MT;1.2T - 12V;Combustão;M-6;S;F;8,4;9,7;12,3;13,7;;;;;1,66;;B;C;-
+Picape Compacta;CHEVROLET;MONTANA;LT;1.2T - 12V;Combustão;M-6;S;F;8,4;9,7;12,3;13,7;;;;;1,66;;B;C;-
+Picape Compacta;CHEVROLET;MONTANA;LTZ;1.2T - 12V;Combustão;A-6;S;F;7,5;9,7;11;13,5;;;;;1,8;;D;C;-
+Picape Compacta;CHEVROLET;MONTANA;PREMIER;1.2T - 12V;Combustão;A-6;S;F;7,5;9,7;11;13,5;;;;;1,8;;D;C;-
+Picape Compacta;CHEVROLET;MONTANA;RS;1.2T - 12V;Combustão;A-6;S;F;7,5;9,7;11;13,5;;;;;1,8;;D;C;-
+Picape Compacta;FIAT;STRADA;ENDURAN CS13;1.3-8V;Combustão;M-5;S;F;9,1;10,1;13;14,7;;;;;1,56;;A;C;-
+Picape Compacta;FIAT;STRADA;FREEDOM CS13;1.3-8V;Combustão;M-5;S;F;9,1;10,1;13;14,7;;;;;1,56;;A;C;-
+Picape Compacta;FIAT;STRADA;FREEDOM CD13;1.3-8V;Combustão;M-5;S;F;8,9;10,1;12,8;14,4;;;;;1,59;;A;C;-
+Picape Compacta;FIAT;STRADA;VOLCANO CD13;1.3-8V;Combustão;M-5;S;F;8,9;9,8;12,4;13,9;;;;;1,63;;B;C;-
+Picape Compacta;FIAT;STRADA;VOLCANO 13AT;1.3-8V;Combustão;CVT-7;S;F;8,9;9,7;12,6;13,5;;;;;1,63;;B;C;-
+Picape Compacta;FIAT;STRADA;ULTRA T200AT;1.0T-12V;Combustão;CVT-7;S;F;8,3;9,2;11,9;13,1;;;;;1,73;;C;C;-
+Picape Compacta;FIAT;STRADA;RANCH T200AT;1.0T-12V;Combustão;CVT-7;S;F;8,3;9,2;11,9;13,1;;;;;1,73;;C;C;-
+Picape Compacta;Renault;OROCH;Intense16M;1.6-16V;Combustão;M-6;S;F;7,6;8,1;11,3;11,7;;;;;1,91;;E;C;-
+Picape Compacta;Renault;OROCH;PRO 16;1.6-16V;Combustão;M-6;S;F;7,6;8,1;11,3;11,7;;;;;1,91;;E;C;-
+Picape Compacta;VW;SAVEIRO;SAVEIRO CABINE SIMPLES;1.6-16V;Combustão;M - 5;S;F;;;;;;;;;1,83;;E;C;-
+Picape;BYD;SHARK;GS DM;1.5-16V;Plug-in;A-1;S;G;;;8,7;8,5;24,3;20,3;;;0,91;68;A;A;SIM
+Picape;BYD;SHARK;GL DM;1.5-16V;Plug-in;A-1;S;G;;;8,7;8,5;24,3;20,3;;;0,91;68;A;A;SIM
+Picape;BYD;SHARK;GS DM;1.5-16V;Plug-in;A-1;S;G;;;8,7;8,5;24,3;20,3;;;0,91;68;A;A;SIM
+Picape;BYD;SHARK;GL DM;1.5-16V;Plug-in;A-1;S;G;;;8,7;8,5;24,3;20,3;;;0,91;68;A;A;SIM
+Picape;CHEVROLET;S10;Z71 Cabine Dupla;2.8 - 16V;Combustão;A-8;S;D;;;8,4;11,1;;;;;2,87;;E;E;-
+Picape;CHEVROLET;S10;HC DD4A;2.8 - 16V;Combustão;A-8;S;D;;;8,8;11,9;;;;;2,73;;D;E;-
+Picape;CHEVROLET;S10;LTZ DD4A;2.8 - 16V;Combustão;A-8;S;D;;;8,8;11,9;;;;;2,73;;D;E;-
+Picape;CHEVROLET;S10;WT DD4A;2.8 - 16V;Combustão;A-8;S;D;;;8,8;11,9;;;;;2,73;;D;E;-
+Picape;CHEVROLET;S10;LTZ DD4A;2.8 - 16V;Combustão;A-8;S;D;;;8,8;11,9;;;;;2,73;;D;E;-
+Picape;CHEVROLET;S10;WT DS4;2.8 - 16V;Combustão;M-6;S;D;;;10,2;11,4;;;;;2,5;;B;D;-
+Picape;CHEVROLET;S10;WT DS4C;2.8 - 16V;Combustão;M-6;S;D;;;10,2;11,4;;;;;2,5;;B;D;-
+Picape;CHEVROLET;S10;WT DD4;2.8 - 16V;Combustão;M-6;S;D;;;10,2;11,4;;;;;2,52;;C;D;-
+Picape;CHEVROLET;S10;Z71;2.8 - 16V;Combustão;A-8;S;D;;;8,4;11,1;;;;;2,87;;E;E;-
+Picape;CHEVROLET;SILVERADO;HIGH COUNTRY;5.3 V8;Combustão;A-10;S;G;;;6;7,2;;;;;3,48;;E;E;-
+Picape;FIAT;TITANO;ENDURANCE;2.2T-16V;Combustão;M-6;S;D;;;10,5;10,5;;;;;2,55;;C;D;-
+Picape;FIAT;TITANO;VOLCANO;2.2T-16V;Combustão;A-8;S;D;;;9,9;10,8;;;;;2,62;;C;D;-
+Picape;FIAT;TITANO;RANCH;2.2T-16V;Combustão;A-8;S;D;;;9,9;10,8;;;;;2,62;;C;D;-
+Picape;FIAT;TORO;ENDUR T270 AT;1.3T-16V;Combustão;A-6;S;F;6,8;7,9;9,8;11,2;;;;;2,1;;A;D;-
+Picape;FIAT;TORO;FREED T270 AT;1.3T-16V;Combustão;A-6;S;F;6,5;7,8;9,4;10,8;;;;;2,19;;A;D;-
+Picape;FIAT;TORO;VOLC T270 AT;1.3T-16V;Combustão;A-6;S;F;6,5;7,8;9,4;10,8;;;;;2,19;;A;D;-
+Picape;FIAT;TORO;ULTRA T270 AT;1.3T-16V;Combustão;A-6;S;F;6,5;7,8;9,4;10,8;;;;;2,19;;A;D;-
+Picape;FIAT;TORO;RANCH TD450 AT;2.2T-16V;Combustão;A-9;S;D;;;10,5;13,6;;;;;2,29;;A;D;-
+Picape;FIAT;TORO;VOLC TD450 AT;2.2T-16V;Combustão;A-9;S;D;;;10,5;13,6;;;;;2,29;;A;D;-
+Picape;FIAT;TORO;FREED TD450 AT;2.2T-16V;Combustão;A-9;S;D;;;10,3;13,1;;;;;2,36;;B;D;-
+Picape;FIAT;TORO;VOLC T270 HYB;1.3T-16V;Híbrido;A-6;S;F;7,3;7,6;10,5;10,7;;;;;2,05;;A;C;-
+Picape;FIAT;TORO;ULTRA T270 HYB;1.3T-16V;Híbrido;A-6;S;F;7,3;7,6;10,5;10,7;;;;;2,05;;A;C;-
+Picape;FORD;Nova Ranger 4x2;Black;2.0 - 16V;Combustão;A-6;S;D;;;10,2;12,1;;;;;2,45;;B;D;-
+Picape;FORD;Nova Ranger 4x4;XL;2.0 - 16V;Combustão;M-6;S;D;;;10,3;11,2;;;;;2,5;;B;D;-
+Picape;FORD;Nova Ranger 4x4;XLS;2.0 - 16V;Combustão;M-6;S;D;;;10,3;11,2;;;;;2,5;;B;D;-
+Picape;FORD;Nova Ranger 4x4;XLS;2.0 - 16V;Combustão;A-6;S;D;;;9,9;11,6;;;;;2,54;;C;D;-
+Picape;FORD;Nova Ranger 4x4;LTD;3.0 V6 - 24V;Combustão;A-10;S;D;;;8,3;10,1;;;;;3,02;;E;E;-
+Picape;FORD;Nova Ranger 4x4;XLS;3.0 V6 - 24V;Combustão;A-10;S;D;;;8,6;10,1;;;;;2,93;;E;E;-
+Picape;FORD;Nova Ranger 4x4;XLT;3.0 V6 - 24V;Combustão;A-10;S;D;;;8,6;10,1;;;;;2,93;;E;E;-
+Picape;FORD;Nova Ranger 4x4;LTD+;3.0 V6 - 24V;Combustão;A-10;S;D;;;8,6;10,1;;;;;2,93;;E;E;-
+Picape;FORD;Nova Ranger 4x4;Cabine Simples;2.0 - 16V;Combustão;M-6;S;D;;;10,3;11,2;;;;;2,5;;B;D;-
+Picape;FORD;Nova Ranger 4x4;Chassis;2.0 - 16V;Combustão;M-6;S;D;;;10,3;11,2;;;;;2,5;;B;D;-
+Picape;FORD;Nova Ranger 4x4;Cabine Simples;2.0 - 16V;Combustão;A-6;S;D;;;9,2;11,1;;;;;2,71;;D;E;-
+Picape;FORD;Nova Ranger 4x4;Chassis;2.0 - 16V;Combustão;A-6;S;D;;;9,2;11,1;;;;;2,71;;D;E;-
+Picape;FORD;Nova Ranger 4x4;XL;2.0 - 16V;Combustão;A-6;S;D;;;9,2;11,1;;;;;2,71;;D;E;-
+Picape;FORD;Maverick;Lariat Hybrid;2.5 - 16V;Híbrido;eCVT;S;G;;;15,4;13,5;;;;;1,46;;A;B;SIM
+Picape;FORD;Maverick;Lariat Black;2.0 - 16V;Combustão;A-8;S;G;;;8,5;11,4;;;;;2,3;;B;D;-
+Picape;FORD;Nova F150;Tremor;5.0 - 32V;Combustão;A-10;S;G;;;6;7,5;;;;;3,39;;E;E;-
+Picape;FORD;Nova F150;Lariat Black;5.0 - 32V;Combustão;A-10;S;G;;;6,5;8,5;;;;;3,08;;E;E;-
+Picape;FORD;Nova F150;Lariat Chrome;5.0 - 32V;Combustão;A-10;S;G;;;6,5;8,5;;;;;3,08;;E;E;-
+Picape;FOTON;TUNLAND;V7;2.0-16V;Híbrido;A-8;S;D;;;8,7;9,9;;;;;2,95;;E;E;-
+Picape;FOTON;TUNLAND;V9;2.0-16V;Híbrido;A-8;S;D;;;8,7;9,9;;;;;2,95;;E;E;-
+Picape;GWM;POER P30;EXC;2.4 - 16V;Combustão;A-9;S;D;;;9,4;10,4;;;;;2,75;;D;E;-
+Picape;GWM;POER P30;TRL;2.4 - 16V;Combustão;A-9;S;D;;;9,4;10,4;;;;;2,75;;D;E;-
+Picape;GWM;POER P30;EXC (MY27);2.4-16V;Combustão;A-9;S;D;;;9,4;10,4;;;;;2,75;;D;E;-
+Picape;GWM;POER P30;TRL (MY27);2.4-16V;Combustão;A-9;S;D;;;9,4;10,4;;;;;2,75;;D;E;-
+Picape;GWM;POER P30;PRO (MY27);2.4-16V;Combustão;A-9;S;D;;;9,4;10,4;;;;;2,75;;D;E;-
+Picape;GWM;POER P30;PRO;2.4-16V;Combustão;A-9;S;D;;;9,4;10,4;;;;;2,75;;D;E;-
+Picape;JAC;IEV330P;IEV330;Elétrico;Elétrico;A-1;S;E;;;;;29,2;25,1;;;0,75;226;A;A;-
+Picape;JAC;HUNTER;HUNTER AT;2.0-16V;Combustão;A-8;S;D;;;9;10,2;;;;;2,84;;D;E;-
+Picape;JAC;HUNTER;HUNTER 4WORK;2.0-16V;Combustão;A-8;S;D;;;9;10,2;;;;;2,84;;D;E;-
+Picape;JAC;HUNTER;HUNTER HD 4X4 AT C;2.0-16V;Combustão;A-8;S;D;;;9;10,2;;;;;2,84;;D;E;-
+Picape;JAC;HUNTER;HUNTER HD 4X4 AT;2.0-16V;Combustão;A-8;S;D;;;9;10,2;;;;;2,84;;D;E;-
+Picape;JAC;HUNTER;HUNTER HDX 4X4 AT;2.0-16V;Combustão;A-8;S;D;;;9;10,2;;;;;2,84;;D;E;-
+Picape;JAC;HUNTER;HUNTER HD AT;2.0-16V;Combustão;A-8;S;D;;;9;10,2;;;;;2,84;;D;E;-
+Picape;JAC;HUNTER;HUNTER HW AT;2.0-16V;Combustão;A-8;S;D;;;9;10,2;;;;;2,84;;D;E;-
+Picape;JAC;HUNTER;HUNTER HW 4X4 AT;2.0-16V;Combustão;A-8;S;D;;;9;10,2;;;;;2,84;;D;E;-
+Picape;JEEP;GLADIATOR;RUBICON;3.6-24V;Combustão;A-8;S;G;;;6,3;7,1;;;;;3,38;;E;E;-
+Picape;KIA;TASMAN;BASIC;2.2 - 16V;Combustão;A-8;S;D;;;9,5;10,9;;;;;2,67;;C;E;-
+Picape;KIA;TASMAN;X-LINE;2.2 - 16V;Combustão;A-8;S;D;;;9,5;10,9;;;;;2,67;;C;E;-
+Picape;Mitsubishi;Triton;GL AT2;2.4-16V;Combustão;AT;S;D;;;10,2;12,3;;;;;2,43;;B;D;-
+Picape;Mitsubishi;Triton;GLS AT2;2.4-16V;Combustão;AT;S;D;;;10,2;12,3;;;;;2,43;;B;D;-
+Picape;Mitsubishi;Triton;GL MT4;2.4-16V;Combustão;MT;S;D;;;10,8;12,2;;;;;2,34;;B;D;-
+Picape;Mitsubishi;Triton;GL AT4;2.4-16V;Combustão;AT;S;D;;;9,5;11,7;;;;;2,6;;C;D;-
+Picape;Mitsubishi;Triton;GLS AT4;2.4-16V;Combustão;AT;S;D;;;9,5;11,7;;;;;2,6;;C;D;-
+Picape;Mitsubishi;Triton;HPE AT4;2.4-16V;Combustão;AT;S;D;;;9,5;11,7;;;;;2,6;;C;D;-
+Picape;Mitsubishi;Triton;HPE-S AT4;2.4-16V;Combustão;AT;S;D;;;9,5;11,7;;;;;2,6;;C;D;-
+Picape;Mitsubishi;Triton;KATANA AT4;2.4-16V;Combustão;AT;S;D;;;9,5;11,7;;;;;2,6;;C;D;-
+Picape;RAM;1500;BIG HORN (CY26);3.0T-24V;Combustão;A-8;S;G;;;6,1;7,2;;;;;3,45;;E;E;-
+Picape;RAM;1500;LARAMIE;3.0T-24V;Combustão;A-8;S;G;;;6;7;;;;;3,5;;E;E;-
+Picape;RAM;1500;LARAMIE (CY26);3.0T-24V;Combustão;A-8;S;G;;;6,1;7,2;;;;;3,45;;E;E;-
+Picape;RAM;1500;REBEL;3.0T-24V;Combustão;A-8;S;G;;;6;7;;;;;3,5;;E;E;-
+Picape;RAM;1500;LARAMIE NE;3.0T-24V;Combustão;A-8;S;G;;;6;7;;;;;3,5;;E;E;-
+Picape;RAM;1500;LARAMIE NE (CY26);3.0T-24V;Combustão;A-8;S;G;;;6,1;7,2;;;;;3,45;;E;E;-
+Picape;RAM;RAMPAGE;LARAMIE DS;2.2T-16V;Combustão;A-9;S;D;;;10,6;13,3;;;;;2,3;;B;D;-
+Picape;RAM;RAMPAGE;BIGHORN DS;2.2T-16V;Combustão;A-9;S;D;;;10,6;13,3;;;;;2,3;;B;D;-
+Picape;RAM;RAMPAGE;LARAMIE FLEX;2.0T-16V;Combustão;A-9;S;F;5,7;7;8,2;10;;;;;2,48;;B;D;-
+Picape;RAM;RAMPAGE;LARAMIE GAS;2.0T-16V;Combustão;A-9;S;G;;;8,2;9,8;;;;;2,51;;C;D;-
+Picape;RAM;RAMPAGE;REBEL AT GAS;2.0T-16V;Combustão;A-9;S;G;;;8,2;9,8;;;;;2,51;;C;D;-
+Picape;RAM;RAMPAGE;REBEL DS;2.2T-16V;Combustão;A-9;S;D;;;10,6;13,3;;;;;2,3;;B;D;-
+Picape;RAM;RAMPAGE;REBEL FLEX;2.0T-16V;Combustão;A-9;S;F;5,7;7;8,2;10;;;;;2,48;;B;D;-
+Picape;RAM;RAMPAGE;RT FLEX;2.0T-16V;Combustão;A-9;S;F;5,3;6,7;7,7;9,7;;;;;2,62;;C;D;-
+Picape;RAM;RAMPAGE;RT GAS;2.0T-16V;Combustão;A-9;S;G;;;7,7;9,9;;;;;2,61;;C;D;-
+Picape;RAM;DAKOTA;BIGHORN;2.2T-16V;Combustão;A-8;S;D;;;9,6;10,8;;;;;2,66;;C;E;-
+Picape;RAM;DAKOTA;LARAMIE;2.2T-16V;Combustão;A-8;S;D;;;9,7;10,8;;;;;2,66;;C;E;-
+Picape;RAM;DAKOTA;WARLOCK;2.2T-16V;Combustão;A-8;S;D;;;9,7;10,8;;;;;2,66;;C;E;-
+Picape;RAM;DAKOTA;LARAMIE NE;2.2T-16V;Combustão;A-8;S;D;;;9,7;10,8;;;;;2,66;;C;E;-
+Picape;TOYOTA;HILUX DIESEL 4X4 MT;CHASSI MT;2.8-16V;Combustão;M-6;S;D;;;9,3;10,6;;;;;2,74;;D;E;-
+Picape;TOYOTA;HILUX DIESEL 4X4 MT;CABINE SIMPLES MT;2.8-16V;Combustão;M-6;S;D;;;9,3;10,6;;;;;2,74;;D;E;-
+Picape;TOYOTA;HILUX DIESEL 4X4 MT;POWER PACK MT;2.8-16V;Combustão;M-6;S;D;;;9,7;11,2;;;;;2,62;;C;D;-
+Picape;TOYOTA;HILUX DIESEL 4X4 AT;CHASSI AT;2.8-16V;Combustão;A-6;S;D;;;9,3;10;;;;;2,82;;D;E;-
+Picape;TOYOTA;HILUX DIESEL 4X4 AT;CABINE SIMPLES AT;2.8-16V;Combustão;A-6;S;D;;;9,3;10;;;;;2,82;;D;E;-
+Picape;TOYOTA;HILUX DIESEL 4X4 AT;POWER PACK AT;2.8-16V;Combustão;A-6;S;D;;;9,3;10;;;;;2,82;;D;E;-
+Picape;TOYOTA;HILUX DIESEL 4X4 AT;SR AT;2.8-16V;Combustão;A-6;S;D;;;9,3;10;;;;;2,82;;D;E;-
+Picape;TOYOTA;HILUX DIESEL 4X4 AT;SRV AT;2.8-16V;Combustão;A-6;S;D;;;9,3;10;;;;;2,82;;D;E;-
+Picape;TOYOTA;HILUX DIESEL 4X4 AT;SRX AT;2.8-16V;Combustão;A-6;S;D;;;9,3;10;;;;;2,82;;D;E;-
+Picape;TOYOTA;HILUX DIESEL 4X4 AT;SRX PLUS AT;2.8-16V;Combustão;A-6;S;D;;;9,3;10;;;;;2,82;;D;E;-
+Picape;VW;AMAROK;V6 COMFORT (MY26);3.0 - 24V;Combustão;A - 8;S;D;;;8,1;9,4;;;;;3,14;;E;E;-
+Picape;VW;AMAROK;V6 HIGH (MY26);3.0 - 24V;Combustão;A - 8;S;D;;;8,1;9,4;;;;;3,14;;E;E;-
+Picape;VW;AMAROK;V6 EXTREME (MY26);3.0 - 24V;Combustão;A - 8;S;D;;;8,1;9,4;;;;;3,14;;E;E;-
+Esportivo;BMW;M3;Competition;3.0 - 24V;Combustão;A-8;S;G;;;7;9,3;;;;;2,84;;E;E;-
+Esportivo;BMW;M3;COMP TRACK;3.0 - 24V;Combustão;A-8;S;G;;;7;9,3;;;;;2,84;;E;E;-
+Esportivo;BMW;M2;Coupe;3.0 - 24V;Combustão;A-8;S;G;;;7,2;9,3;;;;;2,79;;E;E;-
+Esportivo;BMW;M2;Coupe Track;3.0 - 24V;Combustão;A-8;S;G;;;7,2;9,3;;;;;2,79;;E;E;-
+Esportivo;BMW;M4;Competition;3.0 - 24V;Combustão;A-8;S;G;;;7,4;10;;;;;2,67;;E;E;-
+Esportivo;BMW;M4;COMP TRACK;3.0 - 24V;Combustão;A-8;S;G;;;7,4;10;;;;;2,67;;E;E;-
+Esportivo;BMW;M2;CUP;3.0 - 24V;Combustão;A-8;S;G;;;7,2;9,3;;;;;2,79;;E;E;-
+Esportivo;BMW;M2;CUP;3.0 - 24V;Combustão;A-8;S;G;;;7,2;9,3;;;;;2,79;;E;E;-
+Esportivo;FERRARI;296;GTB;3.0-24V;Plug-in;DCT-8;S;G;;;6,3;8,4;8,9;11,9;;;2,02;10;D;C;-
+Esportivo;FERRARI;PUROSANGUE;--;6.5-48V;Combustão;DCT-8;S;G;;;4,1;5,6;;;;;4,88;;E;E;-
+Esportivo;FERRARI;12CILINDRI;--;6.5-48V;Combustão;DCT-8;S;G;;;4,8;6,7;;;;;4,14;;E;E;-
+Esportivo;FERRARI;12CILINDRI;SPI;6.5-48V;Combustão;DCT-8;S;G;;;4,6;6,4;;;;;4,28;;E;E;-
+Esportivo;FERRARI;296;GTS;3.0-24V;Plug-in;DCT-8;S;G;;;6;8;8,8;13,1;;;1,97;11;D;C;-
+Esportivo;FERRARI;ROMA;SPIDER;3.9-32V;Combustão;DCT-8;S;G;;;6,7;8,7;;;;;3,01;;E;E;-
+Esportivo;FORD;Mustang Dark Horse;Dark Horse;5.0 V8 - 32V;Combustão;A-10;S;G;;;6,3;8,8;;;;;3,11;;E;E;-
+Esportivo;FORD;Mustang;GT AT;5.0 V8 - 32V;Combustão;A-10;S;G;;;6,5;9;;;;;3,02;;E;E;-
+Esportivo;MCLAREN;ARTURA;;3.0-24V;Plug-in;DCT-8;S;G;;;6,5;8,5;12,3;16,9;;;1,45;23;D;B;-
+Esportivo;MCLAREN;ARTURA;SPIDER;3.0-24V;Plug-in;DCT-8;S;G;;;6,5;8,5;12,3;16,9;;;1,45;23;D;B;-
+Esportivo;MCLAREN;750S;COUPE;4.0-32V;Combustão;DCT-8;S;G;;;5,9;7,4;;;;;3,46;;E;E;-
+Esportivo;MCLAREN;750S;SPIDER;4.0-32V;Combustão;DCT-8;S;G;;;5,9;7,4;;;;;3,46;;E;E;-
+Esportivo;Mercedes-Benz;AMG SL63S EP;;4.0-32V;Plug-in;A-9;S;G;;;6,2;7,4;7,8;10,8;;;2,27;9;D;D;-
+Esportivo;Mercedes-Benz;AMG GT63S EP;2P;4.0-32V;Plug-in;A-9;S;G;;;6,4;7,6;11,5;11,4;;;1,77;9;D;C;-
+Esportivo;Mercedes-Benz;AMG GT63S EP;;4.0-32V;Plug-in;A-9;S;G;;;6,4;7,5;9,8;11,1;;;1,96;9;D;C;-
+Esportivo;MG;CYBERSTER;77 KWH AWD;Elétrico;Elétrico;A-1;S;E;;;;;38,9;33,9;;;0,56;342;A;A;-
+Esportivo;PORSCHE;911;CARRERA;3.0-24V;Combustão;DCT-8;S;G;;;7;9,6;;;;;2,8;;E;E;-
+Esportivo;PORSCHE;911;CARRERA C;3.0-24V;Combustão;DCT-8;S;G;;;7;9,6;;;;;2,8;;E;E;-
+Esportivo;PORSCHE;911;CARRERA S;3.0-24V;Combustão;DCT-8;S;G;;;6,9;9,5;;;;;2,84;;E;E;-
+Esportivo;PORSCHE;911;CARRERA SC;3.0-24V;Combustão;DCT-8;S;G;;;6,9;9,5;;;;;2,84;;E;E;-
+Esportivo;PORSCHE;911;GT3 MANUAL;4.0-32V;Combustão;M-6;S;G;;;5,2;6,9;;;;;3,86;;E;E;-
+Esportivo;PORSCHE;911;GT3 TOURMT;4.0-32V;Combustão;M-6;S;G;;;5,2;6,9;;;;;3,86;;E;E;-
+Esportivo;PORSCHE;911;GT3;4.0-32V;Combustão;DCT-7;S;G;;;5,6;6,8;;;;;3,69;;E;E;-
+Esportivo;PORSCHE;911;GT3TOURING;4.0-32V;Combustão;DCT-7;S;G;;;5,6;6,8;;;;;3,69;;E;E;-
+Esportivo;PORSCHE;911;CAR T MT;3.0-24V;Combustão;M-6;S;G;;;6,9;9,4;;;;;2,86;;E;E;-
+Esportivo;PORSCHE;911;CAR T MT 2;3.0-24V;Combustão;M-6;S;G;;;6,9;9,4;;;;;2,86;;E;E;-
+Esportivo;PORSCHE;911;CAR T MTCA;3.0-24V;Combustão;M-6;S;G;;;6,9;9,4;;;;;2,86;;E;E;-
+Esportivo;PORSCHE;911;TURBO S / TURBO S CA;3.6/24V;Hibrido;DCT-8;S;G;;;6,2;8,6;;;;;3,17;;E;E;-
+Esportivo;PORSCHE;911;CARRERAGTS;3.6-24V;Híbrido;DCT-8;S;G;;;7,2;9,2;;;;;2,8;;E;E;-
+Esportivo;PORSCHE;911;CAR GTS CA;3.6-24V;Híbrido;DCT-8;S;G;;;7,2;9,2;;;;;2,8;;E;E;-
+Esportivo;PORSCHE;911;SPIRIT 70;3.6-24V;Híbrido;DCT-8;S;G;;;7,2;9,2;;;;;2,8;;E;E;-
+Esportivo;PORSCHE;911;GT3 FA 90Y;4.0-32V;Combustão;M-6;S;G;;;5,2;6,9;;;;;3,86;;E;E;-
+Esportivo;PORSCHE;911;TARGA 4GTS;3.6/24V;Hibrido;DCT-8;S;G;;;6,9;9,3;;;;;2,86;;E;E;-
+Esportivo;PORSCHE;911;GT3 FA 90Y;4.0-32V;Combustão;M-6;S;G;;;5,2;6,9;;;;;3,86;;E;E;-
+Esportivo;PORSCHE;911;TARGA 4GTS;3.6/24V;Hibrido;DCT-8;S;G;;;6,9;9,3;;;;;2,86;;E;E;-
+Esportivo;PORSCHE;911;GT3 SC;4.0-32V;Combustão;M-6;S;G;;;5,2;6,9;;;;;3,86;;E;E;
+Esportivo;PORSCHE;BOXSTER;GTS4.0;4.0-24V;Combustão;DCT-7;S;G;;;7,1;8,9;;;;;2,84;;E;E;-
+Esportivo;PORSCHE;BOXSTER;25 ANOS;4.0-24V;Combustão;DCT-7;S;G;;;7,1;8,9;;;;;2,84;;E;E;-
+Esportivo;PORSCHE;CAYMAN;GTS 4.0;4.0-24V;Combustão;DCT-7;S;G;;;7,1;8,9;;;;;2,84;;E;E;-
+Esportivo;PORSCHE;PANAMERA;TPHEV;4.0-32V;Plug-in;DCT-8;S;G;;;7;8,7;20,1;22,5;;;0,96;61;C;A;-
+Esportivo;PORSCHE;PANAMERA;TSEHY;4.0-32V;Plug-in;DCT-8;S;G;;;6,9;8,6;20,1;22,2;;;0,96;60;C;A;-
+Esportivo;PORSCHE;PANAMERA;4EHYB;2.9-24V;Plug-in;DCT-8;S;G;;;8;9,2;22;23,3;;;0,9;63;C;A;-
+Esportivo;PORSCHE;PANAMERA;4SEHY;2.9-24V;Plug-in;DCT-8;S;G;;;8,1;9,4;21;23,1;;;0,93;63;C;A;-
+Esportivo;PORSCHE;TAYCAN;TURBO S;Elétrico;Elétrico;--;S;E;;;;;30,7;30,2;;;0,67;425;A;A;-
+Esportivo;PORSCHE;TAYCAN;4S;Elétrico;Elétrico;--;S;E;;;;;30;28,5;;;0,69;415;A;A;-
+Esportivo;PORSCHE;TAYCAN;4S BE;Elétrico;Elétrico;--;S;E;;;;;30;28,5;;;0,69;415;A;A;-
+Esportivo;PORSCHE;TAYCAN;TURBOCT;Elétrico;Elétrico;--;S;E;;;;;30;28,5;;;0,69;415;A;A;-
+Esportivo;PORSCHE;TAYCAN;4S CT;Elétrico;Elétrico;--;S;E;;;;;30;28,5;;;0,69;415;A;A;-

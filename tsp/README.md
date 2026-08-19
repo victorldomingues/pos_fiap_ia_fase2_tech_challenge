@@ -15,16 +15,19 @@ integracao com LLM para geracao de instrucoes e relatorios.
 ```bash
 # a partir da raiz do repositorio, com o virtualenv do projeto ativo
 
-# roda o TSP base (Pygame) e, na sequencia, o VRP completo com relatorios
+# roda somente o VRP completo com relatorios (padrao)
 python tsp/run.py
 
 # roda apenas o TSP base (algoritmo genetico classico, sem restricoes de frota)
 python tsp/tsp.py
 ```
 
-`tsp/run.py` executa as duas etapas em sequencia: primeiro abre a janela
-Pygame com o TSP base (feche a janela ou pressione `Q` para avancar), depois
-roda o VRP hospitalar completo e imprime um resumo comparativo dos dois.
+Por padrao, `tsp/run.py` executa somente o VRP hospitalar (nao abre janela
+Pygame). Para tambem rodar o TSP base antes do VRP (util para comparar os
+dois), defina `EXECUTAR_TSP_BASE = True` em `tsp/config.py`, ou chame
+`main(executar_tsp_base=True)` programaticamente - nesse caso, feche a
+janela do Pygame (ou pressione `Q`) para avancar para o VRP, que roda em
+seguida e imprime um resumo comparativo dos dois.
 
 Saidas geradas em `tsp/output/` (pela etapa VRP):
 - `mapa_rotas_otimizadas.html` - mapa interativo (Plotly) das rotas por veiculo.

@@ -1,24 +1,27 @@
 # -*- coding: utf-8 -*-
 """
-Ponto de entrada principal do projeto: executa, em sequencia, os dois
-algoritmos construidos sobre a matriz real de hospitais e apresenta os
-resultados de ambos.
+Ponto de entrada principal do projeto.
 
-1. TSP BASE (tsp/tsp.py): algoritmo genetico classico do caixeiro viajante,
-   uma unica rota visitando todos os hospitais, sem restricoes de frota.
-   Visualizacao interativa em Pygame (feche a janela ou pressione Q para
-   avancar para a etapa seguinte).
-2. VRP HOSPITALAR (tsp/vrp.py + tsp/optimizer.py): multiplos veiculos, com
-   capacidade de carga, autonomia e prioridade de entrega, alem de geracao
-   de mapa de rotas, grafico de convergencia, instrucoes de motoristas e
-   relatorio operacional (via LLM ou template).
+Por padrao, executa somente o VRP HOSPITALAR (tsp/vrp.py + tsp/optimizer.py):
+multiplos veiculos, com capacidade de carga, autonomia e prioridade de
+entrega, alem de geracao de mapa de rotas, grafico de convergencia,
+instrucoes de motoristas e relatorio operacional (via LLM ou template).
+
+Opcionalmente, e possivel tambem rodar antes o TSP BASE (tsp/tsp.py):
+algoritmo genetico classico do caixeiro viajante, uma unica rota visitando
+todos os hospitais, sem restricoes de frota, com visualizacao interativa em
+Pygame. Isso e controlado pela variavel `config.EXECUTAR_TSP_BASE` (padrao
+False) ou pelo parametro `executar_tsp_base` de `main()`.
 
 Uso (a partir da raiz do repositorio ou de dentro da pasta tsp/):
-    python tsp/run.py
-    # ou, como modulo do pacote:
-    python -m tsp.run
+    python tsp/run.py                  # roda somente o VRP (padrao)
+    python -m tsp.run                  # idem, como modulo do pacote
+
+Para tambem rodar o TSP base, defina `EXECUTAR_TSP_BASE = True` em
+tsp/config.py, ou chame `main(executar_tsp_base=True)` programaticamente.
 """
 from __future__ import annotations
+
 
 import sys
 from pathlib import Path
@@ -110,31 +113,40 @@ def executar_pipeline_vrp():
     return melhor_solucao, solucao_baseline
 
 
-def main() -> None:
-    """Executa as duas etapas (TSP base e VRP hospitalar) e resume os resultados de ambas."""
-    print("=" * 70)
-    print("ETAPA 1/2 - TSP BASE (algoritmo genetico classico, sem restricoes de frota)")
-    print("Feche a janela do Pygame (ou pressione Q) para avancar para o VRP.")
-    print("=" * 70)
-    melhor_rota_tsp = executar_tsp_hospitais()
-    distancia_tsp = None
-    if melhor_rota_tsp:
-        df_matriz = carregar_matriz_distancias()
-        df_hospitais_base = construir_lista_hospitais_base(df_matriz)
-        hospital_ids = df_hospitais_base["id"].tolist()
-        matriz_distancias_km = construir_matriz_custos(df_matriz, hospital_ids, metrica="distance_km")
-        indice_por_id = {hospital_id: posicao for posicao, hospital_id in enumerate(hospital_ids)}
-        distancia_tsp = calcular_fitness_hospitais(melhor_rota_tsp, indice_por_id, matriz_distancias_km)
+def main(executar_tsp_base: bool = config.EXECUTAR_TSP_BASE) -> None:
+    """
+    Executa o pipeline do VRP hospitalar e, opcionalmente, o TSP base antes dele.
 
-    print()
+    Parametros:
+    - executar_tsp_base: se True, roda antes o TSP classico (Pygame,
+      interativo) e inclui sua distancia no resumo comparativo. Por padrao
+      (config.EXECUTAR_TSP_BASE = False), somente o VRP e executado.
+    """
+    distancia_tsp = None
+
+    if executar_tsp_base:
+        print("=" * 70)
+        print("ETAPA 1/2 - TSP BASE (algoritmo genetico classico, sem restricoes de frota)")
+        print("Feche a janela do Pygame (ou pressione Q) para avancar para o VRP.")
+        print("=" * 70)
+        melhor_rota_tsp = executar_tsp_hospitais()
+        if melhor_rota_tsp:
+            df_matriz = carregar_matriz_distancias()
+            df_hospitais_base = construir_lista_hospitais_base(df_matriz)
+            hospital_ids = df_hospitais_base["id"].tolist()
+            matriz_distancias_km = construir_matriz_custos(df_matriz, hospital_ids, metrica="distance_km")
+            indice_por_id = {hospital_id: posicao for posicao, hospital_id in enumerate(hospital_ids)}
+            distancia_tsp = calcular_fitness_hospitais(melhor_rota_tsp, indice_por_id, matriz_distancias_km)
+        print()
+
     print("=" * 70)
-    print("ETAPA 2/2 - VRP HOSPITALAR (multiplos veiculos, restricoes e relatorios via LLM)")
+    print("VRP HOSPITALAR (multiplos veiculos, restricoes e relatorios via LLM)")
     print("=" * 70)
     melhor_solucao_vrp, solucao_baseline_vrp = executar_pipeline_vrp()
 
     print()
     print("=" * 70)
-    print("RESUMO COMPARATIVO DOS DOIS ALGORITMOS")
+    print("RESUMO COMPARATIVO DOS DOIS ALGORITMOS" if executar_tsp_base else "RESUMO DA SOLUCAO VRP")
     print("=" * 70)
     if distancia_tsp is not None:
         print(f"TSP base (1 veiculo, sem restricoes):        {distancia_tsp:.1f} km")

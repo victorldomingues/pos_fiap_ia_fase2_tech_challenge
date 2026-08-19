@@ -58,6 +58,13 @@ DEMANDA_KG_MAX = 120.0
 PROBABILIDADE_ENTREGA_CRITICA = 0.3
 
 # ---------------------------------------------------------------------------
+# Controle de execucao do tsp/run.py: por padrao, roda somente o VRP
+# hospitalar (fim-a-fim, sem interacao do usuario). O TSP base (Pygame,
+# interativo) fica desligado por padrao e pode ser habilitado via parametro.
+# ---------------------------------------------------------------------------
+EXECUTAR_TSP_BASE = False
+
+# ---------------------------------------------------------------------------
 # Parametros do algoritmo genetico
 # ---------------------------------------------------------------------------
 POPULATION_SIZE = 120

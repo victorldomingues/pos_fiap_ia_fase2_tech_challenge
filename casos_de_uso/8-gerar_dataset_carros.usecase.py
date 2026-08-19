@@ -6,7 +6,7 @@ import pandas as pd
 BASE_DIR = Path(__file__).resolve().parents[1]
 BASES_DIR = BASE_DIR / "bases"
 CARROS_DATASET_PATH = BASES_DIR / "PBEV_2026_simplificado.csv"
-NOVO_CARROS_DATASET_PATH = BASES_DIR / "Carros.csv"
+NOVO_CARROS_DATASET_PATH = BASES_DIR / "veiculos.csv"
 
 # considerando apenas carros flex
 df_columns = ["marca", "modelo", "versao", "combustivel", "consumo_cidade", "consumo_cidade_2", "consumo_estrada", "consumo_estrada_2", "classificacao_pbe", "classificacao_geral"]

@@ -1,0 +1,181 @@
+INSTRUCOES DE ENTREGA - ROTA 1
+Veiculo: VW VIRTUS HIGHLINE 200TSI AUT
+Carga total: 298.1 kg de 350 kg disponiveis
+Distancia total prevista: 169.6 km (autonomia do veiculo: 415 km)
+Tempo estimado de percurso: 257.1 minutos
+
+Ordem de entrega (parta e retorne ao Centro de Distribuicao):
+  1. HOSP MUN FERNANDO MAURO PIRES DA ROCHA - bairro CAMPO LIMPO - 39.1 kg *** ENTREGA CRITICA ***
+  2. CENTRO DE REFERENCIA DA SAUDE DA MULHER - bairro CAMPOS ELISEOS - 18.8 kg *** ENTREGA CRITICA ***
+  3. INSTITUTO DE INFECTOLOGIA EMILIO RIBAS - bairro SUMARE - 108.1 kg *** ENTREGA CRITICA ***
+  4. HOSP MUN INFANTIL MENINO JESUS - bairro BELA VISTA - 21.1 kg *** ENTREGA CRITICA ***
+  5. CAISM PHILIPPE PINEL SAO PAULO - bairro PIRITUBA - 47.4 kg *** ENTREGA CRITICA ***
+  6. HOSPITAL GERAL DE PEDREIRA - bairro VILA CAMPO GRANDE - 12.9 kg *** ENTREGA CRITICA ***
+  7. HOSPITAL GERAL JESUS TEIXEIRA DA COSTA GUAIANASES SAO PAULO - bairro JARDIM SAO PAULO - 50.7 kg *** ENTREGA CRITICA ***
+
+Atencao: priorize entregas marcadas como criticas e confirme o recebimento em cada parada.
+
+------------------------------------------------------------
+
+INSTRUCOES DE ENTREGA - ROTA 2
+Veiculo: PEUGEOT 208 ALLUR T200
+Carga total: 349.9 kg de 350 kg disponiveis
+Distancia total prevista: 75.4 km (autonomia do veiculo: 415 km)
+Tempo estimado de percurso: 114.8 minutos
+
+Ordem de entrega (parta e retorne ao Centro de Distribuicao):
+  1. CENTRO HOSPITALAR DO SISTEMA PENITENCIARIO SAO PAULO - bairro CARANDIRU - 71.8 kg *** ENTREGA CRITICA ***
+  2. HOSP MUN MATERNIDADE PROFESSOR MARIO DEGNI - bairro VILA ANTONIO - 99.0 kg *** ENTREGA CRITICA ***
+  3. HOSP MUN IGNACIO PROENCA DE GOUVEA - bairro PARQUE DA MOOCA - 35.2 kg *** ENTREGA CRITICA ***
+  4. HOSPITAL DO SERV PUB EST FCO MORATO DE OLIVEIRA SAO PAULO - bairro IBIRAPUERA - 56.4 kg *** ENTREGA CRITICA ***
+  5. CENTRO DE REFERENCIA E TREINAMENTO DST AIDS SAO PAULO - bairro VILA MARIANA - 87.5 kg *** ENTREGA CRITICA ***
+
+Atencao: priorize entregas marcadas como criticas e confirme o recebimento em cada parada.
+
+------------------------------------------------------------
+
+INSTRUCOES DE ENTREGA - ROTA 3
+Veiculo: Hyundai CRETA N Line
+Carga total: 323.2 kg de 350 kg disponiveis
+Distancia total prevista: 203.8 km (autonomia do veiculo: 420 km)
+Tempo estimado de percurso: 266.9 minutos
+
+Ordem de entrega (parta e retorne ao Centro de Distribuicao):
+  1. INSTITUTO DE REABILITACAO LUCY MONTORO - bairro VILA ANDRADE - 20.0 kg *** ENTREGA CRITICA ***
+  2. HOSPITAL GERAL DE SAO MATEUS SAO PAULO - bairro SAO MATEUS - 20.2 kg *** ENTREGA CRITICA ***
+  3. HOSPITAL MUNICIPAL BRASILANDIA - bairro JARDIM MARISTELA - 40.3 kg *** ENTREGA CRITICA ***
+  4. HOSPITAL MILITAR DE AREA DE SAO PAULO - bairro CAMBUCI - 35.1 kg *** ENTREGA CRITICA ***
+  5. CENTRO MEDICO PMESP - bairro TREMEMBE - 53.9 kg *** ENTREGA CRITICA ***
+  6. HOSPITAL MATERNIDADE INTERLAGOS - bairro JD LEBLON - 34.1 kg
+  7. HOSP MUN CAPELA DO SOCORRO - bairro JARDIM DAS IMBUIAS - 119.6 kg
+
+Atencao: priorize entregas marcadas como criticas e confirme o recebimento em cada parada.
+
+------------------------------------------------------------
+
+INSTRUCOES DE ENTREGA - ROTA 4
+Veiculo: FIAT FASTBACK IMPETUS HY
+Carga total: 344.8 kg de 350 kg disponiveis
+Distancia total prevista: 89.5 km (autonomia do veiculo: 445 km)
+Tempo estimado de percurso: 131.6 minutos
+
+Ordem de entrega (parta e retorne ao Centro de Distribuicao):
+  1. CONJUNTO HOSPITALAR DO MANDAQUI SAO PAULO - bairro SANTANA - 98.8 kg
+  2. HOSPITAL UNIVERSITARIO DA USP SAO PAULO - bairro BUTANTA - 98.6 kg
+  3. HOSPITAL INFANTIL CANDIDO FONTOURA SAO PAULO - bairro AGUA RASA - 44.7 kg *** ENTREGA CRITICA ***
+  4. HOSPITAL MUNICIPAL DR BENEDITO MONTENEGRO - bairro JARDIM IVA - 102.7 kg
+
+Atencao: priorize entregas marcadas como criticas e confirme o recebimento em cada parada.
+
+------------------------------------------------------------
+
+INSTRUCOES DE ENTREGA - ROTA 5
+Veiculo: CITROEN AIRCROSS FL
+Carga total: 289.9 kg de 350 kg disponiveis
+Distancia total prevista: 111.4 km (autonomia do veiculo: 395 km)
+Tempo estimado de percurso: 150.6 minutos
+
+Ordem de entrega (parta e retorne ao Centro de Distribuicao):
+  1. HOSPITAL MUNICIPAL GUARAPIRANGA - bairro RIVIERA PAULISTA - 91.0 kg
+  2. HOSP MUN JOSANIAS CASTANHA BRAGA - bairro JARDIM ROSCHEL - 116.8 kg
+  3. HOSPITAL GERAL DE VILA PENTEADO DR JOSE PANGELLA SAO PAULO - bairro JARDIM IRACEMA - 82.1 kg
+
+Atencao: priorize entregas marcadas como criticas e confirme o recebimento em cada parada.
+
+------------------------------------------------------------
+
+INSTRUCOES DE ENTREGA - ROTA 6
+Veiculo: VW VIRTUS HIGHLINE 200TSI AUT
+Carga total: 290.2 kg de 350 kg disponiveis
+Distancia total prevista: 63.8 km (autonomia do veiculo: 415 km)
+Tempo estimado de percurso: 89.8 minutos
+
+Ordem de entrega (parta e retorne ao Centro de Distribuicao):
+  1. HOSP MUN VER JOSE STOROPOLLI - bairro PARQUE NOVO MUNDO - 74.3 kg
+  2. HOSP MUN SOROCABANA - bairro VILA ROMANA - 97.1 kg
+  3. HOSPITAL KATIA DE SOUZA RODRIGUES TAIPASSP SAO PAULO - bairro PARADA DE TAIPAS - 118.8 kg
+
+Atencao: priorize entregas marcadas como criticas e confirme o recebimento em cada parada.
+
+------------------------------------------------------------
+
+INSTRUCOES DE ENTREGA - ROTA 7
+Veiculo: PEUGEOT 208 ALLUR T200
+Carga total: 326.6 kg de 350 kg disponiveis
+Distancia total prevista: 141.2 km (autonomia do veiculo: 415 km)
+Tempo estimado de percurso: 201.3 minutos
+
+Ordem de entrega (parta e retorne ao Centro de Distribuicao):
+  1. HOSP MUN CARMEN PRUDENTE - bairro CIDADE TIRADENTES - 119.7 kg
+  2. HOSP MUN PROFESSOR DOUTOR ALIPIO CORREA NETTO - bairro VILA PARANAGUA - 71.3 kg
+  3. HOSP MUN DR CARMINO CARICCHIO - bairro TATUAPE - 39.4 kg
+  4. HOSP MUN V NHOCUNE ALEXANDRE ZAIO - bairro VILA NHOCUNE - 28.8 kg
+  5. HOSPITAL INFANTIL DARCY VARGAS UGA III SAO PAULO - bairro JARDIM GUEDALA - 34.2 kg
+  6. HOSPITAL REGIONAL SUL SAO PAULO - bairro SANTO AMARO - 33.2 kg
+
+Atencao: priorize entregas marcadas como criticas e confirme o recebimento em cada parada.
+
+------------------------------------------------------------
+
+INSTRUCOES DE ENTREGA - ROTA 8
+Veiculo: Hyundai CRETA N Line
+Carga total: 296.4 kg de 350 kg disponiveis
+Distancia total prevista: 77.1 km (autonomia do veiculo: 420 km)
+Tempo estimado de percurso: 117.9 minutos
+
+Ordem de entrega (parta e retorne ao Centro de Distribuicao):
+  1. HOSPITAL GERAL HENRIQUE ALTIMEYER DE VILA ALPINA - bairro VILA ALPINA - 115.3 kg
+  2. HOSPITAL GERAL DO GRAJAU PROF LIBER JOHN ALPHONSE DI DIO SP - bairro PARQUE DAS NACOES - 101.2 kg
+  3. HOSP MUN MAT ESC DR MARIO DE MORAES A SILVA - bairro VILA NOVA CACHOEIRIN - 79.9 kg
+
+Atencao: priorize entregas marcadas como criticas e confirme o recebimento em cada parada.
+
+------------------------------------------------------------
+
+INSTRUCOES DE ENTREGA - ROTA 9
+Veiculo: FIAT FASTBACK IMPETUS HY
+Carga total: 347.3 kg de 350 kg disponiveis
+Distancia total prevista: 80.9 km (autonomia do veiculo: 445 km)
+Tempo estimado de percurso: 140.3 minutos
+
+Ordem de entrega (parta e retorne ao Centro de Distribuicao):
+  1. HOSP DO SERV PUB MUNICIPAL HSPM - bairro LIBERDADE - 110.6 kg
+  2. HOSP MUN GILSON DE CASSIA MARQUES DE CARVALHO - bairro VILA MASCOTE - 17.0 kg
+  3. HOSPITAL HELIOPOLIS UNIDADE DE GESTAO ASSISTENCIAL I - bairro V HELIOPOLIS - 81.5 kg
+  4. HOSP MUN SOROCABANA - bairro ALTO DE PINHEIROS - 11.3 kg
+  5. INSTITUTO DO CANCER DO ESTADO DE SAO PAULO - bairro CERQUEIRA CESAR - 22.1 kg
+  6. HOSPITAL E MATERNIDADE LEONOR MENDES DE BARROS SAO PAULO - bairro BELENZINHO - 104.8 kg
+
+Atencao: priorize entregas marcadas como criticas e confirme o recebimento em cada parada.
+
+------------------------------------------------------------
+
+INSTRUCOES DE ENTREGA - ROTA 10
+Veiculo: CITROEN AIRCROSS FL
+Carga total: 308.3 kg de 350 kg disponiveis
+Distancia total prevista: 105.0 km (autonomia do veiculo: 395 km)
+Tempo estimado de percurso: 152.9 minutos
+
+Ordem de entrega (parta e retorne ao Centro de Distribuicao):
+  1. HOSP MUN TIDE SETUBAL - bairro SAO MIGUEL PAULISTA - 81.3 kg
+  2. HOSPITAL ESTADUAL DE SAPOPEMBA SAO PAULO - bairro JARDIM SAPOPEMBA - 106.4 kg
+  3. HOSPITAL GERAL SANTA MARCELINA DE ITAIM PAULISTA SAO PAULO - bairro ITAIM PAULISTA - 69.0 kg
+  4. HOSP MUN PROF DR WALDOMIRO DE PAULA - bairro ITAQUERA - 51.6 kg
+
+Atencao: priorize entregas marcadas como criticas e confirme o recebimento em cada parada.
+
+------------------------------------------------------------
+
+INSTRUCOES DE ENTREGA - ROTA 11
+Veiculo: VW VIRTUS HIGHLINE 200TSI AUT
+Carga total: 131.2 kg de 350 kg disponiveis
+Distancia total prevista: 30.8 km (autonomia do veiculo: 415 km)
+Tempo estimado de percurso: 57.1 minutos
+
+Ordem de entrega (parta e retorne ao Centro de Distribuicao):
+  1. UNIDADE DE GESTAO ASSISTENCIAL II HOSPITAL IPIRANGA SP - bairro IPIRANGA - 103.2 kg
+  2. HOSP MUN JABAQUARA ARTUR RIBEIRO DE SABOYA - bairro JABAQUARA - 28.0 kg
+
+Atencao: priorize entregas marcadas como criticas e confirme o recebimento em cada parada.
+
+------------------------------------------------------------

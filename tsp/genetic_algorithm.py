@@ -3,7 +3,9 @@
 import random
 import math
 import copy 
-from typing import List, Tuple
+from typing import Any, List, Tuple
+
+import numpy as np
 
 default_problems = {
 5: [(733, 251), (706, 87), (546, 97), (562, 49), (576, 253)],
@@ -176,6 +178,51 @@ def sort_population(population: List[List[Tuple[float, float]]], fitness: List[f
     sorted_population, sorted_fitness = zip(*sorted_combined_lists)
 
     return sorted_population, sorted_fitness
+
+
+# ---------------------------------------------------------------------------
+# Operadores de selecao genericos (reaproveitados tanto pelo TSP classico
+# quanto pelo VRP hospitalar em tsp/vrp.py e tsp/optimizer.py). Funcionam
+# sobre qualquer tipo de individuo (tuplas de coordenadas ou tuplas de ids
+# de hospitais), pois dependem apenas da lista de fitness correspondente.
+# ---------------------------------------------------------------------------
+def select_parents_by_fitness(population: List[Any], population_fitness: List[float], k: int = 2) -> List[Any]:
+    """
+    Seleciona `k` individuos por amostragem ponderada pelo inverso do fitness
+    (individuos com menor fitness/custo tem maior probabilidade de selecao).
+
+    Parametros:
+    - population: lista de individuos (cromossomos) da geracao atual.
+    - population_fitness: lista de fitness (custo) correspondente a cada individuo.
+    - k: quantidade de individuos a selecionar (com reposicao).
+
+    Retorno:
+    Lista com `k` individuos selecionados da populacao.
+    """
+    # Evita divisao por zero quando algum individuo tem fitness 0 (rota perfeita)
+    fitness_array = np.array(population_fitness, dtype=float)
+    fitness_array = np.where(fitness_array <= 0, 1e-6, fitness_array)
+    probabilidades = 1 / fitness_array
+
+    return random.choices(population, weights=probabilidades, k=k)
+
+
+def tournament_selection(population: List[Any], population_fitness: List[float], tournament_size: int = 3) -> Any:
+    """
+    Seleciona um individuo por torneio: sorteia `tournament_size` candidatos
+    aleatoriamente e retorna o de menor fitness (melhor custo) entre eles.
+
+    Parametros:
+    - population: lista de individuos (cromossomos) da geracao atual.
+    - population_fitness: lista de fitness (custo) correspondente a cada individuo.
+    - tournament_size: quantidade de candidatos sorteados para o torneio.
+
+    Retorno:
+    O individuo vencedor do torneio (menor fitness).
+    """
+    indices_candidatos = random.sample(range(len(population)), k=min(tournament_size, len(population)))
+    indice_vencedor = min(indices_candidatos, key=lambda indice: population_fitness[indice])
+    return population[indice_vencedor]
 
 
 if __name__ == '__main__':

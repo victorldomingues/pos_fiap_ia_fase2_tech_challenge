@@ -1,51 +1,143 @@
-# Otimizacao de Rotas para Distribuicao de Medicamentos e Insumos (VRP Hospitalar)
+# IADT - Fase 2 - Tech Challenge
 
-Modulo `tsp/` do Tech Challenge - Fase 2. Resolve o problema de roteamento de
-veiculos (VRP) para distribuicao de medicamentos e insumos entre hospitais
-publicos de Sao Paulo, usando algoritmo genetico, com restricoes de
-capacidade de carga, autonomia dos veiculos e prioridade de entrega, alem de
-integracao com LLM para geracao de instrucoes e relatorios.
+Victor Luiz Domingues  
+RM: rm375278
 
-> Escopo: este modulo utiliza **somente** os dados em `tsp/bases/` (matriz de
-> distancias/duracoes entre hospitais e catalogo de veiculos). Nenhum outro
-> diretorio do repositorio e usado por este pipeline.
+Este módulo implementa o Projeto 2 de otimização de rotas médicas com TSP/VRP usando algoritmos genéticos.
+A solução considera prioridades de entrega, capacidade e autonomia dos veículos, com visualização de rotas e suporte de LLM para relatórios e instruções operacionais.
 
-## Como executar
+## Relatório técnico
+
+O detalhamento completo da implementação, arquitetura, premissas, resultados,
+integrações e evidências visuais está em [RELATORIO_TECNICO.md](../RELATORIO_TECNICO.md).
+
+## Execução rápida do projeto tsp
+
+1. Ative o ambiente virtual na raiz do repositório:
 
 ```bash
-# a partir da raiz do repositorio, com o virtualenv do projeto ativo
+source .venv/bin/activate
+```
 
-# roda somente o VRP completo com relatorios (padrao)
+2. Execute a solução principal (VRP por padrão):
+
+```bash
 python tsp/run.py
+```
 
-# roda apenas o TSP base (algoritmo genetico classico, sem restricoes de frota)
+3. Opcional: execute apenas o TSP base (modo clássico com Pygame):
+
+```bash
 python tsp/tsp.py
 ```
 
-Por padrao, `tsp/run.py` executa somente o VRP hospitalar (nao abre janela
-Pygame). Para tambem rodar o TSP base antes do VRP (util para comparar os
-dois), defina `EXECUTAR_TSP_BASE = True` em `tsp/config.py`, ou chame
-`main(executar_tsp_base=True)` programaticamente - nesse caso, feche a
-janela do Pygame (ou pressione `Q`) para avancar para o VRP, que roda em
-seguida e imprime um resumo comparativo dos dois.
-
-Saidas geradas em `tsp/output/` (pela etapa VRP):
-- `mapa_rotas_otimizadas.html` - mapa interativo (Plotly) das rotas por veiculo.
-- `convergencia_algoritmo_genetico.html` - curva de convergencia do GA.
-- `instrucoes_motoristas.txt` - instrucoes de entrega por rota.
-- `relatorio_operacional.txt` - relatorio comparando a solucao otimizada com uma baseline.
-
-Rodar os testes:
+4. Opcional: rode os testes da solução tsp:
 
 ```bash
 python -m pytest tsp/tests/ -v
 ```
 
-## Integracao com LLM (opcional)
+---
 
-Por padrao, instrucoes e relatorios sao gerados por um motor de texto baseado
-em template, 100% offline e reproduzivel. Para usar uma LLM real (compativel
-com a API de chat da OpenAI), defina as variaveis de ambiente:
+## Como executar
+
+```bash
+# a partir da raiz do repositório, com o virtualenv do projeto ativo
+
+# roda somente o VRP completo com relatórios (padrão)
+python tsp/run.py
+
+# roda apenas o TSP base (algoritmo genético clássico, sem restrições de frota)
+python tsp/tsp.py
+```
+
+Por padrão, [`tsp/run.py`](run.py) executa somente o VRP hospitalar (não abre janela
+Pygame). Para também rodar o TSP base antes do VRP (útil para comparar os
+dois), defina `EXECUTAR_TSP_BASE = True` em [`tsp/config.py`](config.py), ou chame
+`main(executar_tsp_base=True)` programaticamente — nesse caso, feche a
+janela do Pygame (ou pressione `Q`) para avançar para o VRP, que roda em
+seguida e imprime um resumo comparativo dos dois.
+
+Saídas geradas em `tsp/output/` (pela etapa VRP):
+- `mapa_rotas_otimizadas.html` — mapa interativo (Plotly) das rotas por veículo.
+- `convergencia_algoritmo_genetico.html` — curva de convergência do GA.
+- `instrucoes_motoristas.txt` — instruções de entrega por rota.
+- `relatorio_operacional.txt` — relatório comparando a solução otimizada com uma baseline.
+
+Rodar os testes:
+
+```bash
+# testes da solução TSP/VRP e integração LLM (pasta tsp/tests)
+python -m pytest tsp/tests/ -v
+
+# testes dos serviços de integração de dados (pasta tests na raiz)
+python -m pytest tests/ -v
+```
+
+---
+
+## Serviços e testes do repositório
+
+Embora este README esteja focado na solução em `./tsp`, o repositório também
+contém componentes de suporte importantes para o pipeline de dados:
+
+1. [`./servicos`](../servicos/)
+   1. [`servicos/open_street_map/service.py`](../servicos/open_street_map/service.py): encapsula a integração de geocodificação com OpenStreetMap/Nominatim (latitude/longitude).
+   2. [`servicos/open_route/service.py`](../servicos/open_route/service.py): encapsula a integração com OpenRouteService para matriz de distância e duração entre hospitais.
+   3. Esses serviços são usados principalmente pelos scripts em [`./casos_de_uso`](../casos_de_uso/) na etapa de preparação da base.
+
+2. [`./tests`](../tests/) (raiz do repositório)
+   1. Contém testes dos serviços externos de dados.
+   2. Exemplo atual: validação de comportamento do serviço OpenStreetMap.
+
+3. [`./tsp/tests`](tests/)
+   1. Contém os testes da solução de otimização (TSP/VRP) e da camada de LLM.
+   2. Cobertura principal: carga de dados, restrições do VRP, convergência do algoritmo genético e seleção de cliente LLM.
+
+---
+
+## Resultados visuais dos casos de uso
+
+As imagens abaixo são os resultados gerados pelos casos de uso de
+visualização (principalmente [`5-gerar_imagem_grafo.usecase.py`](../casos_de_uso/5-gerar_imagem_grafo.usecase.py) e
+[`7-gerar_imagem_grafo_matriz_distancias.usecase.py`](../casos_de_uso/7-gerar_imagem_grafo_matriz_distancias.usecase.py)), salvas em
+[`bases/graficos/`](../bases/graficos/).
+
+### Grafo e mapa do conjunto de hospitais
+
+1. Grafo cartesiano dos hospitais selecionados:
+
+![Grafo hospitais públicos de São Paulo](../bases/graficos/grafo_hospitais_publicos_sao_paulo.png)
+
+2. Mapa dos hospitais selecionados:
+
+![Mapa hospitais públicos de São Paulo](../bases/graficos/mapa_hospitais_publicos_sao_paulo.png)
+
+### Grafo ponderado pela matriz de custos
+
+1. Grafo com pesos de distância (km):
+
+![Grafo hospitais por distância](../bases/graficos/grafo_hospitais_distancia_matriz.png)
+
+2. Grafo com pesos de duração (minutos):
+
+![Grafo hospitais por duração](../bases/graficos/grafo_hospitais_duracao_matriz.png)
+
+3. Mapa com pesos de distância (km):
+
+![Mapa hospitais por distância](../bases/graficos/mapa_hospitais_distancia_matriz.png)
+
+4. Mapa com pesos de duração (minutos):
+
+![Mapa hospitais por duração](../bases/graficos/mapa_hospitais_duracao_matriz.png)
+
+---
+
+## Integração com LLM (opcional)
+
+Por padrão, instruções e relatórios são gerados por um motor de texto baseado
+em template, 100% offline e reproduzível. Para usar uma LLM real (compatível
+com a API de chat da OpenAI), defina as variáveis de ambiente:
 
 ```bash
 export OPENAI_API_KEY="sua-chave"
@@ -53,101 +145,114 @@ export OPENAI_BASE_URL="https://api.openai.com/v1/chat/completions"  # opcional
 export OPENAI_MODEL="gpt-4o-mini"  # opcional
 ```
 
-Alternativamente, e possivel usar um modelo local via [Ollama](https://ollama.com)
-(sem custo, sem chave de API e sem enviar dados hospitalares para fora da maquina):
+Alternativamente, é possível usar um modelo local via [Ollama](https://ollama.com)
+(sem custo, sem chave de API e sem enviar dados hospitalares para fora da máquina):
 
 ```bash
-ollama serve                 # inicia o servidor local (padrao: http://localhost:11434)
+ollama serve                 # inicia o servidor local (padrão: http://localhost:11434)
 ollama pull llama3.1         # baixa o modelo escolhido (uma vez)
 
 export OLLAMA_MODEL="llama3.1"
 export OLLAMA_BASE_URL="http://localhost:11434/api/chat"  # opcional
 ```
 
-A prioridade e sempre da opcao mais simples/gratuita para a mais custosa:
-Template (padrao, sem configuracao) > Ollama local > OpenAI (nuvem, paga).
+A prioridade é sempre da opção mais simples/gratuita para a mais custosa:
+Template (padrão, sem configuração) > Ollama local > OpenAI (nuvem, paga).
 Se `OLLAMA_MODEL` e `OPENAI_API_KEY` estiverem definidas ao mesmo tempo, o
-Ollama tem prioridade. Quando nenhuma das duas esta definida, o pipeline usa
-automaticamente o gerador baseado em template (ver `tsp/llm_integration.py`).
+Ollama tem prioridade. Quando nenhuma das duas está definida, o pipeline usa
+automaticamente o gerador baseado em template (ver [`tsp/llm_integration.py`](llm_integration.py)).
 
-## Estrutura dos modulos
+---
+
+## Estrutura dos módulos
 
 | Arquivo | Responsabilidade |
 |---|---|
-| `config.py` | Caminhos, seed e hiperparametros centralizados. |
-| `models.py` | Dataclasses: `Hospital`, `Vehicle`, `VehicleRoute`, `VrpSolution`, `DeliveryPriority`. |
-| `data_loader.py` | Carrega e valida `bases/matriz_distacias_hospitais.csv` e `bases/veiculos.csv`; gera demanda/prioridade sinteticas. |
-| `distance_matrix.py` | Monta a matriz de custos (distancia/duracao) e projecao 2D (MDS) para visualizacao. |
-| `vrp.py` | Decodifica a "rota gigante" (cromossomo) em rotas por veiculo respeitando capacidade/autonomia; calcula fitness. |
-| `genetic_algorithm.py` | Base de TSP fornecida no desafio (mantida), com operadores de selecao (`select_parents_by_fitness`, `tournament_selection`) adicionados e reaproveitados pelo VRP. |
-| `optimizer.py` | Executa o algoritmo genetico do VRP e calcula a solucao baseline. |
-| `visualization.py` | Graficos interativos Plotly (mapa de rotas e convergencia). |
-| `llm_integration.py` | Geracao de instrucoes/relatorios/respostas via template ou LLM real. |
-| `tsp.py` | **TSP base**: algoritmo genetico classico do caixeiro viajante aplicado aos hospitais reais (1 rota, sem restricoes de frota), com visualizacao Pygame. Evoluido do arquivo base do desafio. |
-| `run.py` | **Ponto de entrada principal**: executa o TSP base e o VRP hospitalar em sequencia e apresenta um resumo comparativo dos dois. |
-| `benchmark_att48.py`, `draw_functions.py`, `genetic_algorithm.py` (bloco `__main__`) | Referencias do TSP classico (benchmark att48 e demo Pygame original) mantidas do projeto base; `draw_functions.py` e reaproveitado por `tsp.py`. |
-| `tests/test_vrp_pipeline.py`, `tests/test_llm_integration.py` | Testes objetivos: integridade dos dados, restricoes de capacidade/autonomia, convergencia do GA, selecao/chamada dos clientes LLM. |
+| [`config.py`](config.py) | Caminhos, seed e hiperparâmetros centralizados. |
+| [`models.py`](models.py) | Dataclasses: `Hospital`, `Vehicle`, `VehicleRoute`, `VrpSolution`, `DeliveryPriority`. |
+| [`data_loader.py`](data_loader.py) | Carrega e valida [`bases/matriz_distacias_hospitais.csv`](bases/matriz_distacias_hospitais.csv) e [`bases/veiculos.csv`](bases/veiculos.csv); gera demanda/prioridade sintéticas. |
+| [`distance_matrix.py`](distance_matrix.py) | Monta a matriz de custos (distância/duração) e projeção 2D (MDS) para visualização. |
+| [`vrp.py`](vrp.py) | Decodifica a "rota gigante" (cromossomo) em rotas por veículo respeitando capacidade/autonomia; calcula fitness. |
+| [`genetic_algorithm.py`](genetic_algorithm.py) | Base de TSP fornecida no desafio (mantida), com operadores de seleção (`select_parents_by_fitness`, `tournament_selection`) adicionados e reaproveitados pelo VRP. |
+| [`optimizer.py`](optimizer.py) | Executa o algoritmo genético do VRP e calcula a solução baseline. |
+| [`visualization.py`](visualization.py) | Gráficos interativos Plotly (mapa de rotas e convergência). |
+| [`llm_integration.py`](llm_integration.py) | Geração de instruções/relatórios/respostas via template ou LLM real. |
+| [`tsp.py`](tsp.py) | **TSP base**: algoritmo genético clássico do caixeiro viajante aplicado aos hospitais reais (1 rota, sem restrições de frota), com visualização Pygame. Evoluído do arquivo base do desafio. |
+| [`run.py`](run.py) | **Ponto de entrada principal**: executa o TSP base e o VRP hospitalar em sequência e apresenta um resumo comparativo dos dois. |
+| [`benchmark_att48.py`](benchmark_att48.py), [`draw_functions.py`](draw_functions.py) | Referências do TSP clássico (benchmark att48 e demo Pygame original) mantidas do projeto base; [`draw_functions.py`](draw_functions.py) é reaproveitado por [`tsp.py`](tsp.py). |
+| [`tests/test_vrp_pipeline.py`](tests/test_vrp_pipeline.py), [`tests/test_llm_integration.py`](tests/test_llm_integration.py) | Testes objetivos: integridade dos dados, restrições de capacidade/autonomia, convergência do GA, seleção/chamada dos clientes LLM. |
 
-## Premissas assumidas (dados sinteticos documentados)
+Componentes relacionados fora de `./tsp`:
 
-As bases fornecidas em `tsp/bases/` nao contem alguns atributos necessarios
-para um VRP realista. As premissas abaixo sao aplicadas de forma
-**deterministica** (seed fixa `RANDOM_SEED = 42`), garantindo reprodutibilidade:
+- [`./servicos`](../servicos/): clientes de integração para OpenStreetMap e OpenRouteService.
+- [`./tests`](../tests/): testes da camada de serviços de dados do repositório.
+
+---
+
+## Premissas assumidas (dados sintéticos documentados)
+
+As bases fornecidas em [`tsp/bases/`](bases/) não contêm alguns atributos necessários
+para um VRP realista. As premissas abaixo são aplicadas de forma
+**determinística** (seed fixa `RANDOM_SEED = 42`), garantindo reprodutibilidade:
 
 - **Demanda (kg) e prioridade de entrega por hospital**: sorteadas
-  (`data_loader.gerar_demandas_hospitais`), pois a matriz de distancias nao
-  traz volume de insumos nem criticidade. ~30% das entregas sao marcadas
-  como criticas (`DeliveryPriority.CRITICAL`).
-- **Capacidade de carga do veiculo**: estimada por segmento/modelo
-  (`config.CAPACIDADE_KG_POR_SEGMENTO`), pois `veiculos.csv` traz apenas
+  (`data_loader.gerar_demandas_hospitais`), pois a matriz de distâncias não
+  traz volume de insumos nem criticidade. ~30% das entregas são marcadas
+  como críticas (`DeliveryPriority.CRITICAL`).
+- **Capacidade de carga do veículo**: estimada por segmento/modelo
+  (`config.CAPACIDADE_KG_POR_SEGMENTO`), pois [`bases/veiculos.csv`](bases/veiculos.csv) traz apenas
   dados de consumo do PBE (Programa Brasileiro de Etiquetagem).
-- **Tanque de combustivel**: assumido constante (`TANQUE_LITROS_PADRAO = 50L`).
-- **Autonomia do veiculo**: calculada a partir do consumo urbano **real**
+- **Tanque de combustível**: assumido constante (`TANQUE_LITROS_PADRAO = 50L`).
+- **Autonomia do veículo**: calculada a partir do consumo urbano **real**
   (`consumo_cidade`, km/l) multiplicado pelo tanque assumido.
-- **Centro de Distribuicao (deposito)**: o hospital de `id = 1` e usado como
-  CD (`config.DEPOT_HOSPITAL_ID`), pois a base nao possui um deposito
-  logistico separado dos hospitais.
-- **Coordenadas do mapa**: como a base nao tem latitude/longitude, as
-  posicoes exibidas no mapa sao estimadas via MDS classico (Torgerson) a
-  partir da matriz real de distancias, preservando as distancias relativas
-  entre hospitais para fins de visualizacao.
+- **Centro de Distribuição (depósito)**: o hospital de `id = 1` é usado como
+  CD (`config.DEPOT_HOSPITAL_ID`), pois a base não possui um depósito
+  logístico separado dos hospitais.
+- **Coordenadas do mapa**: como a base não tem latitude/longitude, as
+  posições exibidas no mapa são estimadas via MDS clássico (Torgerson) a
+  partir da matriz real de distâncias, preservando as distâncias relativas
+  entre hospitais para fins de visualização.
+
+---
 
 ## Modelagem do VRP
 
-- **Representacao genetica**: cromossomo = permutacao ("rota gigante") de
-  todos os hospitais, exceto o deposito.
-- **Decodificacao (split)**: a rota gigante e percorrida em ordem, acumulando
-  paradas no veiculo atual enquanto a capacidade de carga e a autonomia
-  forem respeitadas; ao violar uma restricao, a rota e fechada (retorno ao
-  CD) e a proxima parada e atribuida ao proximo veiculo da frota (com
-  rotacao, permitindo multiplas viagens do mesmo veiculo no dia).
-- **Fitness** (`vrp.calcular_fitness_vrp`, quanto menor melhor): soma de
-  distancia total percorrida + penalidade de atraso na entrega de itens
-  criticos (posicao na sequencia global de despacho, com peso maior para
-  criticos) + penalidade por entregas nao atendidas (quando nenhum veiculo
+- **Representação genética**: cromossomo = permutação ("rota gigante") de
+  todos os hospitais, exceto o depósito.
+- **Decodificação (split)**: a rota gigante é percorrida em ordem, acumulando
+  paradas no veículo atual enquanto a capacidade de carga e a autonomia
+  forem respeitadas; ao violar uma restrição, a rota é fechada (retorno ao
+  CD) e a próxima parada é atribuída ao próximo veículo da frota (com
+  rotação, permitindo múltiplas viagens do mesmo veículo no dia).
+- **Fitness** ([`vrp.calcular_fitness_vrp`](vrp.py), quanto menor melhor): soma de
+  distância total percorrida + penalidade de atraso na entrega de itens
+  críticos (posição na sequência global de despacho, com peso maior para
+  críticos) + penalidade por entregas não atendidas (quando nenhum veículo
   comporta aquela demanda isoladamente).
-- **Operadores geneticos**: geracao de populacao, crossover de ordem (OX) e
-  mutacao reaproveitados de `genetic_algorithm.py` (ja existiam no projeto
-  base); selecao por amostragem ponderada pelo inverso do fitness; elitismo.
+- **Operadores genéticos**: geração de população, crossover de ordem (OX) e
+  mutação reaproveitados de [`genetic_algorithm.py`](genetic_algorithm.py) (já existiam no projeto
+  base); seleção por amostragem ponderada pelo inverso do fitness; elitismo.
 
-### Sobre o resultado distancia x priorizacao
+### Sobre o resultado distância x priorização
 
-O algoritmo genetico otimiza o fitness combinado, nao apenas a distancia. Em
-cenarios com muitas entregas criticas, o GA pode aceitar uma distancia total
-levemente maior para garantir que os hospitais criticos sejam atendidos bem
-mais cedo na sequencia de despacho (metrica "posicao media de entregas
-criticas" no relatorio operacional). Esse comparativo evidencia o ganho
+O algoritmo genético otimiza o fitness combinado, não apenas a distância. Em
+cenários com muitas entregas críticas, o GA pode aceitar uma distância total
+levemente maior para garantir que os hospitais críticos sejam atendidos bem
+mais cedo na sequência de despacho (métrica "posição média de entregas
+críticas" no relatório operacional). Esse comparativo evidencia o ganho
 operacional real do sistema para o contexto hospitalar, mesmo quando a
-distancia bruta nao diminui.
+distância bruta não diminui.
+
+---
 
 ## Requisitos entregues
 
-1. **Algoritmo genetico para TSP/VRP**: representacao, selecao, crossover,
-   mutacao, elitismo e fitness com distancia + prioridade + restricoes.
-2. **Restricoes realistas**: prioridade de entrega, capacidade de carga,
-   autonomia de veiculos, multiplos veiculos (VRP).
-3. **Visualizacao**: mapa interativo das rotas (Plotly) e grafico de
-   convergencia do GA.
-4. **Integracao com LLM**: geracao de instrucoes para motoristas, relatorios
+1. **Algoritmo genético para TSP/VRP**: representação, seleção, crossover,
+   mutação, elitismo e fitness com distância + prioridade + restrições.
+2. **Restrições realistas**: prioridade de entrega, capacidade de carga,
+   autonomia de veículos, múltiplos veículos (VRP).
+3. **Visualização**: mapa interativo das rotas (Plotly) e gráfico de
+   convergência do GA.
+4. **Integração com LLM**: geração de instruções para motoristas, relatórios
    operacionais comparando com baseline, e resposta a perguntas em linguagem
-   natural sobre as rotas (`llm_integration.responder_pergunta`).
+   natural sobre as rotas ([`llm_integration.responder_pergunta`](llm_integration.py)).

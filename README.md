@@ -39,3 +39,24 @@ python tsp/tsp.py
 ```bash
 python -m pytest tsp/tests/ -v
 ```
+
+## Visão Geral do Fluxo
+
+O diagrama abaixo resume a ordem cronológica de execução, do carregamento dos
+dados até a geração dos relatórios finais.
+
+```mermaid
+flowchart TD
+    A[1. Carregar matriz de distancias<br/>data_loader.py] --> B[2. Extrair lista de hospitais<br/>data_loader.py]
+    B --> C[3. Gerar demanda e prioridade<br/>data_loader.py]
+    C --> D[4. Carregar frota de veiculos<br/>data_loader.py]
+    D --> E[5. Montar matrizes de custo<br/>distance_matrix.py]
+    E --> F[6. Projetar coordenadas 2D MDS<br/>distance_matrix.py]
+    F --> G[7. Executar algoritmo genetico VRP<br/>optimizer.py + vrp.py]
+    G --> H[8. Calcular solucao baseline<br/>optimizer.py]
+    H --> I[9. Gerar visualizacoes Plotly<br/>visualization.py]
+    I --> J[10. Gerar instrucoes e relatorio<br/>llm_integration.py]
+    J --> K[11. Salvar saidas em tsp/output/]
+```
+
+---

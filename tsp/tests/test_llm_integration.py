@@ -5,11 +5,17 @@ ambiente e chamadas HTTP dos clientes OpenAI-compativel e Ollama, usando
 `monkeypatch` para simular as respostas da API (sem depender de rede real
 nem de um servidor Ollama em execucao).
 """
+from types import SimpleNamespace
+
 import requests
 
+import tsp.llm_integration as integracao_llm
 from tsp.llm_integration import (
+    ClienteLLM,
     ClienteLLMOllama,
     ClienteLLMOpenAICompativel,
+    gerar_instrucoes_motorista,
+    gerar_relatorio_operacional,
     obter_cliente_llm,
 )
 
@@ -25,6 +31,20 @@ class _RespostaFalsa:
 
     def json(self) -> dict:
         return self._corpo_json
+
+
+class _ClienteCaptura(ClienteLLM):
+    """Captura o prompt e o contexto enviados para validar o contrato da LLM."""
+
+    def __init__(self, resposta: str = "# Resposta"):
+        self.prompt = ""
+        self.contexto_sistema = ""
+        self.resposta = resposta
+
+    def gerar_texto(self, prompt: str, contexto_sistema: str = "") -> str:
+        self.prompt = prompt
+        self.contexto_sistema = contexto_sistema
+        return self.resposta
 
 
 def test_obter_cliente_llm_retorna_none_sem_variaveis_de_ambiente(monkeypatch):
@@ -94,3 +114,65 @@ def test_cliente_llm_openai_compativel_gera_texto(monkeypatch):
     resultado = cliente.gerar_texto("Gere um relatorio.")
 
     assert resultado == "Relatorio gerado."
+
+
+def test_instrucoes_llm_exigem_markdown_tabela_icones_e_mermaid():
+    """As instrucoes da LLM devem seguir o contrato visual e operacional em Markdown."""
+    resposta_com_diagrama_invalido = (
+        "# Resposta\n\n```mermaid\nflowchart LR\n"
+        "A[Centro] --> B[HOSPITAL MANDAQUI (SANTANA)]\n```"
+    )
+    cliente = _ClienteCaptura(resposta_com_diagrama_invalido)
+    veiculo = SimpleNamespace(brand="Marca", model="Modelo", capacity_kg=300, autonomy_km=500)
+    rota = SimpleNamespace(
+        vehicle=veiculo,
+        hospital_ids=[2],
+        distance_km=10,
+        duration_min=20,
+        load_kg=30,
+    )
+    hospital = SimpleNamespace(
+        name="Hospital Teste",
+        district="SANTANA",
+        priority=SimpleNamespace(name="CRITICAL"),
+        demand_kg=30,
+    )
+
+    resultado = gerar_instrucoes_motorista(1, rota, {2: hospital}, cliente)
+
+    assert resultado.count("```mermaid") == 1
+    assert "B[HOSPITAL MANDAQUI (SANTANA)]" not in resultado
+    assert 'parada_1["1. Hospital Teste (SANTANA)"]' in resultado
+    assert "deposito --> parada_1" in resultado
+    assert "parada_1 --> deposito" in resultado
+    assert "Markdown valido" in cliente.contexto_sistema
+    assert "tabela" in cliente.contexto_sistema
+    assert "icones" in cliente.contexto_sistema
+    assert "Mermaid" in cliente.contexto_sistema
+    assert "Nao gere blocos Mermaid" in cliente.contexto_sistema
+    assert "Nao invente" in cliente.contexto_sistema
+
+
+def test_relatorio_llm_exige_markdown_tabela_icones_e_mermaid(monkeypatch):
+    """O relatorio da LLM deve seguir o contrato executivo em Markdown."""
+    cliente = _ClienteCaptura("# Resposta\n\n```mermaid\nflowchart LR\nA[Teste (A)]\n```")
+    solucao = SimpleNamespace(total_distance_km=100.0)
+    baseline = SimpleNamespace(total_distance_km=120.0)
+    monkeypatch.setattr(
+        integracao_llm,
+        "gerar_relatorio_operacional_template",
+        lambda solucao, baseline, hospitais: "# Dados operacionais",
+    )
+
+    resultado = gerar_relatorio_operacional(solucao, baseline, {}, cliente)
+
+    assert resultado.count("```mermaid") == 1
+    assert "A[Teste (A)]" not in resultado
+    assert 'otimizada["Solucao otimizada: 100.0 km"]' in resultado
+    assert 'referencia["Solucao baseline: 120.0 km"]' in resultado
+    assert "Markdown valido" in cliente.contexto_sistema
+    assert "tabela comparativa" in cliente.contexto_sistema
+    assert "icones" in cliente.contexto_sistema
+    assert "Mermaid" in cliente.contexto_sistema
+    assert "nao gere blocos Mermaid" in cliente.contexto_sistema
+    assert "nao invente" in cliente.contexto_sistema

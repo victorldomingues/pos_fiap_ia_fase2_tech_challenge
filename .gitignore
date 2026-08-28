@@ -170,3 +170,4 @@ Thumbs.db
 _ig_*
 .github/*
 *.drawio.bkp
+.env*

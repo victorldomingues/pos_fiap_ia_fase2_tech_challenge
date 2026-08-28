@@ -16,6 +16,7 @@ gratuita antes de uma API paga:
 from __future__ import annotations
 
 import os
+import re
 from abc import ABC, abstractmethod
 
 import requests
@@ -28,6 +29,56 @@ OPENAI_MODEL_PADRAO = "gpt-4o-mini"
 
 OLLAMA_BASE_URL_PADRAO = "http://localhost:11434/api/chat"
 OLLAMA_MODEL_PADRAO = "llama3.1"
+
+
+def _remover_blocos_mermaid(texto: str) -> str:
+    """Remove diagramas Mermaid da resposta para substitui-los por uma versao validada."""
+    padrao = re.compile(r"```mermaid\s*\n.*?```", flags=re.IGNORECASE | re.DOTALL)
+    return padrao.sub("", texto).strip()
+
+
+def _normalizar_rotulo_mermaid(valor: object) -> str:
+    """Normaliza um rotulo para uso seguro entre aspas no Mermaid."""
+    texto = re.sub(r"\s+", " ", str(valor)).strip()
+    return texto.replace('"', "'").replace("`", "'")
+
+
+def _gerar_diagrama_rota_mermaid(numero_rota: int, rota, hospitais_por_id: dict[int, Hospital]) -> str:
+    """Gera um fluxo Mermaid deterministico para uma rota hospitalar."""
+    linhas = ["```mermaid", "flowchart LR", '    deposito["Centro de Distribuicao"]']
+    identificador_anterior = "deposito"
+
+    # IDs controlados e rotulos entre aspas evitam conflitos com parenteses e pontuacao.
+    for posicao, hospital_id in enumerate(rota.hospital_ids, start=1):
+        identificador = f"parada_{posicao}"
+        hospital = hospitais_por_id[hospital_id]
+        rotulo = _normalizar_rotulo_mermaid(f"{posicao}. {hospital.name} ({hospital.district})")
+        linhas.append(f'    {identificador}["{rotulo}"]')
+        linhas.append(f"    {identificador_anterior} --> {identificador}")
+        identificador_anterior = identificador
+
+    linhas.append(f"    {identificador_anterior} --> deposito")
+    linhas.extend(["```", f"_Fluxo operacional da Rota {numero_rota}._"])
+    return "\n".join(linhas)
+
+
+def _gerar_diagrama_relatorio_mermaid(solucao: VrpSolution, baseline: VrpSolution) -> str:
+    """Gera um comparativo Mermaid deterministico entre a solucao e a baseline."""
+    linhas = [
+        "```mermaid",
+        "flowchart LR",
+        '    dados["Dados de hospitais e frota"]',
+        '    ga["Algoritmo genetico"]',
+        '    base["Baseline"]',
+        f'    otimizada["Solucao otimizada: {solucao.total_distance_km:.1f} km"]',
+        f'    referencia["Solucao baseline: {baseline.total_distance_km:.1f} km"]',
+        '    comparacao["Comparacao operacional"]',
+        "    dados --> ga --> otimizada --> comparacao",
+        "    dados --> base --> referencia --> comparacao",
+        "```",
+        "_Fluxo de comparacao das estrategias de roteamento._",
+    ]
+    return "\n".join(linhas)
 
 
 class ClienteLLM(ABC):
@@ -180,11 +231,19 @@ def gerar_instrucoes_motorista(
 
     prompt = _montar_prompt_instrucoes_motorista(numero_rota, rota, hospitais_por_id)
     contexto_sistema = (
-        "Voce e um assistente de logistica hospitalar. Gere instrucoes claras, objetivas e "
-        "em portugues do Brasil para o motorista responsavel pela rota de entrega descrita, "
-        "destacando entregas criticas e cuidados com medicamentos."
+        "Voce e um assistente de logistica hospitalar. Responda somente com Markdown valido, "
+        "robusto e bem estruturado, em portugues do Brasil, sem envolver a resposta inteira "
+        "em uma cerca de codigo. Inclua: titulo da rota; resumo operacional em tabela; checklist "
+        "antes da partida; tabela numerada de paradas com prioridade, carga e orientacao; alertas "
+        "de seguranca e checklist de encerramento. Nao gere blocos Mermaid, pois o diagrama sera "
+        "adicionado pela aplicacao com sintaxe validada. Use icones "
+        "compativeis com Markdown, como 🚨 para entrega critica, ⚠️ para alerta, 📦 para carga e "
+        "✅ para confirmacao. Destaque entregas criticas e cuidados com medicamentos. Nao invente "
+        "enderecos, horarios, distancias, cargas ou regras que nao estejam nos dados fornecidos."
     )
-    return cliente_llm.gerar_texto(prompt, contexto_sistema)
+    resposta = _remover_blocos_mermaid(cliente_llm.gerar_texto(prompt, contexto_sistema))
+    diagrama = _gerar_diagrama_rota_mermaid(numero_rota, rota, hospitais_por_id)
+    return f"{resposta}\n\n## Fluxo da rota\n\n{diagrama}"
 
 
 # ---------------------------------------------------------------------------
@@ -287,8 +346,18 @@ def gerar_relatorio_operacional(
         f"sobre a eficiencia das rotas de distribuicao de medicamentos hospitalares, destacando "
         f"ganhos de eficiencia e sugestoes de melhoria:\n\n{relatorio_base}"
     )
-    contexto_sistema = "Voce e um analista de logistica hospitalar redigindo relatorios executivos em portugues do Brasil."
-    return cliente_llm.gerar_texto(prompt, contexto_sistema)
+    contexto_sistema = (
+        "Voce e um analista de logistica hospitalar. Responda somente com Markdown valido, robusto "
+        "e bem estruturado, em portugues do Brasil, sem envolver a resposta inteira em uma cerca "
+        "de codigo. Organize o relatorio com resumo executivo, tabela comparativa entre otimizado e "
+        "baseline, indicadores operacionais, analise de entregas criticas, riscos, recomendacoes "
+        "priorizadas e conclusao. Use icones compativeis com Markdown para facilitar a leitura e "
+        "nao gere blocos Mermaid, pois o diagrama sera adicionado pela aplicacao com sintaxe validada. "
+        "Preserve todos os valores recebidos e nao invente metricas, causas ou resultados."
+    )
+    resposta = _remover_blocos_mermaid(cliente_llm.gerar_texto(prompt, contexto_sistema))
+    diagrama = _gerar_diagrama_relatorio_mermaid(solucao, baseline)
+    return f"{resposta}\n\n## Fluxo comparativo\n\n{diagrama}"
 
 
 # ---------------------------------------------------------------------------

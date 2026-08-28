@@ -1,4 +1,4 @@
-# Otimização de Rotas para Distribuição de Medicamentos e Insumos
+# Otimizador de Rotas para Distribuição de Medicamentos e Insumos - ORDMI
 
 **Tech Challenge - Fase 2 - FIAP**  
 **Autor:** Victor Luiz Domingues (RM: rm375278)  
@@ -27,9 +27,15 @@ Este projeto aplica técnicas de inteligência artificial (algoritmos genéticos
 
 ---
 
-## 3. Coleta e Preparação das Bases de Dados
+## 3. Arquitetura
 
-### 3.1. Base de Hospitais
+![Diagrama da arquitetura ORDMI](diagramas/ORDMI.drawio.png)
+
+---
+
+## 4. Coleta e Preparação das Bases de Dados
+
+### 4.1. Base de Hospitais
 
 **Fonte:** Dados Abertos do Governo Federal - Ministério da Saúde  
 **URL:** https://dadosabertos.saude.gov.br/dataset/hospitais-e-leitos/resource/5ac78b13-649f-4b09-8a92-0ae829a56d50  
@@ -45,7 +51,7 @@ A base original contém todos os hospitais nacionais cadastrados. Para fins dest
 2. Geração de ID numérico sequencial, extração de nome do hospital e endereço completo
 3. Saída: [`bases/normaliza_hospitais_publicos_sao_paulo_sp.csv`](bases/normaliza_hospitais_publicos_sao_paulo_sp.csv)
 
-### 3.2. Base de Veículos
+### 4.2. Base de Veículos
 
 **Fonte:** Programa Brasileiro de Etiquetagem (PBE Veicular) - INMETRO  
 **URL:** https://www.gov.br/inmetro/pt-br/assuntos/regulamentacao/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf/view  
@@ -64,13 +70,13 @@ A base contém informações de consumo de combustível (urbano e rodoviário) d
 
 ---
 
-## 4. Engenharia de Dados e Integração com APIs Externas
+## 5. Engenharia de Dados e Integração com APIs Externas
 
-### 4.1. Serviços de Integração
+### 5.1. Serviços de Integração
 
 Para transformar a base de hospitais em uma rede roteável, foram implementados serviços de integração com APIs públicas de georreferenciamento e roteamento:
 
-#### 4.1.1. OpenStreetMap (Nominatim)
+#### 5.1.1. OpenStreetMap (Nominatim)
 
 **Arquivo:** [`servicos/open_street_map/service.py`](servicos/open_street_map/service.py)  
 **Responsabilidade:** Geocodificação de endereços (conversão de endereço textual para latitude/longitude)
@@ -80,7 +86,7 @@ Para transformar a base de hospitais em uma rede roteável, foram implementados 
 - Entrada: [`bases/normaliza_hospitais_publicos_sao_paulo_sp.csv`](bases/normaliza_hospitais_publicos_sao_paulo_sp.csv)
 - Saída: [`bases/latitude_longitude_hospitais_publicos_sao_paulo_sp.csv`](bases/latitude_longitude_hospitais_publicos_sao_paulo_sp.csv)
 
-#### 4.1.2. OpenRouteService
+#### 5.1.2. OpenRouteService
 
 **Arquivo:** [`servicos/open_route/service.py`](servicos/open_route/service.py)  
 **Responsabilidade:** Cálculo de matriz de distâncias e durações entre todos os pares de hospitais
@@ -90,7 +96,7 @@ Para transformar a base de hospitais em uma rede roteável, foram implementados 
 - Entrada: coordenadas (latitude/longitude) dos hospitais
 - Saída: [`bases/matriz_distacias.csv`](bases/matriz_distacias.csv) — matriz NxN com distâncias em km e durações em minutos
 
-### 4.2. Pipeline de Casos de Uso
+### 5.2. Pipeline de Casos de Uso
 
 Os casos de uso organizam o fluxo de preparação dos dados de forma modular e auditável:
 
@@ -105,7 +111,7 @@ Os casos de uso organizam o fluxo de preparação dos dados de forma modular e a
 | 7 | [`7-gerar_imagem_grafo_matriz_distancias.usecase.py`](casos_de_uso/7-gerar_imagem_grafo_matriz_distancias.usecase.py) | Visualiza grafo ponderado pela matriz de custos |
 | 8 | [`8-gerar_dataset_carros.usecase.py`](casos_de_uso/8-gerar_dataset_carros.usecase.py) | Prepara catálogo de veículos para o VRP |
 
-### 4.3. Redução da Base para o Módulo TSP
+### 5.3. Redução da Base para o Módulo TSP
 
 Para viabilizar a execução do algoritmo genético em tempo razoável e permitir validação acadêmica, foi feita uma redução da base original:
 
@@ -116,9 +122,9 @@ Para viabilizar a execução do algoritmo genético em tempo razoável e permiti
 
 ---
 
-## 5. Validação e Testes
+## 6. Validação e Testes
 
-### 5.1. Testes da Camada de Integração
+### 6.1. Testes da Camada de Integração
 
 **Diretório:** `tests/` (raiz do repositório)  
 **Arquivo:** [`tests/test_open_street_map_service.py`](tests/test_open_street_map_service.py)
@@ -133,7 +139,7 @@ Validação de comportamento dos serviços de geocodificação e roteamento:
 python -m pytest tests/ -v
 ```
 
-### 5.2. Testes da Solução de Otimização
+### 6.2. Testes da Solução de Otimização
 
 **Diretório:** `tsp/tests/`  
 **Arquivos:** [`tsp/tests/test_vrp_pipeline.py`](tsp/tests/test_vrp_pipeline.py), [`tsp/tests/test_llm_integration.py`](tsp/tests/test_llm_integration.py)
@@ -158,9 +164,9 @@ python -m pytest tsp/tests/ -v
 
 ---
 
-## 6. Arquitetura da Solução de Otimização (Módulo TSP)
+## 7. Arquitetura da Solução de Otimização (Módulo TSP)
 
-### 6.1. Visão Geral
+### 7.1. Visão Geral
 
 O módulo `tsp/` implementa a solução de otimização propriamente dita, consumindo as bases preparadas nas etapas anteriores. A arquitetura é modular, separando responsabilidades claras:
 
@@ -172,8 +178,8 @@ tsp/
 ├── output/                         # Resultados gerados
 │   ├── mapa_rotas_otimizadas.html
 │   ├── convergencia_algoritmo_genetico.html
-│   ├── instrucoes_motoristas.txt
-│   └── relatorio_operacional.txt
+│   ├── instrucoes_motoristas.md
+│   └── relatorio_operacional.md
 ├── tests/                          # Testes automatizados
 ├── config.py                       # Parâmetros e hiperparâmetros
 ├── models.py                       # Estruturas de dados
@@ -188,7 +194,7 @@ tsp/
 └── run.py                          # Entrypoint principal
 ```
 
-### 6.2. Estrutura dos Módulos
+### 7.2. Estrutura dos Módulos
 
 | Arquivo | Responsabilidade |
 |---|---|
@@ -211,7 +217,7 @@ Componentes relacionados fora de `./tsp`:
 - [`servicos/`](servicos/): clientes de integração para OpenStreetMap e OpenRouteService
 - [`tests/`](tests/): testes da camada de serviços de dados do repositório
 
-### 6.3. Premissas e Dados Sintéticos
+### 7.3. Premissas e Dados Sintéticos
 
 As bases de entrada não contêm todos os atributos necessários para modelar um VRP realista. As seguintes premissas foram adotadas de forma **determinística** (seed fixa `RANDOM_SEED = 42`), garantindo reprodutibilidade:
 
@@ -235,9 +241,9 @@ As bases de entrada não contêm todos os atributos necessários para modelar um
 
 ---
 
-## 7. Modelagem do Problema de Roteamento de Veículos (VRP)
+## 8. Modelagem do Problema de Roteamento de Veículos (VRP)
 
-### 7.1. Representação Genética
+### 8.1. Representação Genética
 
 O cromossomo representa uma **rota gigante**: permutação de todos os hospitais (exceto o depósito), sem separadores de rota.
 
@@ -248,7 +254,7 @@ O cromossomo representa uma **rota gigante**: permutação de todos os hospitais
 
 Cada número representa o ID de um hospital. A ordem define a sequência de visitas.
 
-### 7.2. Decodificação (Split Route)
+### 8.2. Decodificação (Split Route)
 
 A rota gigante é decodificada em rotas individuais por veículo respeitando restrições:
 
@@ -263,7 +269,7 @@ A rota gigante é decodificada em rotas individuais por veículo respeitando res
 
 **Função:** [`vrp.py`](tsp/vrp.py) — `split_route_by_vehicle_constraints()`
 
-### 7.3. Função Fitness (Minimização)
+### 8.3. Função Fitness (Minimização)
 
 ```python
 fitness = distancia_total + penalidade_prioridade + penalidade_nao_atendidos
@@ -282,7 +288,7 @@ fitness = distancia_total + penalidade_prioridade + penalidade_nao_atendidos
 
 **Função:** [`vrp.py`](tsp/vrp.py) — `calcular_fitness_vrp()`
 
-### 7.4. Operadores Genéticos
+### 8.4. Operadores Genéticos
 
 | Operador | Técnica | Parâmetro |
 |---|---|---|
@@ -295,7 +301,7 @@ fitness = distancia_total + penalidade_prioridade + penalidade_nao_atendidos
 
 **Módulo:** [`genetic_algorithm.py`](tsp/genetic_algorithm.py) (base do TSP fornecido, reaproveitado e estendido)
 
-### 7.5. Solução Baseline
+### 8.5. Solução Baseline
 
 Para comparação, é gerada uma solução baseline usando **Nearest Neighbor Heuristic:**
 
@@ -307,9 +313,9 @@ Para comparação, é gerada uma solução baseline usando **Nearest Neighbor He
 
 ---
 
-## 8. Integração com LLMs para Relatórios e Instruções
+## 9. Integração com LLMs para Relatórios e Instruções
 
-### 8.1. Estratégia de Prioridade
+### 9.1. Estratégia de Prioridade
 
 O sistema suporta três modos de geração de texto:
 
@@ -331,15 +337,15 @@ export OPENAI_MODEL="gpt-4o-mini"
 
 **Módulo:** [`llm_integration.py`](tsp/llm_integration.py)
 
-### 8.2. Saídas Geradas
+### 9.2. Saídas Geradas
 
-1. **Instruções para motoristas** (`instrucoes_motoristas.txt`):
+1. **Instruções para motoristas** (`instrucoes_motoristas.md`):
    - Sequência de entregas por rota
    - Endereços dos hospitais
    - Prioridade de cada entrega
    - Estimativa de tempo de viagem
 
-2. **Relatório operacional** (`relatorio_operacional.txt`):
+2. **Relatório operacional** (`relatorio_operacional.md`):
    - Comparativo entre solução otimizada e baseline
    - Métricas: distância total, número de rotas, posição média de entregas críticas
    - Ganhos operacionais (% de redução de distância)
@@ -349,9 +355,9 @@ export OPENAI_MODEL="gpt-4o-mini"
 
 ---
 
-## 9. Resultados Visuais
+## 10. Resultados Visuais
 
-### 9.1. Grafos e Mapas dos Hospitais (Etapa de Preparação)
+### 10.1. Grafos e Mapas dos Hospitais (Etapa de Preparação)
 
 As visualizações abaixo foram geradas pelos casos de uso de engenharia de dados ([`casos_de_uso/`](casos_de_uso/)), salvos em [`bases/graficos/`](bases/graficos/).
 
@@ -379,7 +385,7 @@ As visualizações abaixo foram geradas pelos casos de uso de engenharia de dado
 
 ![Mapa hospitais por duração](bases/graficos/mapa_hospitais_duracao_matriz.png)
 
-### 9.2. Visualizações da Solução Otimizada (Saída do VRP)
+### 10.2. Visualizações da Solução Otimizada (Saída do VRP)
 
 **Localização:** `tsp/output/`
 
@@ -396,16 +402,16 @@ As visualizações abaixo foram geradas pelos casos de uso de engenharia de dado
 
 ---
 
-## 10. Como Executar o Projeto
+## 11. Como Executar o Projeto
 
-### 10.1. Ativar Ambiente Virtual
+### 11.1. Ativar Ambiente Virtual
 
 ```bash
 # a partir da raiz do repositório
 source .venv/bin/activate
 ```
 
-### 10.2. Executar a Solução VRP (Padrão)
+### 11.2. Executar a Solução VRP (Padrão)
 
 ```bash
 # roda somente o VRP hospitalar completo com relatórios
@@ -415,10 +421,10 @@ python tsp/run.py
 **Saídas geradas em `tsp/output/`:**
 - `mapa_rotas_otimizadas.html`
 - `convergencia_algoritmo_genetico.html`
-- `instrucoes_motoristas.txt`
-- `relatorio_operacional.txt`
+- `instrucoes_motoristas.md`
+- `relatorio_operacional.md`
 
-### 10.3. Executar TSP Base (Opcional)
+### 11.3. Executar TSP Base (Opcional)
 
 ```bash
 # roda apenas o TSP clássico (algoritmo genético sem restrições de frota)
@@ -427,7 +433,7 @@ python tsp/tsp.py
 
 Abre janela Pygame com visualização da rota sendo otimizada. Pressione `Q` para fechar.
 
-### 10.4. Executar TSP + VRP em Sequência
+### 11.4. Executar TSP + VRP em Sequência
 
 Para comparar as duas abordagens (TSP clássico vs VRP com restrições):
 
@@ -445,7 +451,7 @@ Para comparar as duas abordagens (TSP clássico vs VRP com restrições):
 
 4. Ao final, um resumo comparativo será impresso.
 
-### 10.5. Executar Testes
+### 11.5. Executar Testes
 
 ```bash
 # testes da solução TSP/VRP e integração LLM
@@ -457,15 +463,15 @@ python -m pytest tests/ -v
 
 ---
 
-## 11. Requisitos Entregues (Tech Challenge Fase 2)
+## 12. Requisitos Entregues (Tech Challenge Fase 2)
 
-### 11.1. Sistema de Otimização de Rotas via Algoritmos Genéticos
+### 12.1. Sistema de Otimização de Rotas via Algoritmos Genéticos
 
 - **Representação genética adequada:** cromossomo como permutação de hospitais (rota gigante)
 - **Operadores genéticos especializados:** seleção, crossover OX, mutação por swap, elitismo
 - **Função fitness multi-objetivo:** distância + prioridade + restrições de atendimento
 
-### 11.2. Restrições Realistas
+### 12.2. Restrições Realistas
 
 - **Prioridades de entrega:** medicamentos críticos vs. insumos regulares (30% críticos)
 - **Capacidade limitada de carga:** restrição por segmento de veículo (300-600 kg)
@@ -473,13 +479,13 @@ python -m pytest tests/ -v
 - **Múltiplos veículos:** problema de VRP, não apenas TSP
 - **Outras restrições:** centro de distribuição, rotação de veículos
 
-### 11.3. Visualização em Mapa
+### 12.3. Visualização em Mapa
 
 - **Mapa interativo Plotly:** rotas coloridas por veículo, hospitais marcados com prioridade
 - **Gráfico de convergência:** demonstra evolução do fitness ao longo das gerações
 - **Grafos de análise:** visualização da rede de hospitais e matriz de custos
 
-### 11.4. Integração com LLMs
+### 12.4. Integração com LLMs
 
 - **Instruções para motoristas:** texto claro e acionável por rota
 - **Relatórios operacionais:** comparação com baseline, métricas de ganho
@@ -488,7 +494,7 @@ python -m pytest tests/ -v
 
 ---
 
-## 12. Diferenciais Implementados
+## 13. Diferenciais Implementados
 
 - **Rastreabilidade completa:** pipeline modular com casos de uso documentados
 - **Reprodutibilidade:** seed fixa para dados sintéticos, mesmos resultados em todas as execuções
@@ -500,7 +506,7 @@ python -m pytest tests/ -v
 
 ---
 
-## 13. Sobre o Resultado: Distância vs. Priorização
+## 14. Sobre o Resultado: Distância vs. Priorização
 
 O algoritmo genético otimiza o **fitness combinado**, não apenas a distância. Em cenários com muitas entregas críticas, o GA pode aceitar uma distância total levemente maior para garantir que os hospitais críticos sejam atendidos bem mais cedo na sequência de despacho.
 
@@ -510,7 +516,7 @@ Esse comparativo evidencia o **ganho operacional real** do sistema para o contex
 
 ---
 
-## 14. Conclusão
+## 15. Conclusão
 
 Este projeto implementou uma solução completa de otimização de rotas médicas, integrando:
 
@@ -523,7 +529,7 @@ A solução é escalável, auditável e pronta para aplicação em cenários rea
 
 ---
 
-## 15. Fontes e Referências
+## 16. Fontes e Referências
 
 **Bases de dados:**
 - Hospitais: https://dadosabertos.saude.gov.br/dataset/hospitais-e-leitos

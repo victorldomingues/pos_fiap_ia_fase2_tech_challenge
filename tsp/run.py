@@ -20,17 +20,45 @@ Uso (a partir da raiz do repositorio ou de dentro da pasta tsp/):
 Para tambem rodar o TSP base, defina `EXECUTAR_TSP_BASE = True` em
 tsp/config.py, ou chame `main(executar_tsp_base=True)` programaticamente.
 """
+
+
+
 from __future__ import annotations
 
-
+import os
 import sys
 from pathlib import Path
 
 # Garante que a raiz do repositorio esteja no sys.path, permitindo importar o
 # pacote `tsp` mesmo quando este arquivo e executado diretamente (python tsp/run.py)
-_RAIZ_REPOSITORIO = str(Path(__file__).resolve().parent.parent)
-if _RAIZ_REPOSITORIO not in sys.path:
-    sys.path.insert(0, _RAIZ_REPOSITORIO)
+_RAIZ_REPOSITORIO = Path(__file__).resolve().parent.parent
+if str(_RAIZ_REPOSITORIO) not in sys.path:
+    sys.path.insert(0, str(_RAIZ_REPOSITORIO))
+
+
+def _carregar_env(caminho: Path) -> None:
+    """Carrega variaveis de ambiente do arquivo .env (sem sobrescrever as ja definidas)."""
+    if not caminho.is_file():
+        return
+    try:
+        from dotenv import load_dotenv  # type: ignore
+        load_dotenv(caminho, override=False)
+        return
+    except ImportError:
+        pass
+    # Fallback minimo caso python-dotenv nao esteja instalado.
+    for linha in caminho.read_text(encoding="utf-8").splitlines():
+        linha = linha.strip()
+        if not linha or linha.startswith("#") or "=" not in linha:
+            continue
+        chave, _, valor = linha.partition("=")
+        chave, valor = chave.strip(), valor.strip().strip('"').strip("'")
+        os.environ.setdefault(chave, valor)
+
+
+_carregar_env(_RAIZ_REPOSITORIO / ".env")
+
+print(os.environ.get("OLLAMA_MODEL"))
 
 from tsp import config
 from tsp.data_loader import (
@@ -101,12 +129,12 @@ def executar_pipeline_vrp():
         if not rota.hospital_ids:
             continue
         linhas_instrucoes.append(gerar_instrucoes_motorista(numero_rota, rota, hospitais_por_id, cliente_llm))
-        linhas_instrucoes.append("\n" + "-" * 60 + "\n")
+        linhas_instrucoes.append("\n---\n")
 
     relatorio = gerar_relatorio_operacional(melhor_solucao, solucao_baseline, hospitais_por_id, cliente_llm)
 
-    (config.OUTPUT_DIR / "instrucoes_motoristas.txt").write_text("\n".join(linhas_instrucoes), encoding="utf-8")
-    (config.OUTPUT_DIR / "relatorio_operacional.txt").write_text(relatorio, encoding="utf-8")
+    (config.OUTPUT_DIR / "instrucoes_motoristas.md").write_text("\n".join(linhas_instrucoes), encoding="utf-8")
+    (config.OUTPUT_DIR / "relatorio_operacional.md").write_text(relatorio, encoding="utf-8")
 
     print(f"Arquivos gerados em: {config.OUTPUT_DIR}")
 

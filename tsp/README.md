@@ -61,8 +61,8 @@ seguida e imprime um resumo comparativo dos dois.
 Saídas geradas em `tsp/output/` (pela etapa VRP):
 - `mapa_rotas_otimizadas.html` — mapa interativo (Plotly) das rotas por veículo.
 - `convergencia_algoritmo_genetico.html` — curva de convergência do GA.
-- `instrucoes_motoristas.txt` — instruções de entrega por rota.
-- `relatorio_operacional.txt` — relatório comparando a solução otimizada com uma baseline.
+- `instrucoes_motoristas.md` — instruções de entrega por rota.
+- `relatorio_operacional.md` — relatório comparando a solução otimizada com uma baseline.
 
 Rodar os testes:
 

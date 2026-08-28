@@ -142,24 +142,26 @@ def gerar_instrucoes_motorista_template(numero_rota: int, rota, hospitais_por_id
     destacando entregas criticas e a ordem correta de visitacao.
     """
     linhas = [
-        f"INSTRUCOES DE ENTREGA - ROTA {numero_rota}",
-        f"Veiculo: {rota.vehicle.brand} {rota.vehicle.model} {rota.vehicle.version}",
-        f"Carga total: {rota.load_kg:.1f} kg de {rota.vehicle.capacity_kg:.0f} kg disponiveis",
-        f"Distancia total prevista: {rota.distance_km:.1f} km (autonomia do veiculo: {rota.vehicle.autonomy_km:.0f} km)",
-        f"Tempo estimado de percurso: {rota.duration_min:.1f} minutos",
+        f"## Instrucoes de entrega - Rota {numero_rota}",
         "",
-        "Ordem de entrega (parta e retorne ao Centro de Distribuicao):",
+        f"- **Veiculo:** {rota.vehicle.brand} {rota.vehicle.model} {rota.vehicle.version}",
+        f"- **Carga total:** {rota.load_kg:.1f} kg de {rota.vehicle.capacity_kg:.0f} kg disponiveis",
+        f"- **Distancia total prevista:** {rota.distance_km:.1f} km (autonomia do veiculo: {rota.vehicle.autonomy_km:.0f} km)",
+        f"- **Tempo estimado de percurso:** {rota.duration_min:.1f} minutos",
+        "",
+        "### Ordem de entrega (parta e retorne ao Centro de Distribuicao)",
+        "",
     ]
 
     for posicao, hospital_id in enumerate(rota.hospital_ids, start=1):
         hospital = hospitais_por_id[hospital_id]
-        marcador = "*** ENTREGA CRITICA ***" if hospital.priority.name == "CRITICAL" else ""
+        marcador = " **:rotating_light: ENTREGA CRITICA**" if hospital.priority.name == "CRITICAL" else ""
         linhas.append(
-            f"  {posicao}. {hospital.name} - bairro {hospital.district} - {hospital.demand_kg:.1f} kg {marcador}".rstrip()
+            f"{posicao}. {hospital.name} - bairro {hospital.district} - {hospital.demand_kg:.1f} kg{marcador}".rstrip()
         )
 
     linhas.append("")
-    linhas.append("Atencao: priorize entregas marcadas como criticas e confirme o recebimento em cada parada.")
+    linhas.append("> **Atencao:** priorize entregas marcadas como criticas e confirme o recebimento em cada parada.")
     return "\n".join(linhas)
 
 
@@ -206,26 +208,40 @@ def gerar_relatorio_operacional_template(
     posicao_critica_baseline = calcular_posicao_media_entregas_criticas(baseline, hospitais_por_id)
 
     linhas = [
-        "RELATORIO DE EFICIENCIA DE ROTAS - DISTRIBUICAO HOSPITALAR",
-        "=" * 60,
-        f"Veiculos utilizados (otimizado): {solucao.vehicles_used}",
-        f"Veiculos utilizados (baseline):  {baseline.vehicles_used}",
+        "# Relatorio de eficiencia de rotas - Distribuicao hospitalar",
         "",
-        f"Distancia total (otimizado): {solucao.total_distance_km:.1f} km",
-        f"Distancia total (baseline):   {baseline.total_distance_km:.1f} km",
-        f"Economia de distancia: {economia_distancia_km:.1f} km ({economia_percentual:.1f}%)",
+        "## Veiculos utilizados",
         "",
-        f"Duracao total (otimizado): {solucao.total_duration_min:.1f} min",
-        f"Duracao total (baseline):   {baseline.total_duration_min:.1f} min",
+        f"- **Otimizado:** {solucao.vehicles_used}",
+        f"- **Baseline:** {baseline.vehicles_used}",
         "",
-        f"Entregas nao atendidas (otimizado): {len(solucao.unassigned_hospital_ids)}",
-        f"Entregas nao atendidas (baseline):   {len(baseline.unassigned_hospital_ids)}",
+        "## Distancia total",
         "",
-        "Priorizacao de entregas criticas (posicao media na sequencia de despacho, menor = mais cedo):",
-        f"  Otimizado: {posicao_critica_otimizado:.1f}ª entrega em media" if posicao_critica_otimizado is not None else "  Otimizado: sem entregas criticas",
-        f"  Baseline:  {posicao_critica_baseline:.1f}ª entrega em media" if posicao_critica_baseline is not None else "  Baseline: sem entregas criticas",
+        f"- **Otimizado:** {solucao.total_distance_km:.1f} km",
+        f"- **Baseline:** {baseline.total_distance_km:.1f} km",
+        f"- **Economia de distancia:** {economia_distancia_km:.1f} km ({economia_percentual:.1f}%)",
         "",
-        "Detalhamento por rota (solucao otimizada):",
+        "## Duracao total",
+        "",
+        f"- **Otimizado:** {solucao.total_duration_min:.1f} min",
+        f"- **Baseline:** {baseline.total_duration_min:.1f} min",
+        "",
+        "## Entregas nao atendidas",
+        "",
+        f"- **Otimizado:** {len(solucao.unassigned_hospital_ids)}",
+        f"- **Baseline:** {len(baseline.unassigned_hospital_ids)}",
+        "",
+        "## Priorizacao de entregas criticas",
+        "",
+        "_Posicao media na sequencia de despacho (menor = mais cedo)._",
+        "",
+        f"- **Otimizado:** {posicao_critica_otimizado:.1f}ª entrega em media" if posicao_critica_otimizado is not None else "- **Otimizado:** sem entregas criticas",
+        f"- **Baseline:** {posicao_critica_baseline:.1f}ª entrega em media" if posicao_critica_baseline is not None else "- **Baseline:** sem entregas criticas",
+        "",
+        "## Detalhamento por rota (solucao otimizada)",
+        "",
+        "| Rota | Veiculo | Paradas | Criticas | Distancia (km) | Carga (kg) |",
+        "|---|---|---|---|---|---|",
     ]
 
     for numero_rota, rota in enumerate(solucao.routes, start=1):
@@ -235,17 +251,17 @@ def gerar_relatorio_operacional_template(
             1 for hid in rota.hospital_ids if hospitais_por_id[hid].priority.name == "CRITICAL"
         )
         linhas.append(
-            f"  Rota {numero_rota}: {rota.vehicle.brand} {rota.vehicle.model} | "
-            f"{len(rota.hospital_ids)} paradas ({qtd_criticas} criticas) | "
-            f"{rota.distance_km:.1f} km | {rota.load_kg:.1f} kg"
+            f"| {numero_rota} | {rota.vehicle.brand} {rota.vehicle.model} | "
+            f"{len(rota.hospital_ids)} | {qtd_criticas} | "
+            f"{rota.distance_km:.1f} | {rota.load_kg:.1f} |"
         )
 
     linhas.append("")
     linhas.append(
-        "Sugestao de melhoria: avaliar aumento da frota ou revisao de janelas de entrega "
+        "> **Sugestao de melhoria:** avaliar aumento da frota ou revisao de janelas de entrega "
         "caso o numero de entregas nao atendidas seja maior que zero."
         if solucao.unassigned_hospital_ids
-        else "Todas as entregas foram atendidas dentro das restricoes de capacidade e autonomia."
+        else "> Todas as entregas foram atendidas dentro das restricoes de capacidade e autonomia."
     )
 
     return "\n".join(linhas)

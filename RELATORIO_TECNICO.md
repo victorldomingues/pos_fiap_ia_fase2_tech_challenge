@@ -2,19 +2,22 @@
 
 ## Tech Challenge - Fase 2 - FIAP
 
-**Curso:** 
+**Curso:** IA Para Devs
 
 **Projeto 2:** Sistema de Otimização de Rotas via Algoritmos Genéticos 
 
 **Autor:** Victor Luiz Domingues **RM:** rm375278 
 
+**Grupo:** 61
+
 **Data:** 2026
+
 
 ---
 
 ## 1. Apresentação do Projeto
 
-Este projeto implementa uma solução de otimização de rotas para distribuição de medicamentos e insumos entre hospitais públicos da cidade de São Paulo, utilizando algoritmos genéticos para resolver o problema de roteamento de veículos (Vehicle Routing Problem - VRP). A solução considera restrições reais como capacidade de carga, autonomia dos veículos, prioridades de entrega e múltiplos veículos, além de integrar modelos de linguagem (LLM) para geração automática de instruções de entrega e relatórios operacionais.
+O projeto ORDMI (Otimizador de Rotas para Distribuição de Medicamentos e Insumos) implementa uma solução de otimização de rotas para distribuição de medicamentos e insumos entre hospitais públicos da cidade de São Paulo, utilizando algoritmos genéticos para resolver o problema de roteamento de veículos (Vehicle Routing Problem - VRP). A solução considera restrições reais como capacidade de carga, autonomia dos veículos, prioridades de entrega e múltiplos veículos, além de integrar modelos de linguagem (LLM) para geração automática de instruções de entrega e relatórios operacionais.
 
 O sistema foi desenvolvido em Python, seguindo princípios de engenharia de dados com rastreabilidade, validação, modularização e reprodutibilidade.
 

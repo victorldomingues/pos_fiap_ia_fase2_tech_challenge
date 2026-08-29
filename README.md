@@ -1,7 +1,14 @@
-# IADT - Fase 2 - Tech Challenge
+## Tech Challenge - Fase 2 - FIAP
 
-Victor Luiz Domingues  
-RM: rm375278
+**Curso:** IA Para Devs
+
+**Projeto 2:** Sistema de Otimização de Rotas via Algoritmos Genéticos 
+
+**Autor:** Victor Luiz Domingues **RM:** rm375278 
+
+**Grupo:** 61
+
+**Data:** 2026
 
 ---
 

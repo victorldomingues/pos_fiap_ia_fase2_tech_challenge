@@ -15,7 +15,7 @@ sequenceDiagram
     participant Run as run.py
     participant Loader as data_loader.py
     participant Dist as distance_matrix.py
-    participant Opt as optimizer.py
+    participant Otim as optimizer.py
     participant Vrp as vrp.py
     participant GA as genetic_algorithm.py
     participant Viz as visualization.py
@@ -56,32 +56,32 @@ sequenceDiagram
     Dist-->>Run: coordenadas_mds (x, y para o mapa)
 
     Note over Run,GA: 4. Otimização por Algoritmo Genético (VRP)
-    Run->>Opt: executar_algoritmo_genetico_vrp(...)
-    activate Opt
-    Opt->>GA: generate_random_population(genes, population_size)
-    GA-->>Opt: populacao inicial
+    Run->>Otim: executar_algoritmo_genetico_vrp(...)
+    activate Otim
+    Otim->>GA: generate_random_population(genes, population_size)
+    GA-->>Otim: populacao inicial
     loop N_GENERATIONS (500 gerações)
-        Opt->>Vrp: decodificar_rota_gigante(individuo, frota, ...)
+        Otim->>Vrp: decodificar_rota_gigante(individuo, frota, ...)
         Vrp->>Vrp: split_route_by_vehicle_constraints (capacidade/autonomia)
-        Vrp-->>Opt: VrpSolution (rotas por veículo)
-        Opt->>Vrp: calcular_fitness_vrp(solucao)
-        Vrp-->>Opt: fitness (distância + penalidades)
-        Opt->>Opt: ordena por fitness + elitismo (top 10%)
-        Opt->>GA: select_parents_by_fitness()
-        GA-->>Opt: pais
-        Opt->>GA: order_crossover(pai1, pai2)
-        GA-->>Opt: filho
-        Opt->>GA: mutate(filho, mutation_probability)
-        GA-->>Opt: nova população
+        Vrp-->>Otim: VrpSolution (rotas por veículo)
+        Otim->>Vrp: calcular_fitness_vrp(solucao)
+        Vrp-->>Otim: fitness (distância + penalidades)
+        Otim->>Otim: ordena por fitness + elitismo (top 10%)
+        Otim->>GA: select_parents_by_fitness()
+        GA-->>Otim: pais
+        Otim->>GA: order_crossover(pai1, pai2)
+        GA-->>Otim: filho
+        Otim->>GA: mutate(filho, mutation_probability)
+        GA-->>Otim: nova população
     end
-    Opt-->>Run: melhor_solucao, historico_fitness
-    deactivate Opt
+    Otim-->>Run: melhor_solucao, historico_fitness
+    deactivate Otim
 
     Note over Run,Vrp: 5. Solução baseline (comparação)
-    Run->>Opt: calcular_solucao_baseline(...)
-    Opt->>Vrp: decodificar_rota_gigante(ordem de cadastro)
-    Vrp-->>Opt: solucao_baseline
-    Opt-->>Run: solucao_baseline
+    Run->>Otim: calcular_solucao_baseline(...)
+    Otim->>Vrp: decodificar_rota_gigante(ordem de cadastro)
+    Vrp-->>Otim: solucao_baseline
+    Otim-->>Run: solucao_baseline
 
     Note over Run,FS: 6. Visualizações interativas (Plotly)
     Run->>Viz: plotar_mapa_rotas(melhor_solucao, coordenadas_mds, ...)

@@ -516,20 +516,44 @@ Esse comparativo evidencia o **ganho operacional real** do sistema para o contex
 
 ---
 
-## 15. Conclusão
+## 15. Comparativo Resumido: TSP Base vs. VRP Hospitalar
 
-Este projeto implementou uma solução completa de otimização de rotas médicas, integrando:
+A versão **TSP base** (`tsp/tsp.py`) representa o problema como uma única rota fechada, em que um único percurso visita todos os hospitais e retorna ao ponto inicial. Essa abordagem é útil como referência didática e como evolução direta do código base fornecido, pois demonstra o funcionamento do algoritmo genético sobre os hospitais reais e a matriz de distâncias do projeto. Em execução controlada de 200 gerações, o TSP encontrou uma rota de referência com aproximadamente **640,1 km**.
 
-1. **Engenharia de dados:** coleta, tratamento e enriquecimento de bases públicas
-2. **Algoritmos genéticos:** TSP e VRP com restrições realistas
-3. **Integração com LLMs:** geração automática de instruções e relatórios
-4. **Validação rigorosa:** testes automatizados e comparação com baseline
+Entretanto, esse resultado não considera restrições operacionais essenciais para a distribuição hospitalar: não há múltiplos veículos, capacidade de carga, autonomia, demanda por hospital, prioridade de entrega nem entregas não atendidas. Por isso, apesar de apresentar menor distância total, o TSP não representa uma solução logística executável para o cenário real do projeto.
 
-A solução é escalável, auditável e pronta para aplicação em cenários reais de distribuição hospitalar.
+A versão **VRP hospitalar** (`tsp/vrp.py` + `tsp/optimizer.py`) amplia o problema para múltiplas rotas e veículos, incorporando capacidade, autonomia e priorização de entregas. Na execução registrada, a solução otimizada percorreu **886,7 km**, contra **1087,4 km** da baseline em ordem de cadastro, obtendo redução de **200,7 km (18,5%)** e mantendo **100% das entregas atendidas**. Assim, o VRP tem uma distância maior que o TSP base por modelar retornos ao depósito e restrições reais, mas entrega uma solução operacionalmente viável e comparável ao processo logístico esperado.
+
+| Critério | TSP base | VRP hospitalar |
+|---|---|---|
+| Objetivo | Minimizar uma única rota fechada | Minimizar rotas com restrições reais |
+| Veículos | 1 rota teórica | Múltiplos veículos/viagens |
+| Restrições | Não considera capacidade, autonomia ou prioridade | Considera capacidade, autonomia, demanda, prioridade e não atendimento |
+| Resultado observado | 640,1 km em 200 gerações | 886,7 km otimizado vs. 1087,4 km baseline |
+| Uso no projeto | Referência didática e comparativa | Solução principal para operação hospitalar |
 
 ---
 
-## 16. Fontes e Referências
+## 16. Conclusão
+
+Este projeto demonstrou a construção de uma solução completa para otimização de rotas médicas, partindo de bases públicas reais e evoluindo de um problema clássico de TSP para uma modelagem mais próxima da operação logística hospitalar. A implementação não se limita a encontrar uma rota curta: ela organiza dados, calcula custos de deslocamento, considera frota disponível, aplica restrições de capacidade e autonomia, prioriza entregas críticas e gera saídas interpretáveis para apoio à decisão.
+
+Do ponto de vista técnico, a solução integra quatro frentes principais:
+
+1. **Engenharia de dados:** coleta, tratamento, normalização e redução das bases de hospitais e veículos, mantendo rastreabilidade das fontes e dos arquivos gerados.
+2. **Otimização por algoritmos genéticos:** aplicação do TSP como referência didática e expansão para VRP com múltiplos veículos, demanda, capacidade, autonomia e penalidades operacionais.
+3. **Visualização e interpretação:** geração de mapas, grafos e curvas de convergência para permitir análise visual das rotas, do comportamento do algoritmo e da rede hospitalar.
+4. **Integração com LLMs:** geração automatizada de instruções para motoristas, relatórios operacionais e respostas em linguagem natural, com fallback offline por template.
+
+O comparativo entre a solução otimizada e a baseline mostrou ganho operacional relevante: a distância total foi reduzida de **1087,4 km** para **886,7 km**, representando economia de **200,7 km (18,5%)**, sem entregas não atendidas. Esse resultado reforça que o algoritmo genético, quando combinado com restrições realistas, consegue produzir rotas mais eficientes do que uma abordagem simples baseada na ordem de cadastro dos hospitais.
+
+Também ficou evidente a diferença entre o TSP base e o VRP hospitalar. O TSP funciona como uma referência importante para validar o uso de algoritmos genéticos em roteamento, mas não representa sozinho a complexidade logística do problema. Já o VRP incorpora as condições necessárias para uma operação real: múltiplos veículos, retornos ao centro de distribuição, limites de carga, limites de autonomia e priorização de medicamentos críticos.
+
+Assim, o ORDMI entrega uma base escalável, auditável e extensível para cenários reais de distribuição hospitalar. Como próximos passos naturais, a solução poderia incorporar janelas de entrega, dados reais de demanda, tráfego em tempo real, custos de combustível por veículo, disponibilidade dinâmica da frota e integração direta com sistemas de despacho ou rastreamento.
+
+---
+
+## 17. Fontes e Referências
 
 **Bases de dados:**
 - Hospitais: https://dadosabertos.saude.gov.br/dataset/hospitais-e-leitos

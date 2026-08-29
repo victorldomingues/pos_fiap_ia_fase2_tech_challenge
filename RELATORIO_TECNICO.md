@@ -1,7 +1,13 @@
 # Otimizador de Rotas para Distribuição de Medicamentos e Insumos - ORDMI
 
-**Tech Challenge - Fase 2 - FIAP**  
-**Autor:** Victor Luiz Domingues (RM: rm375278)  
+## Tech Challenge - Fase 2 - FIAP
+
+**Curso:** 
+
+**Projeto 2:** Sistema de Otimização de Rotas via Algoritmos Genéticos 
+
+**Autor:** Victor Luiz Domingues **RM:** rm375278 
+
 **Data:** 2026
 
 ---

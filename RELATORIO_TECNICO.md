@@ -226,11 +226,11 @@ Componentes relacionados fora de `./tsp`:
 - [`servicos/`](servicos/): clientes de integração para OpenStreetMap e OpenRouteService
 - [`tests/`](tests/): testes da camada de serviços de dados do repositório
 
-### 7.3. Premissas e Dados Sintéticos
+### 7.3. Premissas, Dados Sintéticos e Atributos Derivados
 
 As bases de entrada não contêm todos os atributos necessários para modelar um VRP realista. As seguintes premissas foram adotadas de forma **determinística** (seed fixa `RANDOM_SEED = 42`), garantindo reprodutibilidade:
 
-#### Dados Sintéticos Gerados
+#### Premissas Operacionais e Atributos Derivados
 
 | Atributo | Fonte/Estimativa | Justificativa |
 |---|---|---|
@@ -240,7 +240,7 @@ As bases de entrada não contêm todos os atributos necessários para modelar um
 | **Tanque de combustível (L)** | Assumido 50L para todos os veículos | Padrão representativo de veículos leves |
 | **Autonomia (km)** | `consumo_cidade (km/l) × 50L` | Calculada a partir do consumo real do PBE |
 | **Centro de Distribuição** | Hospital ID=1 | Base não possui depósito logístico separado |
-| **Coordenadas lat/long** | Projeção MDS 2D a partir da matriz real | Base reduzida não possui coordenadas geográficas |
+| **Coordenadas 2D para visualização** | Projeção MDS 2D a partir da matriz real | Usada apenas nos mapas/gráficos; TSP e VRP calculam custo pela matriz real de distâncias/durações |
 
 **Capacidade estimada por segmento:**
 - Sedan: 350 kg

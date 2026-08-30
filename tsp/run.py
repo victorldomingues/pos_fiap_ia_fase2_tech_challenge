@@ -114,15 +114,14 @@ def executar_pipeline_vrp():
 
     # 5. Visualizacoes
     figura_mapa = plotar_mapa_rotas(melhor_solucao, coordenadas_mds, hospital_ids, hospitais_por_id, config.DEPOT_HOSPITAL_ID)
-    figura_mapa_openstreetmap = plotar_mapa_rotas_openstreetmap(melhor_solucao, coordenadas_geo_por_id, hospitais_por_id, config.DEPOT_HOSPITAL_ID)
+    html_mapa_openstreetmap = plotar_mapa_rotas_openstreetmap(
+        melhor_solucao, coordenadas_geo_por_id, hospitais_por_id, config.DEPOT_HOSPITAL_ID,
+        indice_por_id, matriz_distancias_km, matriz_duracoes_min,
+    )
     figura_convergencia = plotar_convergencia(historico_fitness)
     # Usa o Plotly via CDN (em vez de embutir a biblioteca inteira) para manter os arquivos HTML leves
     figura_mapa.write_html(config.OUTPUT_DIR / "mapa_rotas_otimizadas.html", include_plotlyjs="cdn")
-    figura_mapa_openstreetmap.write_html(
-        config.OUTPUT_DIR / "mapa_rotas_openstreetmap.html",
-        include_plotlyjs="cdn",
-        config={"scrollZoom": True, "displayModeBar": True},
-    )
+    (config.OUTPUT_DIR / "mapa_rotas_openstreetmap.html").write_text(html_mapa_openstreetmap, encoding="utf-8")
     figura_convergencia.write_html(config.OUTPUT_DIR / "convergencia_algoritmo_genetico.html", include_plotlyjs="cdn")
 
     # 6. Instrucoes de entrega e relatorio operacional (LLM opcional)

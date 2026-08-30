@@ -38,8 +38,11 @@ Este projeto aplica técnicas de inteligência artificial (algoritmos genéticos
 
 ## 3. Arquitetura
 
-![Diagrama da arquitetura ORDMI](diagramas/ORDMI.drawio.png)
+### Diagrama de Contexto
+![Diagrama da arquitetura ORDMI](diagramas/Contexto.drawio.png)
 
+### C4 Model
+![Diagrama da arquitetura ORDMI](diagramas/ORDMI.drawio.png)
 ---
 
 ## 4. Coleta e Preparação das Bases de Dados
@@ -105,7 +108,7 @@ Para transformar a base de hospitais em uma rede roteável, foram implementados 
 - Entrada: coordenadas (latitude/longitude) dos hospitais
 - Saída: [`bases/matriz_distacias.csv`](bases/matriz_distacias.csv) — matriz NxN com distâncias em km e durações em minutos
 
-### 5.2. Pipeline de Casos de Uso
+### 5.2. Pipeline de Casos de Uso (ETL)
 
 Os casos de uso organizam o fluxo de preparação dos dados de forma modular e auditável:
 
@@ -127,7 +130,7 @@ Para viabilizar a execução do algoritmo genético em tempo razoável e permiti
 - **Base original:** 354 hospitais
 - **Base reduzida (`tsp/bases`):** 51 hospitais
 - **Critério de seleção:** distribuição geográfica representativa e hospitais de referência
-- **Resultado:** [`tsp/bases/matriz_distacias_hospitais.csv`](tsp/bases/matriz_distacias_hospitais.csv) — matriz 51x51 de distâncias e durações
+- **Resultado:** [`tsp/bases/matriz_distacias_hospitais.csv`](tsp/bases/matriz_distacias_hospitais.csv) — matriz 51x51 de distâncias, durações e coordenadas geográficas de origem/destino para visualização
 
 ---
 
@@ -186,6 +189,7 @@ tsp/
 │   └── veiculos.csv
 ├── output/                         # Resultados gerados
 │   ├── mapa_rotas_otimizadas.html
+│   ├── mapa_rotas_openstreetmap.html
 │   ├── convergencia_algoritmo_genetico.html
 │   ├── instrucoes_motoristas.md
 │   └── relatorio_operacional.md
@@ -240,7 +244,8 @@ As bases de entrada não contêm todos os atributos necessários para modelar um
 | **Tanque de combustível (L)** | Assumido 50L para todos os veículos | Padrão representativo de veículos leves |
 | **Autonomia (km)** | `consumo_cidade (km/l) × 50L` | Calculada a partir do consumo real do PBE |
 | **Centro de Distribuição** | Hospital ID=1 | Base não possui depósito logístico separado |
-| **Coordenadas 2D para visualização** | Projeção MDS 2D a partir da matriz real | Usada apenas nos mapas/gráficos; TSP e VRP calculam custo pela matriz real de distâncias/durações |
+| **Coordenadas geográficas para mapa OSM** | Colunas `origin_latitude`, `origin_longitude`, `destination_latitude` e `destination_longitude` da matriz do `tsp` | Usadas apenas no mapa OpenStreetMap; TSP e VRP calculam custo pela matriz real de distâncias/durações |
+| **Coordenadas 2D para mapa MDS** | Projeção MDS 2D a partir da matriz real | Visualização alternativa quando se deseja observar a estrutura relativa das distâncias |
 
 **Capacidade estimada por segmento:**
 - Sedan: 350 kg
@@ -404,7 +409,12 @@ As visualizações abaixo foram geradas pelos casos de uso de engenharia de dado
    - Linhas representando sequência de visitas
    - Interativo (Plotly): zoom, hover com detalhes
 
-2. **Curva de convergência do algoritmo genético** (`convergencia_algoritmo_genetico.html`):
+2. **Mapa OpenStreetMap com toggle de rotas** (`mapa_rotas_openstreetmap.html`):
+   - Usa latitude/longitude reais recuperadas na etapa de engenharia de dados
+   - Permite ligar/desligar cada rota pela legenda do Plotly
+   - Serve para apresentar a solução sobre o mapa geográfico da cidade
+
+3. **Curva de convergência do algoritmo genético** (`convergencia_algoritmo_genetico.html`):
    - Eixo X: geração
    - Eixo Y: melhor fitness da população
    - Demonstra melhoria ao longo das iterações
@@ -429,6 +439,7 @@ python tsp/run.py
 
 **Saídas geradas em `tsp/output/`:**
 - `mapa_rotas_otimizadas.html`
+- `mapa_rotas_openstreetmap.html`
 - `convergencia_algoritmo_genetico.html`
 - `instrucoes_motoristas.md`
 - `relatorio_operacional.md`

@@ -3,10 +3,8 @@
 import random
 import math
 import copy 
-from typing import Any, List, Tuple
-
 import numpy as np
-
+from typing import Any, List, Tuple
 
 
 def generate_random_population(cities_location: List[Tuple[float, float]], population_size: int) -> List[List[Tuple[float, float]]]:

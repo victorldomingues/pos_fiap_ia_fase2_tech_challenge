@@ -73,6 +73,7 @@ apoio na raiz do repositório.
     │   └── veiculos.csv                      # Cadastro da frota de veículos
     ├── output/                   # Artefatos gerados pela execução
     │   ├── mapa_rotas_otimizadas.html        # Mapa interativo das rotas otimizadas
+    │   ├── mapa_rotas_openstreetmap.html     # Mapa OpenStreetMap com toggle de rotas pela legenda
     │   ├── convergencia_algoritmo_genetico.html  # Curva de convergência do algoritmo genético
     │   ├── instrucoes_motoristas.md          # Instruções de entrega por motorista
     │   └── relatorio_operacional.md          # Relatório operacional da distribuição
@@ -97,7 +98,7 @@ pip install -r requirements.txt
 python tsp/run.py
 ```
 
-As saídas são geradas em `tsp/output/`: mapa de rotas, curva de convergência, instruções de motoristas e relatório operacional.
+As saídas são geradas em `tsp/output/`: mapa de rotas MDS, mapa OpenStreetMap com toggle de rotas, curva de convergência, instruções de motoristas e relatório operacional.
 
 ### Executar o TSP base (opcional)
 

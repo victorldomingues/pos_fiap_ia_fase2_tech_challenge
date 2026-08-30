@@ -8,6 +8,7 @@ fitness ao longo das geracoes do algoritmo genetico.
 """
 from tsp import config
 from tsp.data_loader import (
+    carregar_coordenadas_hospitais,
     carregar_frota,
     carregar_matriz_distancias,
     construir_lista_hospitais_base,
@@ -56,6 +57,23 @@ def test_gerar_demandas_hospitais_e_deterministico():
     assert [h.demand_kg for h in hospitais_1] == [h.demand_kg for h in hospitais_2]
     assert [h.priority for h in hospitais_1] == [h.priority for h in hospitais_2]
     assert all(config.DEMANDA_KG_MIN <= h.demand_kg <= config.DEMANDA_KG_MAX for h in hospitais_1)
+
+
+def test_carregar_coordenadas_hospitais_usa_matriz_distancias():
+    """As coordenadas do mapa OSM devem vir da propria matriz do projeto tsp."""
+    import pandas as pd
+
+    df_matriz = pd.DataFrame(
+        [
+            {"origin_id": 1, "origin_latitude": -23.55, "origin_longitude": -46.65},
+            {"origin_id": 2, "origin_latitude": -23.47, "origin_longitude": -46.69},
+            {"origin_id": 1, "origin_latitude": -23.55, "origin_longitude": -46.65},
+        ]
+    )
+
+    coordenadas = carregar_coordenadas_hospitais(df_matriz, [1, 2])
+
+    assert coordenadas == {1: (-23.55, -46.65), 2: (-23.47, -46.69)}
 
 
 def test_carregar_frota_calcula_autonomia_positiva():

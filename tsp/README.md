@@ -60,6 +60,7 @@ seguida e imprime um resumo comparativo dos dois.
 
 Saídas geradas em `tsp/output/` (pela etapa VRP):
 - `mapa_rotas_otimizadas.html` — mapa interativo (Plotly) das rotas por veículo.
+- `mapa_rotas_openstreetmap.html` — mapa geografico OpenStreetMap com toggle de rotas pela legenda.
 - `convergencia_algoritmo_genetico.html` — curva de convergência do GA.
 - `instrucoes_motoristas.md` — instruções de entrega por rota.
 - `relatorio_operacional.md` — relatório comparando a solução otimizada com uma baseline.
@@ -208,10 +209,10 @@ para um VRP realista. As premissas abaixo são aplicadas de forma
 - **Centro de Distribuição (depósito)**: o hospital de `id = 1` é usado como
   CD (`config.DEPOT_HOSPITAL_ID`), pois a base não possui um depósito
   logístico separado dos hospitais.
-- **Coordenadas do mapa**: como a base não tem latitude/longitude, as
-  posições exibidas no mapa são estimadas via MDS clássico (Torgerson) a
-  partir da matriz real de distâncias, preservando as distâncias relativas
-  entre hospitais para fins de visualização.
+- **Coordenadas dos mapas**: o mapa OpenStreetMap usa `origin_latitude` e
+  `origin_longitude` da própria [`bases/matriz_distacias_hospitais.csv`](bases/matriz_distacias_hospitais.csv).
+  O mapa MDS continua disponível como visualização alternativa, projetando os
+  hospitais em 2D a partir da matriz real de distâncias.
 
 ---
 

@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 """
 Construcao da matriz de custos (distancia/duracao) entre hospitais e de um
-layout bidimensional para visualizacao das rotas em mapa.
+layout bidimensional alternativo para visualizacao das rotas.
 
-Como a base tsp/bases nao possui latitude/longitude dos hospitais (apenas
-distancias e duracoes rodoviarias entre pares), utilizamos escalonamento
-multidimensional classico (MDS de Torgerson) para projetar os hospitais em
-um plano 2D que preserva, o melhor possivel, as distancias reais da matriz.
-Essa projecao e apenas para fins de visualizacao; o custo real das rotas
-sempre usa a matriz original.
+O custo real das rotas sempre usa a matriz original de distancias/duracoes.
+Quando for necessario visualizar a solucao sem mapa geografico, utilizamos
+escalonamento multidimensional classico (MDS de Torgerson) para projetar os
+hospitais em um plano 2D que preserva, o melhor possivel, as distancias reais.
 """
 from __future__ import annotations
 

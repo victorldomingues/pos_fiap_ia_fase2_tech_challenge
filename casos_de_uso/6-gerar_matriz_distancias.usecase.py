@@ -4,15 +4,19 @@ import csv
 import hashlib
 import json
 import os
+import sys
 import time
 from pathlib import Path
 from typing import Any
 
 import numpy as np
 
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+	sys.path.insert(0, str(ROOT))
+
 from servicos.open_route import OpenRouteServiceClient
 
-ROOT = Path(__file__).resolve().parents[1]
 INPUT_PATH = ROOT / "bases" / "por_bairro_hospitais_publicos_sao_paulo_sp.csv"
 OUTPUT_PATH = ROOT / "bases" / "matriz_distacias.csv"
 CACHE_DIR = ROOT / "bases" / ".cache" / "openrouteservice"
@@ -173,9 +177,13 @@ def gerar_matriz(
 					"origin_id": origin["id"],
 					"origin_hospital": origin["hospital"],
 					"origin_bairro": origin["bairro"],
+					"origin_latitude": origin["lat"],
+					"origin_longitude": origin["lng"],
 					"destination_id": destination["id"],
 					"destination_hospital": destination["hospital"],
 					"destination_bairro": destination["bairro"],
+					"destination_latitude": destination["lat"],
+					"destination_longitude": destination["lng"],
 					"distance_meters": "" if np.isnan(distance) else int(distance),
 					"distance_km": "" if np.isnan(distance) else round(float(distance) / 1000, 3),
 					"duration_seconds": "" if np.isnan(duration) else int(duration),
@@ -193,9 +201,13 @@ def salvar_matriz(rows: list[dict[str, Any]]) -> None:
 		"origin_id",
 		"origin_hospital",
 		"origin_bairro",
+		"origin_latitude",
+		"origin_longitude",
 		"destination_id",
 		"destination_hospital",
 		"destination_bairro",
+		"destination_latitude",
+		"destination_longitude",
 		"distance_meters",
 		"distance_km",
 		"duration_seconds",

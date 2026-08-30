@@ -171,3 +171,4 @@ _ig_*
 .github/*
 *.drawio.bkp
 .env*
+~$*

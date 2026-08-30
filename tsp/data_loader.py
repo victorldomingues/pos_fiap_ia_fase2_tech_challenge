@@ -30,6 +30,12 @@ COLUNAS_OBRIGATORIAS_MATRIZ = {
     "status",
 }
 
+COLUNAS_OBRIGATORIAS_COORDENADAS = {
+    "origin_id",
+    "origin_latitude",
+    "origin_longitude",
+}
+
 
 def carregar_matriz_distancias(caminho=config.MATRIZ_DISTANCIAS_PATH) -> pd.DataFrame:
     """
@@ -70,6 +76,38 @@ def construir_lista_hospitais_base(df_matriz: pd.DataFrame) -> pd.DataFrame:
         .reset_index(drop=True)
     )
     return hospitais
+
+
+def carregar_coordenadas_hospitais(
+    df_matriz: pd.DataFrame,
+    hospital_ids: list[int],
+) -> dict[int, tuple[float, float]]:
+    """
+    Extrai latitude/longitude reais dos hospitais a partir da matriz reduzida.
+
+    Observacao: essas coordenadas devem estar em tsp/bases/matriz_distacias_hospitais.csv
+    e sao usadas apenas para visualizacao no mapa OpenStreetMap. O custo das
+    rotas continua sendo calculado pela matriz real de distancias e duracoes.
+    """
+    colunas_faltantes = COLUNAS_OBRIGATORIAS_COORDENADAS - set(df_matriz.columns)
+    if colunas_faltantes:
+        raise ValueError(
+            "Colunas de latitude/longitude ausentes na matriz tsp/bases/matriz_distacias_hospitais.csv: "
+            f"{colunas_faltantes}. Gere a matriz pelo caso de uso 6 atualizado e copie o CSV para tsp/bases/."
+        )
+
+    ids_necessarios = set(hospital_ids)
+    df_valido = df_matriz[df_matriz["origin_id"].isin(ids_necessarios)].copy()
+    coordenadas_por_id = {
+        int(linha.origin_id): (float(linha.origin_latitude), float(linha.origin_longitude))
+        for linha in df_valido.itertuples(index=False)
+    }
+
+    ids_faltantes = sorted(ids_necessarios - set(coordenadas_por_id))
+    if ids_faltantes:
+        raise ValueError(f"Hospitais sem coordenadas validas para mapa OpenStreetMap: {ids_faltantes}")
+
+    return coordenadas_por_id
 
 
 def gerar_demandas_hospitais(

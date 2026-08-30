@@ -58,10 +58,9 @@ def _carregar_env(caminho: Path) -> None:
 
 _carregar_env(_RAIZ_REPOSITORIO / ".env")
 
-print(os.environ.get("OLLAMA_MODEL"))
-
 from tsp import config
 from tsp.data_loader import (
+    carregar_coordenadas_hospitais,
     carregar_frota,
     carregar_matriz_distancias,
     construir_lista_hospitais_base,
@@ -71,7 +70,7 @@ from tsp.distance_matrix import calcular_coordenadas_mds, construir_matriz_custo
 from tsp.llm_integration import gerar_instrucoes_motorista, gerar_relatorio_operacional, obter_cliente_llm
 from tsp.optimizer import calcular_solucao_baseline, executar_algoritmo_genetico_vrp
 from tsp.tsp import calcular_fitness_hospitais, executar_tsp_hospitais
-from tsp.visualization import plotar_convergencia, plotar_mapa_rotas
+from tsp.visualization import plotar_convergencia, plotar_mapa_rotas, plotar_mapa_rotas_openstreetmap
 
 
 def executar_pipeline_vrp():
@@ -97,6 +96,7 @@ def executar_pipeline_vrp():
     matriz_duracoes_min = construir_matriz_custos(df_matriz, hospital_ids, metrica="duration_minutes")
     indice_por_id = {hospital_id: posicao for posicao, hospital_id in enumerate(hospital_ids)}
     coordenadas_mds = calcular_coordenadas_mds(matriz_distancias_km)
+    coordenadas_geo_por_id = carregar_coordenadas_hospitais(df_matriz, hospital_ids)
 
     # 4. Algoritmo genetico e baseline
     print("Executando algoritmo genetico para o VRP hospitalar...")
@@ -114,9 +114,15 @@ def executar_pipeline_vrp():
 
     # 5. Visualizacoes
     figura_mapa = plotar_mapa_rotas(melhor_solucao, coordenadas_mds, hospital_ids, hospitais_por_id, config.DEPOT_HOSPITAL_ID)
+    figura_mapa_openstreetmap = plotar_mapa_rotas_openstreetmap(melhor_solucao, coordenadas_geo_por_id, hospitais_por_id, config.DEPOT_HOSPITAL_ID)
     figura_convergencia = plotar_convergencia(historico_fitness)
     # Usa o Plotly via CDN (em vez de embutir a biblioteca inteira) para manter os arquivos HTML leves
     figura_mapa.write_html(config.OUTPUT_DIR / "mapa_rotas_otimizadas.html", include_plotlyjs="cdn")
+    figura_mapa_openstreetmap.write_html(
+        config.OUTPUT_DIR / "mapa_rotas_openstreetmap.html",
+        include_plotlyjs="cdn",
+        config={"scrollZoom": True, "displayModeBar": True},
+    )
     figura_convergencia.write_html(config.OUTPUT_DIR / "convergencia_algoritmo_genetico.html", include_plotlyjs="cdn")
 
     # 6. Instrucoes de entrega e relatorio operacional (LLM opcional)

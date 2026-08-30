@@ -54,8 +54,7 @@ def _carregar_env(caminho: Path) -> None:
         chave, _, valor = linha.partition("=")
         chave, valor = chave.strip(), valor.strip().strip('"').strip("'")
         os.environ.setdefault(chave, valor)
-
-
+        
 _carregar_env(_RAIZ_REPOSITORIO / ".env")
 
 from tsp import config

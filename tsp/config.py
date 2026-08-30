@@ -55,7 +55,7 @@ CAPACIDADE_KG_PADRAO = 350.0
 # ---------------------------------------------------------------------------
 DEMANDA_KG_MIN = 10.0
 DEMANDA_KG_MAX = 120.0
-PROBABILIDADE_ENTREGA_CRITICA = 0.3
+PROBABILIDADE_ENTREGA_CRITICA = 0.0
 
 # ---------------------------------------------------------------------------
 # Controle de execucao do tsp/run.py: por padrao, roda somente o VRP

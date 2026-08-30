@@ -27,7 +27,7 @@ Vídeo de apresentação da solução no YouTube, com a demonstração do funcio
 do otimizador de rotas (TSP/VRP) e a explicação da arquitetura e dos resultados.
 
 - **Título:** ORDMI — Otimizador de Rotas para Distribuição de Medicamentos e Insumos
-- **Link:** _a ser adicionado_ (URL do YouTube)
+- **Link:** [VÍDEO NO YOUTUBE](https://youtu.be/T90CqrFOdgU)
 
 ---
 
